@@ -1,0 +1,17 @@
+{
+    "name": "mey/css100",
+    "authors": [
+        {
+            "name": "MeyDetour",
+            "email": "meydetour@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src"
+        }
+    },
+    "require": {
+        "altorouter/altorouter": "^2.0"
+    }
+}
