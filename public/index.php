@@ -4,15 +4,17 @@ $router = new AltoRouter();
 
 
 $router->map( 'GET', '/', function() {
-    App\View\View::render('home',[]);
+    App\View\View::render('home', []);
 
 });
 // map users details page
-$router->map( 'GET|POST', '/page/[i:id]/', function( $id ) {
-    App\View\View::render('p'.$id,[]);
-
+$router->map('GET|POST', '/page/[i:id]/', function($id) {
+    App\View\View::render('p'.$id, []);
 });
 
+$router->map('GET|POST', '/page/[*:pageName]/', function($pageName) {
+    App\View\View::render($pageName, []);
+});
 
 // match current request
 $match = $router->match();
@@ -22,5 +24,5 @@ if ($match && is_callable($match['target'])) {
     call_user_func_array($match['target'], $match['params']);
 } else {
     // no route was matched
-    header($_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found');
+    header($_SERVER["SERVER_PROTOCOL"].' 404 Not Found');
 }

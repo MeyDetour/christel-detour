@@ -6,24 +6,25 @@ use Exception;
 
 class View
 {
-    public static function render($nomDeTemplate, $donnees){
+    public static function render($templateName, $donnees){
         $templatePath = __DIR__ . '/../../templates/';
 
         // Assurez-vous que le fichier du template spécifique existe
-        $templateFile = $templatePath . $nomDeTemplate . '.html.php';
+        $templateFile = $templatePath.$templateName.'.html.php';
         if (!file_exists($templateFile)) {
-            throw new Exception("Template file does not exist: " . $templateFile);
+            throw new Exception("Template file does not exist: ".$templateFile);
         }
+        
         ob_start();
         extract($donnees);
 
-        require_once "${templatePath}${nomDeTemplate}.html.php";
+        require_once $templatePath.$templateName.".html.php";
 
         $content = ob_get_clean();
 
 
         ob_start();
-        require_once "${templatePath}base.html.php";
+        require_once $templatePath."base.html.php";
         echo ob_get_clean();
 
     }

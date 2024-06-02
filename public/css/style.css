@@ -1,1 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=New+Tegomin&display=swap');
+
+home {
+	margin: 0;
+	padding: 0;
+}
+
+/* Basic classes */
+.flexRow {
+	display: flex;
+	flex-direction: row;
+}
+.flexRowAround {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.flexRowBetween {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.flexCol {
+	display: flex;
+	flex-direction: column;
+}
+.flexColAround {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.flexColBetween {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.gridCenter {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+/* --- Basic classes --- */
+
+.box {
+	width: 250px;
+	height: 205px;
+	padding: 15px;
+	margin: 20px;
+
+	background-color: red;
+
+	border-radius: 20px;
+
+	color: rgba(0, 0, 0, .4);
+	font-size: 30px;
+	font-weight: bold;
+
+	cursor: pointer;
+}
