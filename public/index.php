@@ -12,8 +12,8 @@ $router->map('GET|POST', '/page/[i:id]/', function($id) {
     App\View\View::render('p'.$id, []);
 });
 
-$router->map('GET|POST', '/page/[*:pageName]/', function($pageName) {
-    App\View\View::render($pageName, []);
+$router->map('GET|POST', '/activité/[*:theme]/', function($theme) {
+    App\View\View::render('themeOfActivite', ['theme'=>$theme]);
 });
 
 // match current request
