@@ -7,12 +7,8 @@ $router->map( 'GET', '/', function() {
     App\View\View::render('home', []);
 
 });
-// map users details page
-$router->map('GET|POST', '/page/[i:id]/', function($id) {
-    App\View\View::render('p'.$id, []);
-});
 
-$router->map('GET|POST', '/page/[*:pageName]/', function($pageName) {
+$router->map('GET|POST', '/[*:pageName]/', function($pageName) {
     App\View\View::render($pageName, []);
 });
 
