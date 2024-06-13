@@ -9,7 +9,7 @@ $router->map( 'GET', '/', function() {
 });
 
 
-$router->map('GET|POST', '/page/[*:pageName]/', function($pageName) {
+$router->map('GET|POST', '/[*:pageName]/', function($pageName) {
     App\View\View::render($pageName, []);
 });
 $router->map('GET|POST', '/activité/[*:theme]/', function($theme) {
