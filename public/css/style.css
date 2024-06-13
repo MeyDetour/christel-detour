@@ -3,6 +3,8 @@
 html {
 	margin: 0;
 	padding: 0;
+
+	font-family: "MuseoModerno";
 }
 
 /* Basic classes */
@@ -40,6 +42,24 @@ html {
 	align-items: center;
 }
 /* --- Basic classes --- */
+/* Titles */
+h1 {
+	font-size: 90px;
+	font-weight: bold;
+	line-height: 60px;
+}
+h1 sub {
+	font-size: 60px;
+}
+h2 {
+	font-size: 50px;
+	color: #816F6F;
+}
+h4 {
+	font-size: 30px;
+	font-weight: bold;
+}
+/* --- Titles --- */
 
 .box {
 	width: 250px;

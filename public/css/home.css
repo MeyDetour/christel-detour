@@ -1,0 +1,25 @@
+#bigBox {
+	width: 90vmin;
+	height: 90vmin;
+	padding: 30px;
+	margin: 5vmin;
+
+	background-color: #D9ECFA;
+
+	border-radius: 20px;
+}
+
+#smallBox {
+	margin-top: 5vmin;
+}
+
+.leftBoxSection div {
+	margin-left: 0;
+}
+
+h1 {
+	color: white;
+}
+h4 {
+	color: #B1CBDA;
+}
