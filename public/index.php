@@ -8,7 +8,6 @@ $router->map( 'GET', '/', function() {
 
 });
 
-
 $router->map('GET|POST', '/[*:pageName]/', function($pageName) {
     App\View\View::render($pageName, []);
 });
@@ -17,6 +16,7 @@ $router->map('GET|POST', '/activité/[*:theme]/', function($theme) {
 });
 // match current request
 $match = $router->match();
+
 
 // call closure or throw 404 status
 if ($match && is_callable($match['target'])) {

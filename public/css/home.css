@@ -1,6 +1,6 @@
 #bigBox {
-	width: 90vmin;
-	height: 90vmin;
+	width: calc(100vw - 10vh - 580px);
+	height: 90vh;
 	padding: 30px;
 	margin: 5vmin;
 
@@ -18,8 +18,8 @@
 }
 
 h1 {
-	color: white;
+	color: var(--text-white);
 }
 h4 {
-	color: #B1CBDA;
+	color: var(--text-blue);
 }
