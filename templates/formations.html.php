@@ -22,7 +22,7 @@
 
             } ?>
         </div>
-        <div class="flexCol">
+        <div class="flexCol formationsCol2">
             <?php
             for ($i = 4; $i <= 6; $i++) {
 
