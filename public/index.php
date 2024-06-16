@@ -20,8 +20,8 @@ $router->map('GET|POST', '/animations/', function () {
 $router->map('GET|POST', '/contact/', function () {
     App\View\View::render('contact', []);
 });
-$router->map('GET|POST', '/fomrations/', function () {
-    App\View\View::render('fomrations', []);
+$router->map('GET|POST', '/formations/', function () {
+    App\View\View::render('formations', []);
 });
 $router->map('GET|POST', '/presentation/', function () {
     App\View\View::render('presentation', []);

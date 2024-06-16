@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/home.css">
 	<link rel="stylesheet" href="/css/activity.css">
+	<link rel="stylesheet" href="/css/formations.css">
 
 	<link rel="preload" as="image"  href="pictures/activitesIcon.svg" />
 	<link rel="preload" as="image"  href="pictures/animationsIcon.svg" />
