@@ -1,0 +1,60 @@
+.contactBackground {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+
+    width: 80vw;
+    height: 82vh;
+
+    background: #E5C6FD;
+    border-radius: 180px 180px 0px 0px;
+
+    padding: 65px 200px 60px 150px;
+}
+
+.contactBackground span {
+    font-size: 27px;
+    text-align: start;
+    font-family: "MuseoModerno", sans-serif;
+    font-weight: 600;
+}
+
+.contactButton {
+    text-align: center;
+    font-size: 30px;
+    color: #3B0961;
+
+    background: #BE9FD6;
+
+    border-radius: 64px;
+    padding: 16px 100px;
+    margin-block: 2vmin;
+
+    font-weight: 600;
+    font-family: "MuseoModerno", sans-serif;
+}
+
+.contactChristelImage{
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    right: 19%;
+
+    width: 21vw;
+
+    border-top: 0;
+    border: 8px solid #E5C6FD;
+    border-radius: 0px 0px 140px 140px;
+}
+.contactSalleImage{
+    position: absolute;
+    z-index: 1;
+    bottom: 0%;
+    right: 2%;
+
+    width: 21vw;
+
+    border: 8px solid #E5C6FD;
+    border-bottom: 0;
+    border-radius: 140px 140px 0px 0px;
+}
