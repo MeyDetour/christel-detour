@@ -1,0 +1,50 @@
+.boxContainerActivity{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.boxActivity{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 322px;
+    height: 235px;
+    padding: 15px;
+    margin-block: 2vh;
+
+    border-radius: 20px;
+
+    color: rgba(0, 0, 0, .4);
+    font-size: 34px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: all 0.2;
+}
+
+.activityPlusTitle{
+    color: black;
+    text-align: center;
+    font-size: 32px;
+}
+.activitePlusList{
+    font-size: 30px;
+}
+.activityColumns{
+    padding-inline: 6vw;
+    margin-top: 7vh;
+}
+.activityColumn{
+
+    width: 437px;
+}
+
+.activityImage{
+    width: 100%;
+    margin-bottom: 47px;
+}

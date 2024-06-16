@@ -1,6 +1,6 @@
 
 <div class="containerMade">
 
-    <?php $theme = "animations "; $link ='/';
+    <?php $theme = "Procédure "; $link ='/';
     require __DIR__ . "/components/header.html.php"; ?>
 </div>

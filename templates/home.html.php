@@ -8,12 +8,14 @@
 		<div class="flexRow">
 			<?php 
 				$boxesInfo = [
-					["Formations", "/pictures/formationsIcon.svg", "/formations/", "#FFEEE2"],
-					["Activités", "/pictures/activitesIcon.svg", "/activites/", "#E9FCFF"],
-					["Animations", "/pictures/animationsIcon.svg", "/animations/", "#E8E4F2"],
-					["Valeurs", "/pictures/valeursIcon.svg", "/valeurs/", "#F0E9FF"],
-					["Missions", "/pictures/missionsIcon.svg", "/missions/", "#FFE9EB"],
-					["Contact", "/pictures/contactIcon.svg", "/contact/", "#DEF4EA"]
+					["Activités", "/pictures/svg/home/activitesIcon.svg", "/activites/", "#E9FDE0"],
+				["Présentation", "/pictures/svg/home/presentation.svg", "/presentation/", "#FFEEE2"],
+                    ["Procédure", "/pictures/svg/home/procedure.svg", "/procedure/", "#F4F8C7"],
+
+                    ["Animations", "/pictures/svg/home/animationsIcon.svg", "/animations/", "#C7F3FF"],
+                    ["Formations", "/pictures/svg/home/formationsIcon.svg", "/formations/", "#F0DCFF"],
+
+                    ["Contact", "/pictures/svg/home/contactIcon.svg", "/contact/", "#DEF4EA"]
 				];
 			?>
 			<div class="leftBoxSection">
