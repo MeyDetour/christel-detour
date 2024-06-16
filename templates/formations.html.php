@@ -1,3 +1,12 @@
+
+<style>
+    body {
+        overflow-y: hidden !important;
+        background: #3B0961;
+    }
+</style>
+
+
 <div class="containerMade">
     <?php $theme = "Formations ";
     $link = "/";
