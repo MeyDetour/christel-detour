@@ -19,7 +19,6 @@
             for ($i = 0; $i <= 3; $i++) {
                 $formation = $formations[$i];
                 require __DIR__ . "/components/formationBox.html.php";
-
             } ?>
         </div>
         <div class="flexCol formationsCol2">
@@ -33,6 +32,8 @@
             ?>
         </div>
     </div>
+
+
 
 
 </div>

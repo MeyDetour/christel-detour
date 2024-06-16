@@ -1,4 +1,4 @@
-<div class="flexRow">
+<div id="homePage" class="flexRow">
 	<div id="bigBox" class="flexColBetween">
 		<h1>Christel <br><sub>DETOUR</sub></h1>
 		<h4>Assistante maternelle</h4>

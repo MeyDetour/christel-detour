@@ -1,4 +1,4 @@
-#bigBox {
+#homePage #bigBox {
 	width: calc(100vw - 10vh - 580px);
 	height: 90vh;
 	padding: 30px;
@@ -9,17 +9,77 @@
 	border-radius: 20px;
 }
 
-#smallBox {
+#homePage #smallBox {
 	margin-top: 5vmin;
 }
 
-.leftBoxSection div {
+#homePage .leftBoxSection div {
 	margin-left: 0;
 }
 
-h1 {
+#homePage h1 {
 	color: var(--text-white);
 }
-h4 {
+#homePage h4 {
 	color: var(--text-blue);
+}
+
+@media all and (max-width: 1024px) {
+	#homePage {
+		flex-direction: column;
+	}
+
+	#homePage #bigBox {
+		width: 90vw;
+	}
+
+	#homePage #smallBox {
+		text-align: center;
+	}
+	#homePage #smallBox img {
+		margin: auto;
+	}
+
+	#homePage #smallBox > div {
+		margin: auto;
+	}
+
+	#homePage #smallBox > div .box {
+		margin: 20px;
+	}
+}
+
+@media all and (max-width: 530px) {
+	#homePage h2 {
+		font-size: 40px;
+	}
+}
+
+@media all and (max-width: 485px) {
+	#homePage #smallBox > div {
+		flex-direction: column;
+	}
+}
+
+@media all and (max-width: 425px) {
+	#homePage #bigBox h1 {
+		font-size: 70px;
+		line-height: 40px;
+	}
+	#homePage #bigBox h1 sub {
+		font-size: 40px;
+	}
+}
+
+@media all and (max-width: 350px) {
+	#homePage #bigBox h1 {
+		font-size: 50px;
+		line-height: 30px;
+	}
+	#homePage #bigBox h1 sub {
+		font-size: 30px;
+	}
+	#homePage #bigBox h4 {
+		font-size: 25px;
+	}
 }
