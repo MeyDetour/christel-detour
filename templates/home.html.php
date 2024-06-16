@@ -9,7 +9,7 @@
 			<?php 
 				$boxesInfo = [
 					["Activités", "/pictures/svg/home/activitesIcon.svg", "/activites/", "#E9FDE0"],
-				["Présentation", "/pictures/svg/home/presentation.svg", "/presentation/", "#FFEEE2"],
+					["Présentation", "/pictures/svg/home/presentation.svg", "/presentation/", "#FFEEE2"],
                     ["Procédure", "/pictures/svg/home/procedure.svg", "/procedure/", "#F4F8C7"],
 
                     ["Animations", "/pictures/svg/home/animationsIcon.svg", "/animations/", "#C7F3FF"],

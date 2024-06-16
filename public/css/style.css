@@ -9,27 +9,20 @@
 	--text-blue: #B1CBDA;
 }
 /* --- Variables --- */
-a{
-	text-decoration: none;
-	color: var(--text-dash);
-}
 html {
 	margin: 0;
 	padding: 0;
 }
-h1,h2,h3,h4,h5,h6{
-font-weight: bold;
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
 	font-family: "MuseoModerno", sans-serif;
 }
 
-.containerMade{
-	padding: 8vmin;
+a {
+	text-decoration: none;
+	color: var(--text-dash);
 }
-
-.h100{
-	height: 100vh;
-}
-
 
 /* Basic classes */
 .flexRow {
@@ -51,6 +44,7 @@ font-weight: bold;
 	flex-direction: row;
 	justify-content: space-between;
 }
+
 .flexCol {
 	display: flex;
 	flex-direction: column;
@@ -65,39 +59,55 @@ font-weight: bold;
 	flex-direction: column;
 	justify-content: space-between;
 }
+
 .gridCenter {
 	display: grid;
 	justify-content: center;
 	align-items: center;
 }
+
+.h100 {
+	height: 100vh;
+}
+
 /* --- Basic classes --- */
+
+.containerMade {
+	padding: 10vmin;
+}
+
 /* Titles */
 h1 {
 	font-size: 90px;
-	font-weight: bold;
 	line-height: 60px;
+	font-weight: bold;
 }
 h1 sub {
 	font-size: 60px;
 }
 h2 {
-	font-size: 50px;
 	color: var(--text-brown);
+	font-size: 50px;
 }
-h3{
-	font-size: 32px;
+h3 {
 	color: var(--text-light-brown);
+	font-size: 32px;
 }
 h4 {
 	font-size: 30px;
 	font-weight: bold;
 }
-.backButton{
-	color: var(--text-dash);
-	font-weight: bold;
-	font-size: 34px;
+
+.backButton {
 	font-family: "MuseoModerno", sans-serif;
+	color: var(--text-dash);
+	font-size: 34px;
+	font-weight: bold;
 }
+.backButton img {
+	padding-right: 10px;
+}
+
 /* --- Titles --- */
 
 .box {

@@ -1,6 +1,6 @@
 
 <div class="containerMade">
 
-    <?php $theme = "formations "; $link ='/';
+    <?php $theme = "Formations "; $link ='/';
     require __DIR__ . "/components/header.html.php"; ?>
 </div>

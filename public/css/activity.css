@@ -1,12 +1,11 @@
-.boxContainerActivity{
+.boxContainerActivity {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 
-.boxActivity{
+.boxActivity {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,24 +26,24 @@
     transition: all 0.2;
 }
 
-.activityPlusTitle{
+.activityPlusTitle {
     color: black;
     text-align: center;
     font-size: 32px;
 }
-.activitePlusList{
+.activitePlusList {
     font-size: 30px;
 }
-.activityColumns{
+.activityColumns {
     padding-inline: 6vw;
     margin-top: 7vh;
 }
-.activityColumn{
+.activityColumn {
 
     width: 437px;
 }
 
-.activityImage{
+.activityImage {
     width: 100%;
     margin-bottom: 47px;
 }
