@@ -128,3 +128,39 @@ h4 {
 .box:hover {
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
 }
+.box img {
+	width: 100px;
+}
+
+@media all and (max-width: 768px) {
+	.box {
+		width: 255px;
+		height: 165px;
+	}
+}
+
+@media all and (max-width: 585px) {
+	.box {
+		width: 205px;
+		height: 155px;
+	}
+	.box img {
+		width: 75px;
+	}
+}
+
+@media all and (max-width: 485px) {
+	.box {
+		width: 70vmin;
+		height: 40vmin;
+	}
+}
+
+@media all and (max-width: 340px) {
+	.box {
+		font-size: 22px;
+	}
+	.box img {
+		width: 55px;
+	}
+}

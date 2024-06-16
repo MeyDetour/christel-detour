@@ -18,20 +18,19 @@
 	<div class="flexRowBetween">
 		<div class="flexCol">
 			<?php
-			for ($i = 0; $i <= 3; $i++) {
-				$formation = $formations[$i];
-				require __DIR__ . "/components/formationBox.html.php";
-
-			} ?>
+				for ($i = 0; $i <= 3; $i++) {
+					$formation = $formations[$i];
+					require __DIR__ . "/components/formationBox.html.php";
+				} 
+			?>
 		</div>
 		<div class="flexCol">
 			<?php
-			for ($i = 4; $i <= 7; $i++) {
+				for ($i = 4; $i < 7; $i++) {
 
-				$formation = $formations[$i];
-				require __DIR__ . "/components/formationBox.html.php";
-
-			}
+					$formation = $formations[$i];
+					require __DIR__ . "/components/formationBox.html.php";
+				}
 			?>
 		</div>
 	</div>
