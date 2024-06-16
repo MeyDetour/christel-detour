@@ -1,11 +1,11 @@
 .formationBox{
-    position: relative;
-    width: 42vw;
+	width: 42vw;
+	padding: 35px;
+	margin: auto;
 
-    background: #07070714;
+	background: #07070714;
 
-    border-radius: 30px;
+	border-radius: 30px;
 
-    padding: 35px;
-
+	position: relative;
 }
