@@ -69,6 +69,9 @@ a {
 .alignCenter {
     align-items: center;
 }
+.alignStart{
+	align-items: start;
+}
 .h100 {
 	height: 100vh;
 }
