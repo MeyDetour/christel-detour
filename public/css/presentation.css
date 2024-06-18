@@ -1,0 +1,124 @@
+/*====================Presentation Part=====================*/
+.presentationContainer {
+    height: 100vh;
+    width: 100vw;
+    font-family: "New Tegomin", serif;
+    font-size: 24px;
+    font-weight: 400;
+
+}
+
+.presentationPart {
+    height: 87%;
+}
+
+#presentationPart2Container, #presentationPart3Container , #presentationPart4Container {
+    display: none;
+}
+
+/*====================Presentation Part 1 =====================*/
+
+#presentationPart1 {
+    height: 80%;
+}
+
+#presentationPart1 img {
+    height: 100%;
+    border-radius: 100px;
+}
+
+#presentationPart1 .one, #presentationPart1 .three {
+    width: 30%;
+}
+
+#presentationPart1 span {
+    font-size: 30px;
+}
+
+#presentationPart1 .one {
+}
+
+/*====================Presentation Part 2 =====================*/
+#presentationPart2Container h2{
+    height: 15%;
+
+    cursor: pointer;
+}
+#presentationPart2Container > #presentationPart2{
+    height: 85%;
+}
+#presentationPart2 h3, #presentationPart2 p{
+    text-align: center;
+}
+#presentationPart2 h3{
+    font-size: 40px;
+    margin-bottom: 3vh;
+}
+#presentationPart2Container .flexColEvenly  button{
+    color: #8C8C8C;
+    background: #F6F6F6;
+    padding-block: 13px;
+    width: 70%;
+    transition: all 0.5s;
+}
+
+#presentationPart2Container .flexColEvenly  button:hover{
+color : #19969F;
+background: #D9FDFF;
+}
+#presentationPart2Container .focus{
+    color : #19969F;
+    background: #D9FDFF;
+}
+/*====================PROGRESS BAR=====================*/
+.progressBar {
+    height: 13%;
+    margin-top: 2vh;
+}
+
+.progressBar .line {
+    height: 12px;
+    border: 2px solid #DCDCDB;
+    border-radius: 14px;
+    background: #F7F7F7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: -10px;
+}
+
+.progressBar .point1, .progressBar .point5 {
+
+    border: 3px solid #62A7AB;
+    background: #98EBF0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.progressBar .point2, .progressBar .point3, .progressBar .point4 {
+    margin-left: -5px;
+    border: 3px solid #DCDCDC;
+    background: #F7F7F7;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.progressBar .textes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: -10px;
+    margin-bottom: 15px;
+}
+
+.progressBar [class^="text"] {
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 38px;
+    text-align: center;
+    font-weight: 600;
+    color: #816F6F;
+}
