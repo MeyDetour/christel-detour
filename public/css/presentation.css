@@ -59,7 +59,7 @@
     background: #F6F6F6;
     padding-block: 13px;
     width: 70%;
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 
 #presentationPart2Container .flexColEvenly  button:hover{
@@ -67,8 +67,27 @@ color : #19969F;
 background: #D9FDFF;
 }
 #presentationPart2Container .focus{
-    color : #19969F;
-    background: #D9FDFF;
+    color : #19969F !important;
+    background: #D9FDFF !important;
+}
+
+/*====================Presentation Part 3 =====================*/
+.presentationPart3Body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 85%;
+}
+.presentationPart3Box{
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+.presentationPart3Box img{
+    margin-top: 2vh;
 }
 /*====================PROGRESS BAR=====================*/
 .progressBar {

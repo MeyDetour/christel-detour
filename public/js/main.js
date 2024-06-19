@@ -49,6 +49,7 @@ window.addEventListener('DOMContentLoaded', () => {
 function hideAll() {
     part1.style.display = 'none'
     part2.style.display = 'none'
+    part3.style.display = 'none'
 
 }
 
