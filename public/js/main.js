@@ -3,6 +3,7 @@
 let part1 = document.querySelector('#presentationPart1Container')
 let part2 = document.querySelector('#presentationPart2Container')
 let part3 = document.querySelector('#presentationPart3Container')
+let part4 = document.querySelector('#presentationPart4Container')
 
 // =======================COOKIE=======================
 
@@ -50,6 +51,7 @@ function hideAll() {
     part1.style.display = 'none'
     part2.style.display = 'none'
     part3.style.display = 'none'
+    part4.style.display = 'none'
 
 }
 

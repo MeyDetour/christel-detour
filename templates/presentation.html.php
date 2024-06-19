@@ -72,40 +72,47 @@
         <div class="presentationPart3Body w100p">
 
             <?php
-            $data =[
-                    ['regles.svg','Les règles et les limites','Un enfant a besoin de repères. Les limites lui permettent de se
+            $data = [
+                ['regles.svg', 'Les règles et les limites', 'Un enfant a besoin de repères. Les limites lui permettent de se
 construire. Chez l’assistante Maternelle il y a des règles de vie à respecter : (on ne se tape pas,
-on respecte l’autre, on écoute l’autre, on dit « s’il te plait », « merci », etc)','#AAC8F3'],
-                ['socialisation.svg',"La socialisation","Je travaille en équipe avec l’Association des Assistantes Maternelle Les
+on respecte l’autre, on écoute l’autre, on dit « s’il te plait », « merci », etc)', '#AAC8F3'],
+                ['socialisation.svg', "La socialisation", "Je travaille en équipe avec l’Association des Assistantes Maternelle Les
 Pioupious des nounous qui propose des activités collectives manuelles et de motricité. Cette
 activité peut m’amener, avec votre accord, à me déplacer dans d’autres lieux avec votre enfant
 (sortie ludique, ludothèque, bibliothèque...).
-","#BFF1BB"],
-                ['hygiene.svg',"L’hygiène et la sécurité :","Je veille à la bonne hygiène de votre enfant (change, lavage des
+", "#BFF1BB"],
+                ['hygiene.svg', "L’hygiène et la sécurité :", "Je veille à la bonne hygiène de votre enfant (change, lavage des
 mains, préparation des repas …) ainsi que de l’environnement (ménage quotidien des lieux et nettoyage des jouets...).
-","#E9C8DD"],
-                ['autonomie.svg',"L’autonomie","Je l’accompagne dans tous les actes de la vie quotidienne mais je n’nterviens
-pas automatiquement (je le soutiens, le stimule et l’encourage).","#F1AEB2"],
-                ['epanouissement.svg',"L’épanouissement","Je lui propose diverses activités variées et adaptées. Elles doivent être
+", "#E9C8DD"],
+                ['autonomie.svg', "L’autonomie", "Je l’accompagne dans tous les actes de la vie quotidienne mais je n’nterviens
+pas automatiquement (je le soutiens, le stimule et l’encourage).", "#F1AEB2"],
+                ['epanouissement.svg', "L’épanouissement", "Je lui propose diverses activités variées et adaptées. Elles doivent être
  variées pour lui permettre de s’éveiller et adaptées afin de respecter ses aptitudes (ne pas le mettre
  en échec).
-","#F9CDB8"],
+", "#F9CDB8"],
 
-];
-            foreach($data as $datum):
-            ?>
-            <div class="presentationPart3Box">
-                <img src="/pictures/svg/presentation/<?=$datum[0]?>" alt="">
-                <div class="flexCol"">
+            ];
+            foreach ($data as $datum):
+                ?>
+                <div class="presentationPart3Box">
+                    <img src="/pictures/svg/presentation/<?= $datum[0] ?>" alt="">
+                    <div class="flexCol">
+                        <div class="presentationPart3BoxHead" style="background: <?= $datum[3] ?>">
+                            <h6><?= $datum[1] ?></h6>
 
-                    <h6  style="background: <?=$datum[3]?>"><?=$datum[1]?></h6>
-                    <p  style="background: <?=$datum[3]?>"><?=$datum[2]?></p>
+                        </div>
+                        <div class="presentationPart3BoxBody" style="background: <?= $datum[3] ?>">
+                            <p><?= $datum[2] ?></p>
+
+                        </div>
+                    </div>
+
                 </div>
-            </div>
+
             <?php endforeach; ?>
         </div>
-
     </div>
+
     <div class="presentationPart flexCol alignCenter" id="presentationPart4Container">
         <?php
         $functionBack = "presentationPart2Back()";
@@ -115,7 +122,7 @@ pas automatiquement (je le soutiens, le stimule et l’encourage).","#F1AEB2"],
 
     </div>
 
-    <div class="progressBar">
+    <div class="progressBar w100p">
         <div class="textes"><span class="text1">Moi</span>
             <span class="text2">Mon role</span>
             <span class="text3">Développement</span>
@@ -129,4 +136,5 @@ pas automatiquement (je le soutiens, le stimule et l’encourage).","#F1AEB2"],
             <div class="point5"></div>
         </div>
     </div>
+
 </div>
