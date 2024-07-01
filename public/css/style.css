@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 
 /* Variables */
 :root {
@@ -24,7 +25,11 @@ a {
 	text-decoration: none;
 	color: var(--text-dash);
 }
-
+button{
+	outline: 0;
+	border: 0;
+	background: transparent;
+}
 /* Basic classes */
 .flexRow {
 	display: flex;
@@ -59,6 +64,10 @@ a {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}.flexColEvenly {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
 .gridCenter {
@@ -69,10 +78,21 @@ a {
 .alignCenter {
     align-items: center;
 }
+.alignStart{
+	align-items: start;
+}
 .h100 {
 	height: 100vh;
 }
-
+.h100p{
+	height: 100%;
+}.w100p{
+	width: 100%;
+}.w50p{
+	width: 50%;
+}.w25p{
+	width: 25%;
+}
 /* --- Basic classes --- */
 
 .containerMade {
