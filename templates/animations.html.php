@@ -1,4 +1,4 @@
-<div class="containerMade h100 containerAnimations">
+<div id="animation" class="containerMade h100 containerAnimations">
 
     <?php $theme = "Animations ";
     $link = '/';

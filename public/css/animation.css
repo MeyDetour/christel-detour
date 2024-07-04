@@ -1,8 +1,8 @@
-.containerAnimations {
+#animation .containerAnimations {
     position: relative;
 }
 
-.animationBackgroundTop {
+#animation .animationBackgroundTop {
     position: absolute;
     z-index: -1;
     top: 0%;
@@ -14,7 +14,7 @@
     background: #EBF5E5;
 }
 
-.animationBackgroundBottom {
+#animation .animationBackgroundBottom {
     position: absolute;
     z-index: -1;
     bottom: 0%;
@@ -26,7 +26,7 @@
     background: #F5C5C5;
 }
 
-.whiteContainer {
+#animation .whiteContainer {
     position: absolute;
     bottom: 0%;
     left: 50%;
@@ -38,32 +38,35 @@
     background: white;
     border-radius: 50px 50px 0px 0px;
 }
-.whiteContainer .overflowVertical{
+#animation .whiteContainer .overflowVertical{
     height: 100%;
 
     padding-block: 13vh;
     padding-inline: 6vw;
+    padding-bottom: 5vh;
 }
 /*==============  COMPONENT BOX =================*/
-.animationBoxContainer {
+#animation .animationBoxContainer {
     padding-inline: 8%;
     padding-block: 16vh;
 }
 
-.animationBox {
-
+#animation .animationBox {
     margin-bottom: 20vh;
 }
-.animationBox .flexRowBetween{
+#animation .animationBox:last-child {
+    margin-bottom: 0;
+}
+#animation .animationBox .flexRowBetween {
     width: 100%;
 }
-.animationBox p{font-size: 28px;}
-.animationBox h2 {
+#animation .animationBox p { font-size: 28px; }
+#animation .animationBox h2 {
     font-size: 48px;
     color: #D96F6F;
 }
 
-.animationBox img {
+#animation .animationBox img {
     max-height: 37vh;
     max-width: 56vw;
 
@@ -94,4 +97,33 @@
     background: #b30000;
 }
 
-/*@media */
+@media screen and (max-width: 1300px) {
+    #animation .animationBox div {
+        flex-direction: column-reverse;
+    }
+
+    #animation .animationBox img {
+        margin: 30px auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #animation .overflowVertical, #animation .whiteContainer {
+        width: 100vw;
+    }
+    #animation .whiteContainer {
+        border-radius: 20px 20px 0 0;
+    }
+    
+    #animation .animationBox h2 {
+        font-size: 35px;
+    }
+    #animation .animationBox p {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 450px) {
+    #animation .animationBox img {
+        min-width: 100%;
+    }
+}
