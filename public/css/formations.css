@@ -1,4 +1,4 @@
-.formationBox{
+#formation .formationBox {
     position: relative;
     width: 42vw;
 
@@ -9,21 +9,68 @@
     padding: 35px;
     margin-block: 4vh;
 }
-.formationBox h4{
+#formation .formationBox h4{
     color: #CD959A;
     font-size: 40px;
 
 }
-.formationBox p{
+#formation .formationBox p{
     font-size: 24px;
 }
-.formationBox img{
+#formation .formationBox img {
     position: absolute;
     width: 67px;
 
     top: -35px;
     left: -3%;
 }
-.formationsCol2{
+#formation .formationsCol2{
     margin-top: 12vh;
+}
+
+@media screen and (max-width: 900px) {
+    #formation > div:last-child {
+        flex-direction: column;
+
+    }
+    #formation > div:last-child > div:last-child {
+        margin-top: 0;        
+    }
+
+    #formation .formationBox {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    #formation .formationBox {
+        padding: 35px 15px 15px 35px;
+    }
+    #formation .formationBox h4 {
+        font-size: 30px;
+    }
+    #formation .formationBox p {
+        font-size: 20px;
+    }
+    #formation .formationBox img {
+        width: 55px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    #formation > div h2 {
+        font-size: 40px;
+    }
+    #formation .formationBox h4 {
+        font-size: 25px;
+    }
+
+    #formation .formationBox p {
+        font-size: 18px;
+    }
+
+    #formation .formationBox img {
+        top: -15px;
+        width: 45px;
+    }
 }

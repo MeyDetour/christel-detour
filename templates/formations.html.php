@@ -1,13 +1,4 @@
-
-<style>
-    body {
-        overflow-y: hidden !important;
-        background: #3B0961;
-    }
-</style>
-
-
-<div class="containerMade">
+<div id="formation" class="containerMade">
     <?php $theme = "Formations ";
     $link = "/";
     require __DIR__ . "/components/header.html.php";
