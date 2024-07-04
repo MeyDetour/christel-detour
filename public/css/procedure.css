@@ -1,10 +1,11 @@
-.procedureParagraphe{
+#procedure .procedureParagraphe{
     font-size: 24px;
     width: 48%;
     text-align: justify;
+    margin: 20px;
 }
 
-.procedureSchemaContainer{
+#procedure .procedureSchemaContainer{
 
 
     width: 100%;
@@ -16,19 +17,66 @@
     padding: 5vh 3vw;
 
 }
-.procedureSchemaContainer .arrow{
+#procedure .procedureSchemaContainer .arrow{
     width: 4vw;
     margin-top: 5vh;
 }
-.procedureSchemaContainer .imageSvg{
+#procedure .procedureSchemaContainer .imageSvg{
     width: 8vw;
 
 }
-.procedureSchemaContainer h6{
+#procedure .procedureSchemaContainer h6{
     font-size: 31px;
     text-align: center;
     margin-block: 4vh;
 }
-.procedureSchemaContainer p{
+#procedure .procedureSchemaContainer p{
     font-size: 20px;
+}
+
+@media screen and (max-width: 1050px) {
+    #procedure .procedureSchemaContainer {
+        flex-direction: column;
+    }
+
+    #procedure .procedureSchemaContainer > div {
+        flex-direction: column;
+    }
+    #procedure .procedureSchemaContainer img.arrow {
+        width: 75px;
+        margin: 75px auto;
+        transform: rotate(90deg);
+    }
+    #procedure .procedureSchemaContainer img.imageSvg {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #procedure .procedureParagraphes {
+        flex-direction: column;
+    }
+    #procedure .procedureParagraphes .procedureParagraphe {
+        width: calc(90vw - 30px);
+    }
+    #procedure .procedureSchemaContainer {
+        border-radius: 20px;
+    }
+
+    #procedure .procedureSchemaContainer img.arrow {
+        width: 50px;
+        margin: 50px auto;
+        transform: rotate(90deg);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #procedure .procedureParagraphes p {
+        font-size: 20px;
+    }
+    #procedure .procedureSchemaContainer {
+        width: 90vw;
+        border-radius: 10px;
+    }
 }

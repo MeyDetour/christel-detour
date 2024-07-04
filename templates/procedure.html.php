@@ -1,9 +1,9 @@
-<div class="containerMade">
+<div id="procedure" class="containerMade">
 
     <?php $theme = "Procédure ";
     $link = '/';
     require __DIR__ . "/components/header.html.php"; ?>
-    <div class="flexRowBetween ">
+    <div class="flexRowBetween procedureParagraphes">
         <p class="procedureParagraphe">En tant qu’assistante maternelle agréée depuis 2008, je suis passionnée par mon
             métier et je m'efforce de créer un environnement de confiance et de bien-être pour les enfants que
             j'accueille. J'accueille des enfants de 2 mois et demi jusqu'à leur entrée à l'école dans une ambiance
@@ -24,19 +24,24 @@
 
         ];
 
-        foreach ($data as $index => $datum) :?>
-            <div class="flexCol alignCenter">
-                <img class="imageSvg" src="/pictures/svg/procedure/<?= $datum[0] ?>" alt="">
-                <h6><?= $datum[1] ?></h6>
-                <p class="text-center"><?= $datum[2]?></p>
+        foreach ($data as $index => $datum) : 
+        ?>
+            <div class="flexRow alignStart">
+                <div class="flexCol alignCenter">
+                    <img class="imageSvg" src="/pictures/svg/procedure/<?= $datum[0]; ?>" alt="<?= $datum[0]; ?>">
+                    <h6><?= $datum[1]; ?></h6>
+                    <p class="text-center"><?= $datum[2]; ?></p>
+                </div>
+                <?php
+                    if($index != count($data)-1):
+                ?>
+                    <img class="arrow" src="/pictures/svg/procedure/arrow.svg" alt="">
+                <?php
+                    endif;
+                ?>
             </div>
-            <?php
-            if( $index!= count($data)-1 ):
-            ?>
-                <img class="arrow" src="/pictures/svg/procedure/arrow.svg" alt="">
         <?php
-        endif;
-        endforeach;
+            endforeach;
         ?>
     </div>
 </div>
