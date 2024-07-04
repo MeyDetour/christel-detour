@@ -23,7 +23,7 @@
     font-weight: bold;
 
     cursor: pointer;
-    transition: all 0.2;
+    transition: all 0.2s;
 }
 
 .activityPlusTitle {
@@ -39,11 +39,88 @@
     margin-top: 7vh;
 }
 .activityColumn {
-
     width: 437px;
 }
 
 .activityImage {
     width: 100%;
     margin-bottom: 47px;
+}
+
+@media all and (min-width: 1451px) {
+    #activityPage .boxActivity {
+        width: calc(100% / 5 - 20px);
+    }
+}
+
+@media all and (max-width: 1450px) {
+    #activityPage .boxActivity {
+        width: calc(100% / 5 - 20px);
+    }
+}
+
+@media all and (max-width: 1240px) {
+    #activityPage .boxActivity {
+        width: calc(100% / 5 - 10px);
+
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width: 950px) {
+    #activityPage .boxActivity {
+        width: 225px;
+        margin: 2vh 0;
+    }
+}
+
+@media all and (max-width: 770px) {
+    #activityPage .boxActivity {
+        width: 275px;
+        margin: 20px;
+    }
+}
+
+@media all and (max-width: 760px) {
+    #activityPage .boxActivity {
+        width: 275px;
+        margin: 2vh 0;
+    }
+}
+
+@media all and (max-width: 630px) {
+    #activityPage .boxActivity {
+        width: 225px;
+        height: 225px;
+    }
+}
+
+@media all and (max-width: 520px) {
+    #activityPage h2 {
+        font-size: 40px;
+    }
+    #activityPage a {
+        font-size: 27px;
+    }
+    #activityPage .boxActivity {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media all and (max-width: 460px) {
+    #activityPage .boxContainerActivity {
+        flex-direction: column;
+    }
+
+    #activityPage .boxActivity {
+        width: 70vw;
+        height: 150px;
+        margin: 2vh auto;
+        font-size: 25px;
+    }
+    #activityPage .boxActivity img {
+        width: 50px;
+        height: 50px;
+    }
 }

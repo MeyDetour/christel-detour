@@ -1,4 +1,4 @@
-<div class="flexColBetween containerMade h100">
+<div id="activityPage" class="flexColBetween containerMade h100">
 
     <?php $theme = "Activtés"; $link ='/';
     require __DIR__ . "/components/header.html.php"; ?>
