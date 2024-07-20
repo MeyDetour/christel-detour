@@ -1,4 +1,4 @@
-.contactBackground {
+#contact .contactBackground {
     position: absolute;
     left: 0%;
     bottom: 0%;
@@ -12,14 +12,14 @@
     padding: 65px 200px 60px 150px;
 }
 
-.contactBackground span {
+#contact .contactBackground span {
     font-size: 27px;
     text-align: start;
     font-family: "MuseoModerno", sans-serif;
     font-weight: 600;
 }
 
-.contactButton {
+#contact .contactButton {
     text-align: center;
     font-size: 30px;
     color: #3B0961;
@@ -34,27 +34,79 @@
     font-family: "MuseoModerno", sans-serif;
 }
 
-.contactChristelImage{
+#contact img.contactChristelImage1 {
     position: absolute;
     z-index: 1;
     top: 0%;
-    right: 19%;
 
-    width: 21vw;
+    right: 14%;
+    max-height: 51.5vh;
+    object-fit: cover;
 
     border-top: 0;
     border: 8px solid #E5C6FD;
     border-radius: 0px 0px 140px 140px;
+
 }
-.contactSalleImage{
+#contact img.contactChristelImage2 {
+    width: 100px;
+}
+#contact img.contactSalleImage1 {
     position: absolute;
     z-index: 1;
     bottom: 0%;
     right: 2%;
 
-    width: 21vw;
+    max-height: 51.5vh;
+    object-fit: cover;
 
     border: 8px solid #E5C6FD;
     border-bottom: 0;
     border-radius: 140px 140px 0px 0px;
+}
+
+@media screen and (min-width: 1201px) {
+    #contact img.contactChristelImage1, #contact img.contactSalleImage1 {
+        visibility: visible;
+        position: absolute;
+    }
+    #contact img.contactChristelImage2, #contact img.contactSalleImage2 {
+        visibility: hidden;
+        position: absolute;
+    }
+}
+@media screen and (max-width: 1200px) {
+    #contact .contactBackground {
+        width: 100%;
+        height: fit-content;
+        border-radius: 40px;
+
+        overflow-y: auto;
+        position: relative;
+    }
+    #contact .contactBackground img.me-5 {
+        width: 100px;
+    }
+    #contact .me-5 {
+        width: 80px;
+    }
+
+    #contact img.contactChristelImage1, #contact img.contactSalleImage1 {
+        visibility: hidden;
+        position: absolute;
+    }
+    #contact img.contactChristelImage2, #contact img.contactSalleImage2 {
+        visibility: visible;
+        position: relative;
+    }
+
+    #contact img.contactChristelImage2 {
+        margin: auto;
+        width: 300px;
+        height: 400px;
+    }
+    #contact img.contactSalleImage2 {
+        margin: auto;
+        width: 300px;
+    }
 }
