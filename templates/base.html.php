@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="/css/contact.css">
 	<link rel="stylesheet" href="/css/procedure.css">
 	<link rel="stylesheet" href="/css/presentation.css">
+	<link rel="stylesheet" href="/css/error.css">
 	<link rel="preload" as="image"  href="pictures/svg/home/activitesIcon.svg" />
 	<link rel="preload" as="image"  href="pictures/svg/home/animationsIcon.svg" />
 	<link rel="preload" as="image"  href="pictures/svg/home/contactIcon.svg" />
