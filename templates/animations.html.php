@@ -19,7 +19,7 @@ Son développement social <br>
 Le développement de son langage <br>
 L’enfant développe son autonomie et sa confianceen lui."],
                     ['balades.png', "Les balades :", "Les enfants sont débordants d’énergie. Pour bien se développer, et libérer leurs tensions, ils ont besoin de bouger, courir, sauter… Pour leur bien-être, ce besoin de mouvement est essentiel."],
-                    ["l'eveil.png", "L’éveille de ses sens :", "Ecoutez : les bruits de la nature en fonction 
+                    ["l'eveil.png", "L’éveil de ses sens :", "Ecoutez : les bruits de la nature en fonction 
 des saisons, de la musique, des comptines et 
 découverte d’instruments. Ecouter des sons 
 différents Sentez : les odeurs de la nature 
@@ -44,7 +44,7 @@ sensoriel : l’enfant touche, il sent, il voit, il découvre son environnement 
                     ['peinture.png', "La peinture :", "C’est une activité qui développe l’imagination, la patience, la contraction, c’est une
 façon de communiquer sur ses émotions, elle développe la confiance en soi, elle
 développe la mobilité musculaire particulièrement celle des mains.
-La peinture stimule éveiller de l’enfant ux arts visuels cela développe sont ouverture
+La peinture stimule éveiller de l’enfant aux arts visuels cela développe sont ouverture
 d’esprit, de créativité et d’imagination."],
                     ['cuisine.png', "La cuisine :", "Cela développe un plus grand intérêt pour les aliments et les nouvelles saveurs. Il est
 aussi plus tenté de goûter un plat lorsqu’il a participé à sa préparation. De plus,

@@ -21,6 +21,9 @@ class View
         require_once $templatePath.$templateName.".html.php";
 
         $content = ob_get_clean();
+        if(!isset($pageTitle)){ $pageTitle = "Christel Detour Assistante maternelle"; }
+        if(!isset($metaDescription)){ $metaDescription = "Découvrez Christel DETOUR, assistante maternelle. Apprenez-en plus sur ses activités, formations et procédures."; }
+
         ob_start();
         require_once $templatePath."base.html.php";
         echo ob_get_clean();
