@@ -1,9 +1,13 @@
 {
-    "name": "Christel DETOUR",
+    "name": "meydetour/christe-detour",
     "authors": [
         {
-            "name": "MeyDetour & MaxenceAbrile",
-            "email": "meydetour@gmail.com & abrilemaxence@gmail.com"
+            "name": "MeyDetour",
+            "email": "meydetour@gmail.com"
+        },
+        {
+            "name": "MaxenceAbrile",
+            "email": "abrilemaxence@gmail.com"
         }
     ],
     "autoload": {
