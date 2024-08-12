@@ -109,12 +109,10 @@
 }
 
 @media all and (max-width: 460px) {
-    #activityPage .boxContainerActivity {
-        flex-direction: column;
-    }
+
 
     #activityPage .boxActivity {
-        width: 70vw;
+        width: 48%;
         height: 150px;
         margin: 2vh auto;
         font-size: 25px;
