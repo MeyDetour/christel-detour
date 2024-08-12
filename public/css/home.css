@@ -55,6 +55,9 @@
 	#homePage h2 {
 		font-size: 36px;
 	}
+	#homePage #smallBox{
+		margin-bottom: 25px;
+	}
 	#homePage #smallBox > div{
 		width: 94%;
 	}	#homePage #smallBox > div> div{
