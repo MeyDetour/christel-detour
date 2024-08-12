@@ -53,7 +53,7 @@
 
 @media all and (max-width: 530px) {
 	#homePage h2 {
-		font-size: 40px;
+		font-size: 36px;
 	}
 	#homePage #smallBox > div{
 		width: 94%;
