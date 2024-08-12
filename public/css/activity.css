@@ -54,6 +54,7 @@
     #activityPage .boxActivity {
         width: calc(100% / 5 - 20px);
     }
+
 }
 
 @media all and (max-width: 1450px) {
@@ -67,6 +68,14 @@
         width: calc(100% / 5 - 10px);
 
         font-size: 30px;
+    }
+
+    .activityPlusTitle {
+        font-size: 24px;
+    }
+
+    .activitePlusList {
+        font-size: 20px;
     }
 }
 
@@ -96,15 +105,27 @@
         width: 225px;
         height: 225px;
     }
+    .activityPlusTitle {
+        font-size: 19px;
+    }
+
+    .activitePlusList {
+        font-size: 16px;
+    }
 }
 
 @media all and (max-width: 520px) {
     #activityPage h2 {
-        font-size: 40px;
+        font-size: 36px;
     }
 
     #activityPage a {
         font-size: 27px;
+    }
+
+    #activityPage img {
+
+        width: 52px;
     }
 
     #activityPage .boxActivity {
