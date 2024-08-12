@@ -12,7 +12,9 @@
 #homePage #smallBox {
 	margin-top: 5vmin;
 }
-
+#smallBox .leftBoxSection{
+	width: 50%;
+}
 #homePage .leftBoxSection div {
 	margin-left: 0;
 }
@@ -53,11 +55,29 @@
 	#homePage h2 {
 		font-size: 40px;
 	}
+	#homePage #smallBox > div{
+		width: 94%;
+	}	#homePage #smallBox > div> div{
+		width: 50%;
+	}
+	#homePage #smallBox > div .box {
+		width: 93%;
+		margin: 0;
+		margin-bottom: 10px;
+
+		font-size: 24px;
+	}
+	#smallBox > div > div{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 }
 
 @media all and (max-width: 485px) {
 	#homePage #smallBox > div {
-		flex-direction: column;
+		flex-direction: row;
 	}
 }
 
