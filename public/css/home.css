@@ -14,8 +14,8 @@
     object-fit: contain;
     /* align-items: end; */
     align-self: end;
-    border-radius: 30px;
-    border: 7px solid white;
+    border-radius: 30px !important;
+    border: 7px solid white !important;
 }
 
 #homePage #smallBox {
