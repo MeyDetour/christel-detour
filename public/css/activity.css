@@ -31,13 +31,16 @@
     text-align: center;
     font-size: 32px;
 }
+
 .activitePlusList {
     font-size: 30px;
 }
+
 .activityColumns {
     padding-inline: 6vw;
     margin-top: 7vh;
 }
+
 .activityColumn {
     width: 437px;
 }
@@ -99,9 +102,11 @@
     #activityPage h2 {
         font-size: 40px;
     }
+
     #activityPage a {
         font-size: 27px;
     }
+
     #activityPage .boxActivity {
         width: 200px;
         height: 200px;
@@ -117,8 +122,16 @@
         margin: 2vh auto;
         font-size: 25px;
     }
+
     #activityPage .boxActivity img {
         width: 50px;
-        height: 50px;
+        height: 64px;
+    }
+}
+
+@media all and (max-width: 400px) {
+
+    #activityPage a {
+        font-size: 19px;
     }
 }
