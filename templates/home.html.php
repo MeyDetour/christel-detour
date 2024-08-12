@@ -1,7 +1,8 @@
 <div id="homePage" class="flexRow">
 	<div id="bigBox" class="flexColBetween">
 		<h1>Christel <br><sub>DETOUR</sub></h1>
-		<h4>Assistante maternelle</h4>
+        <img src="/pictures/svg/home/mainImg.png" alt="image d'une boule à lumière">
+        <h4>Assistante maternelle</h4>
 	</div>
 	<div id="smallBox" class="flexCol">
 		<h2>Mieux me connaître</h2>

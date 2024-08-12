@@ -8,6 +8,15 @@
 
 	border-radius: 20px;
 }
+#homePage #bigBox img{
+    max-height: 75%;
+    max-width: 100%;
+    object-fit: contain;
+    /* align-items: end; */
+    align-self: end;
+    border-radius: 30px;
+    border: 7px solid white;
+}
 
 #homePage #smallBox {
 	margin-top: 5vmin;
@@ -21,6 +30,8 @@
 
 #homePage h1 {
 	color: var(--text-white);
+
+    margin-bottom: 38px;
 }
 #homePage h4 {
 	color: var(--text-blue);
@@ -31,9 +42,21 @@
 		flex-direction: column;
 	}
 
+    #homePage h1 {
+
+        line-height: 46px;
+        font-size: 70px !important;
+    }
+    #homePage h1 sub{
+
+        font-size: 45px;
+    }
 	#homePage #bigBox {
 		width: 90vw;
-	}
+
+        height: 67vh;
+
+    }
 
 	#homePage #smallBox {
 		text-align: center;
