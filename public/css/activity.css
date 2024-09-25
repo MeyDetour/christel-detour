@@ -43,15 +43,12 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
-.activityColumn {
-    width: 31%;
-}
-
-.activityImage {
-    width: 100%;
+.activityImage {    width: 28%;
     margin-bottom: 47px;
+    object-fit: contain;
 }
 
 @media all and (min-width: 1451px) {
@@ -94,6 +91,9 @@
     #activityPage .boxActivity {
         width: 275px;
         margin: 20px;
+    }
+    .activityImage {    width: 46%;
+
     }
 }
 
@@ -153,14 +153,7 @@
         height: 64px;
     }
 
-    .activityColumns {
 
-        flex-direction: column;
-    }
-
-    .activityColumn {
-        width: 100%;
-    }
 }
 
 @media all and (max-width: 400px) {
