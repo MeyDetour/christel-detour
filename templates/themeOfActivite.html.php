@@ -25,7 +25,7 @@
         echo "Le dossier n'existe pas.";
     }
     ?>
-    <div class="flexRowBetween activityColumns">
+    <div class=" activityColumns">
         <?php for ($i = 0; $i < 3; $i++): ?>
             <div class="flexCol activityColumn">
                 <?php foreach ($columns[$i] as $image): ?>

@@ -39,10 +39,14 @@
 .activityColumns {
     padding-inline: 6vw;
     margin-top: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
 }
 
 .activityColumn {
-    width: 437px;
+    width: 31%;
 }
 
 .activityImage {
@@ -147,6 +151,15 @@
     #activityPage .boxActivity img {
         width: 50px;
         height: 64px;
+    }
+
+    .activityColumns {
+
+        flex-direction: column;
+    }
+
+    .activityColumn {
+        width: 100%;
     }
 }
 
