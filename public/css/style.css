@@ -260,6 +260,10 @@ h5 {
     .box img {
         width: 75px;
     }
+
+    h2{
+    font-size: 38px;
+}
 }
 
 @media all and (max-width: 485px) {
