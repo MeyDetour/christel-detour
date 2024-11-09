@@ -20,7 +20,7 @@
                 <span>Vous pouvez me contacter de  8h à 18h en semaine</span>
             </div>
         </div>
-        <div class="flexRowEnd">
+        <div class="flexRow" style="margin: auto;">
             <div class="flexCol">
                 <a class="contactButton" href="/presentation/">Présentation de mon activité</a>
                 <a class="contactButton" href="/documents/projet_accueil_christel_detour.pdf" download> Télécharger mon

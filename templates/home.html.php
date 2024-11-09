@@ -26,7 +26,7 @@
 					}
 				?>
 			</div>
-			<div>
+			<div class="rightBoxSection">
 				<?php
 					for ($i = 3; $i < 6; $i++) {
 						$values = $boxesInfo[$i];

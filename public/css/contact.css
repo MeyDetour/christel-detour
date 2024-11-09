@@ -110,3 +110,32 @@
         width: 300px;
     }
 }
+
+@media screen and (max-width: 900px) {
+    #contact .contactBackground {
+        padding: 60px 50px 60px 50px;
+    }
+
+    #contact .mb-4 span {
+        font-size: 20px;
+    }
+
+    #contact .mb-4 img.me-5 {
+        width: 50px;
+    }
+
+    #contact .contactBackground a.contactButton {
+        height: 50px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    #contact img.contactChristelImage2 {
+        width: 200px !important;
+        height: calc(400px * 2/3);
+    }
+    #contact img.contactSalleImage2 {
+        width: 200px !important;
+        height: calc(400px * 2/3);
+    }
+}

@@ -109,6 +109,10 @@
 }
 
 @media all and (max-width: 460px) {
+    #activityPage h3 {
+        width: 340px;
+    }
+
     #activityPage .boxContainerActivity {
         flex-direction: column;
     }
