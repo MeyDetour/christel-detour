@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
-        'name' => 'mey/css100',
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
-        'reference' => 'b44e29c82f8535c77e9fe920300f778c6fd97f20',
+        'name' => 'meydetour/christe-detour',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'ec39b33fb35f1a72951be17e8c0329fa3a2284da',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -19,10 +19,10 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'mey/css100' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => 'b44e29c82f8535c77e9fe920300f778c6fd97f20',
+        'meydetour/christe-detour' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'ec39b33fb35f1a72951be17e8c0329fa3a2284da',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

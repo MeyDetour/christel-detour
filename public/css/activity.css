@@ -31,26 +31,31 @@
     text-align: center;
     font-size: 32px;
 }
+
 .activitePlusList {
     font-size: 30px;
 }
+
 .activityColumns {
     padding-inline: 6vw;
     margin-top: 7vh;
-}
-.activityColumn {
-    width: 437px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
-.activityImage {
-    width: 100%;
+.activityImage {    width: 28%;
     margin-bottom: 47px;
+    object-fit: contain;
 }
 
 @media all and (min-width: 1451px) {
     #activityPage .boxActivity {
         width: calc(100% / 5 - 20px);
     }
+
 }
 
 @media all and (max-width: 1450px) {
@@ -64,6 +69,14 @@
         width: calc(100% / 5 - 10px);
 
         font-size: 30px;
+    }
+
+    .activityPlusTitle {
+        font-size: 24px;
+    }
+
+    .activitePlusList {
+        font-size: 20px;
     }
 }
 
@@ -79,6 +92,9 @@
         width: 275px;
         margin: 20px;
     }
+    .activityImage {    width: 46%;
+
+    }
 }
 
 @media all and (max-width: 760px) {
@@ -93,15 +109,29 @@
         width: 225px;
         height: 225px;
     }
+    .activityPlusTitle {
+        font-size: 19px;
+    }
+
+    .activitePlusList {
+        font-size: 16px;
+    }
 }
 
 @media all and (max-width: 520px) {
     #activityPage h2 {
-        font-size: 40px;
+        font-size: 36px;
     }
+
     #activityPage a {
         font-size: 27px;
     }
+
+    #activityPage img {
+
+        width: 52px;
+    }
+
     #activityPage .boxActivity {
         width: 200px;
         height: 200px;
@@ -118,13 +148,23 @@
     }
 
     #activityPage .boxActivity {
-        width: 70vw;
+        width: 48%;
         height: 150px;
         margin: 2vh auto;
         font-size: 25px;
     }
+
     #activityPage .boxActivity img {
         width: 50px;
-        height: 50px;
+        height: 64px;
+    }
+
+
+}
+
+@media all and (max-width: 400px) {
+
+    #activityPage a {
+        font-size: 19px;
     }
 }

@@ -1,0 +1,20 @@
+.errorPage{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.errorPage h1{
+    color: mediumvioletred;
+    margin-bottom: 40px;
+}
+.errorPage a{
+    background: mistyrose;
+    padding: 10px;
+    border-radius: 9px;
+    color: #00000099;
+    margin-block: 30px;
+}

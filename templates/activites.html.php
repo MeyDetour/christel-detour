@@ -3,7 +3,7 @@
     <?php $theme = "Activtés"; $link ='/';
     require __DIR__ . "/components/header.html.php"; ?>
 
-    <h3 class="" style=""><a href="/activite/plus/">Pourquoi faire des activités ?</a></h3>
+    <h3 class="" style=""><a href="/activites/plus/">Pourquoi faire des activités ?</a></h3>
     <div class="boxContainerActivity">
         <?php
         $boxesInfo = [

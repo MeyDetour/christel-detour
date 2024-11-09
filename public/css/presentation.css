@@ -3,7 +3,7 @@
     height: 100vh;
     width: 100vw;
     font-family: "New Tegomin", serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
 
 }
@@ -12,7 +12,7 @@
     height: 87%;
 }
 
-#presentationPart2Container, #presentationPart3Container , #presentationPart4Container {
+#presentationPart2Container, #presentationPart3Container, #presentationPart4Container {
     display: none;
 }
 
@@ -39,22 +39,26 @@
 }
 
 /*====================Presentation Part 2 =====================*/
-#presentationPart2Container h2{
+#presentationPart2Container h2 {
     height: 15%;
 
     cursor: pointer;
 }
-#presentationPart2Container > #presentationPart2{
+
+#presentationPart2Container > #presentationPart2 {
     height: 85%;
 }
-#presentationPart2 h3, #presentationPart2 p{
+
+#presentationPart2 h3, #presentationPart2 p {
     text-align: center;
 }
-#presentationPart2 h3{
+
+#presentationPart2 h3 {
     font-size: 40px;
     margin-bottom: 3vh;
 }
-#presentationPart2Container .flexColEvenly  button{
+
+#presentationPart2Container .flexColEvenly button {
     color: #8C8C8C;
     background: #F6F6F6;
     padding-block: 13px;
@@ -62,12 +66,13 @@
     transition: all 0.2s;
 }
 
-#presentationPart2Container .flexColEvenly  button:hover{
-color : #19969F;
-background: #D9FDFF;
+#presentationPart2Container .flexColEvenly button:hover {
+    color: #19969F;
+    background: #D9FDFF;
 }
-#presentationPart2Container .focus{
-    color : #19969F !important;
+
+#presentationPart2Container .focus {
+    color: #19969F !important;
     background: #D9FDFF !important;
 }
 
@@ -80,31 +85,131 @@ background: #D9FDFF;
     flex-wrap: wrap;
     height: 85%;
 }
-.presentationPart3Box{
+
+.presentationPart3Box {
     width: 40vw;
     display: flex;
     flex-direction: row;
     align-items: start;
 }
-.presentationPart3Box p{
+
+.presentationPart3Box p {
     font-size: 20px;
 }
-.presentationPart3BoxHead{
+
+.presentationPart3BoxHead {
     width: fit-content;
     padding: 10px 20px;
     border-radius: 20px 20px 0px 0px;
 }
-.presentationPart3BoxBody{
+
+.presentationPart3BoxBody {
     padding: 10px 20px;
     border-radius: 0px 20px 20px 20px;
 }
-.presentationPart3Box img{
+
+.presentationPart3Box img {
     margin-top: 2vh;
 }
+
+
+/*====================Presentation Part 4 =====================*/
+
+#presentationPart4Container #gardenImg {
+    width: 32%;
+    object-fit: cover;
+}
+
+
+#presentationPart4Container .cardForRoom p {
+    text-align: center;
+    border: 0;
+    outline: 0;
+}
+
+/*====================Presentation Part 5 =====================*/
+#presentationPart5Container p {
+    text-align: center;
+}
+
+/*====================Presentation Part 6 =====================*/
+
+#presentationPart6Container .left {
+    width: 48%;
+    background: #FBE1FD;
+    border: 3px solid #EFC5F2;
+    text-align: justify;
+    padding: 20px;
+}
+
+#presentationPart6Container .right {
+    text-align: justify;
+    width: 48%;
+    background: #FDE1E1;
+    border: 3px solid #F9CBCB;
+    padding: 20px;
+}
+
+
+/*====================Presentation Part 7 =====================*/
+.presentationPart7Body img{
+    width: 95%;
+    object-fit: cover;
+
+}.presentationPart7Body span{
+    font-size: 25px;
+    font-family: "MuseoModerno", sans-serif;
+    font-weight: 400;
+    margin-block: 5px;
+ }
+
+
+/*====================Presentation Part 8 =====================*/
+#presentationPart8Container .saumon{
+    background:#E59393;
+    height: 50vh;
+    width: 60%;
+    z-index: -1;
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}#presentationPart8Container .violet{
+    background:#EBC6EE;
+    height: 50vh;
+    width: 60%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    z-index: -2;
+}#presentationPart8Container .blanc{
+    background:white;
+    height: 50vh;
+    width: 40%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: -2;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+ #presentationPart8Container .saumon img{
+     width: 32vw;
+     position: absolute;
+     bottom: -30%;
+     right: 0%;
+     z-index: 2;
+ }
 /*====================PROGRESS BAR=====================*/
 .progressBar {
     height: 13%;
     margin-top: 2vh;
+    position: fixed;
+    bottom: 0%;
+    backdrop-filter: blur(3px);
+    width: 90vw;
 }
 
 .progressBar .line {
@@ -117,8 +222,30 @@ background: #D9FDFF;
     align-items: center;
     justify-content: space-between;
     padding-inline: -10px;
-}
+    position: relative;
+    z-index: -2;
 
+    transition: all .5s;
+}
+.progressBar .progressLine{
+    background: #98EBF0;
+    border: 2px solid #62A7AB;
+    border-radius: 14px;
+    position: absolute;
+    left: 1%;
+    height: 120%;
+    z-index: -1;
+    transition: all 1s;
+}
+.progressBar .focusPoint{
+    background: #98EBF0 !important;
+    border: 2px solid #62A7AB !important;
+
+
+}
+.progressBar [class^='point']{
+    transition: all 0.5s  1s 1s;
+}
 .progressBar .point1, .progressBar .point5 {
 
     border: 3px solid #62A7AB;

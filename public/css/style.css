@@ -3,164 +3,219 @@
 
 /* Variables */
 :root {
-	--text-white: #FFFFFF;
-	--text-brown: #816F6F;
-	--text-light-brown : #A09898;
-	--text-dash :#5B5B5B;
-	--text-blue: #B1CBDA;
+    --text-white: #FFFFFF;
+    --text-brown: #816F6F;
+    --text-light-brown: #A09898;
+    --text-dash: #5B5B5B;
+    --text-blue: #B1CBDA;
 }
+
 /* --- Variables --- */
 html {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: bold;
-	font-family: "MuseoModerno", sans-serif;
+    font-weight: bold;
+    font-family: "MuseoModerno", sans-serif;
 }
 
 a {
-	text-decoration: none;
-	color: var(--text-dash);
+    text-decoration: none;
+    color: var(--text-dash);
 }
+
 button {
-	outline: 0;
-	border: 0;
-	background: transparent;
+    outline: 0;
+    border: 0;
+    background: transparent;
 }
+
 /* Basic classes */
 .flexRow {
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
+
 .flexRowEnd {
-	display: flex;
-	flex-direction: row;
-	justify-content: end;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
+
 .flexRowAround {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
 .flexRowBetween {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flexRowCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .flexCol {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
+
 .flexColAround {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
+
 .flexColBetween {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}.flexColEvenly {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flexColEvenly {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .gridCenter {
-	display: grid;
-	justify-content: center;
-	align-items: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
+
 .alignCenter {
     align-items: center;
 }
-.alignStart{
-	align-items: start;
+
+.alignStart {
+    align-items: start;
 }
+
+.alignEnd {
+    align-items: end;
+}
+
 .h100 {
-	height: 100vh;
+    height: 100vh;
 }
-.h100p{
-	height: 100%;
-}.w100p{
-	width: 100%;
-}.w50p{
-	width: 50%;
-}.w25p{
-	width: 25%;
+
+.h100p {
+    height: 100%;
 }
+
+.w100p {
+    width: 100%;
+}
+
+.w80p {
+    width: 80%;
+}
+.w50p {
+    width: 50%;
+}
+
+.w25p {
+    width: 25%;
+}
+
+.h-fit-content {
+    height: fit-content;
+}
+
 /* --- Basic classes --- */
 
 .containerMade {
     padding-inline: 5vw;
     padding-block: 5vh;
 }
-.centered{
+
+.centered {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
-.overflowVertical{
-    overflow-x: hidden ;
+
+.overflowVertical {
+    overflow-x: hidden;
     overflow-y: scroll;
 }
+
 /* Titles */
 h1 {
-	font-size: 90px;
-	line-height: 60px;
-	font-weight: bold;
+    font-size: 90px;
+    line-height: 60px;
+    font-weight: bold;
 }
+
 h1 sub {
-	font-size: 60px;
+    font-size: 60px;
 }
+
 h2 {
-	color: var(--text-brown);
-	font-size: 50px;
+    color: var(--text-brown);
+    font-size: 50px;
 }
+
 h3 {
-	color: var(--text-light-brown);
-	font-size: 32px;
+    font-size: 45px;
+    color: black;
 }
+
 h4 {
-	font-size: 30px;
-	font-weight: bold;
+    font-size: 32px;
+    color: black;
+    font-weight: 400;
+}
+
+h5 {
+    color: black;
+    font-size: 31px;
+    font-weight: bold;
 }
 
 .backButton {
-	font-family: "MuseoModerno", sans-serif;
-	color: var(--text-dash);
-	font-size: 34px;
-	font-weight: bold;
+    font-family: "MuseoModerno", sans-serif;
+    color: var(--text-dash);
+    font-size: 34px;
+    font-weight: bold;
 }
+
 .backButton img {
-	padding-right: 10px;
+    padding-right: 10px;
 }
 
 /* --- Titles --- */
 
 .box {
-	width: 322px;
-	height: 205px;
-	padding: 15px;
-	margin: 20px;
+    width: 322px;
+    height: 205px;
+    padding: 15px;
+    margin: 20px;
 
-	border-radius: 20px;
+    border-radius: 20px;
 
-	color: rgba(0, 0, 0, .4);
-	font-size: 30px;
-	font-weight: bold;
+    color: rgba(0, 0, 0, .4);
+    font-size: 30px;
+    font-weight: bold;
 
-	cursor: pointer;
-	transition: all 0.25s;
+    cursor: pointer;
+    transition: all 0.25s;
 }
+
 .box:hover {
-	box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
 }
+
 .box img {
     width: 100px;
 }
@@ -195,14 +250,20 @@ h4 {
         height: 165px;
     }
 }
+
 @media all and (max-width: 585px) {
     .box {
         width: 205px;
         height: 155px;
     }
+
     .box img {
         width: 75px;
     }
+
+    h2{
+    font-size: 38px;
+}
 }
 
 @media all and (max-width: 485px) {
@@ -216,6 +277,7 @@ h4 {
     .box {
         font-size: 22px;
     }
+
     .box img {
         width: 55px;
     }

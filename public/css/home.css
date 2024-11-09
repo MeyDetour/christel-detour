@@ -8,17 +8,30 @@
 
 	border-radius: 20px;
 }
+#homePage #bigBox img{
+    max-height: 75%;
+    max-width: 100%;
+    object-fit: contain;
+    /* align-items: end; */
+    align-self: end;
+    border-radius: 30px !important;
+    border: 7px solid white !important;
+}
 
 #homePage #smallBox {
 	margin-top: 5vmin;
 }
-
+#smallBox .leftBoxSection{
+	width: 50%;
+}
 #homePage .leftBoxSection div {
 	margin-left: 0;
 }
 
 #homePage h1 {
 	color: var(--text-white);
+
+    margin-bottom: 38px;
 }
 #homePage h4 {
 	color: var(--text-blue);
@@ -39,9 +52,20 @@
 		flex-direction: column;
 	}
 
+    #homePage h1 {
+
+        line-height: 46px;
+        font-size: 70px !important;
+    }
+    #homePage h1 sub{
+
+        font-size: 45px;
+    }
 	#homePage #bigBox {
 		width: 90vw;
-	}
+        height: 79vh;
+
+    }
 
 	#homePage #smallBox {
 		text-align: center;
@@ -103,13 +127,34 @@
 
 @media all and (max-width: 530px) {
 	#homePage h2 {
-		font-size: 40px;
+		font-size: 36px;
 	}
+	#homePage #smallBox{
+		margin-bottom: 25px;
+	}
+	#homePage #smallBox > div{
+		width: 94%;
+	}	#homePage #smallBox > div> div{
+		width: 50%;
+	}
+	#homePage #smallBox > div .box {
+		width: 93%;
+		margin: 0;
+		margin-bottom: 10px;
+
+		font-size: 24px;
+	}
+	#smallBox > div > div{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 }
 
 @media all and (max-width: 485px) {
 	#homePage #smallBox > div {
-		flex-direction: column;
+		flex-direction: row;
 	}
 }
 

@@ -4,6 +4,12 @@ let part1 = document.querySelector('#presentationPart1Container')
 let part2 = document.querySelector('#presentationPart2Container')
 let part3 = document.querySelector('#presentationPart3Container')
 let part4 = document.querySelector('#presentationPart4Container')
+let part5 = document.querySelector('#presentationPart5Container')
+let part6 = document.querySelector('#presentationPart6Container')
+let part7 = document.querySelector('#presentationPart7Container')
+let part8 = document.querySelector('#presentationPart8Container')
+let progressLine = document.querySelector('.progressLine')
+let state = 0
 
 // =======================COOKIE=======================
 
@@ -52,13 +58,28 @@ function hideAll() {
     part2.style.display = 'none'
     part3.style.display = 'none'
     part4.style.display = 'none'
+    part5.style.display = 'none'
+    part6.style.display = 'none'
+    part7.style.display = 'none'
+    part8.style.display = 'none'
 
 }
 
 function loadPart(nb) {
     hideAll()
     setCookie('page', nb, 1)
+    console.log(nb)
+    if (  nb == 1   ) state = 0
+    else if (nb == 2)state = 1
+    else if (nb == 3)state = 2
+    else if ([4,5,6,7].includes(nb))state = 3
+    else if (nb == 8) state=4
+if(!    document.querySelector(`#presentationPart${nb}Container`)){
+
+}
+
     document.querySelector(`#presentationPart${nb}Container`).style.display = 'flex';
+
 }
 
 // =======================PART =======================
@@ -68,33 +89,109 @@ function presentationPart1Back() {
 }
 
 function presentationPart1Next() {
+
     hideAll()
     setCookie('page', 2, 1)
     part2.style.display = 'flex'
 }
 
 function presentationPart2Back() {
+
+
     hideAll()
     setCookie('page', 1, 1)
     part1.style.display = 'flex'
 }
 
 function presentationPart2Next() {
+
     hideAll()
     setCookie('page', 3, 1)
     part3.style.display = 'flex'
 }
 
 function presentationPart3Back() {
+
     hideAll()
     setCookie('page', 2, 1)
     part2.style.display = 'flex'
 }
 
 function presentationPart3Next() {
+
     hideAll()
     setCookie('page', 4, 1)
     part4.style.display = 'flex'
+}
+
+function presentationPart4Back() {
+
+    hideAll()
+    setCookie('page', 3, 1)
+    part3.style.display = 'flex'
+}
+
+function presentationPart4Next() {
+
+    hideAll()
+    setCookie('page', 5, 1)
+    part5.style.display = 'flex'
+}
+
+function presentationPart5Back() {
+
+    hideAll()
+    setCookie('page', 4, 1)
+    part4.style.display = 'flex'
+}
+
+function presentationPart5Next() {
+
+    hideAll()
+    setCookie('page', 6, 1)
+    part6.style.display = 'flex'
+}
+
+function presentationPart6Back() {
+
+    hideAll()
+    setCookie('page', 5, 1)
+    part5.style.display = 'flex'
+}
+
+function presentationPart6Next() {
+
+    hideAll()
+    setCookie('page', 7, 1)
+    part7.style.display = 'flex'
+}
+
+function presentationPart7Back() {
+
+    hideAll()
+    setCookie('page', 6, 1)
+    part6.style.display = 'flex'
+}
+
+function presentationPart7Next() {
+
+    hideAll()
+    setCookie('page', 8, 1)
+    part8.style.display = 'flex'
+}
+
+function presentationPart8Back() {
+
+    hideAll()
+    setCookie('page', 7, 1)
+    part6.style.display = 'flex'
+}
+
+function presentationPart8Next() {
+
+    hideAll()
+    setCookie('page', 1, 1)
+    window.location = '/'
 }
 
 
@@ -102,11 +199,13 @@ function presentationPart3Next() {
 let tile = document.querySelector('.presentationPart2Title')
 let texte = document.querySelector('.presentationPart2Texte')
 
-function clearTextes(){
+function clearTextes() {
     tile.textContent = ''
-    texte.textContent =''
+    texte.textContent = ''
     const buttons = document.querySelectorAll('button');
-    buttons.forEach(button => button.classList.remove('focus'));}
+    buttons.forEach(button => button.classList.remove('focus'));
+}
+
 function presentationPart2LesBesoins() {
     clearTextes()
     this.classList.add('focus')
@@ -116,35 +215,35 @@ function presentationPart2LesBesoins() {
 }
 
 function presentationPart2LeRythme() {
-       clearTextes()
+    clearTextes()
     this.classList.add('focus')
     tile.textContent = 'Respecter le rythme'
     texte.textContent = 'Respecter le rythme et l\'évolution de votre enfant permet de favoriser un développement harmonieux. Chaque enfant progresse à son propre rythme, et il est crucial de lui offrir un environnement qui soutient sa croissance.'
 }
 
 function presentationPart2ConfortSecurity() {
-       clearTextes()
+    clearTextes()
     this.classList.add('focus')
     tile.textContent = 'Confort et sécurité'
     texte.textContent = 'Assurer le confort et la sécurité physique et psychique de votre enfant est une priorité. Le rassurer, le protéger, et l\'accompagner dans ses activités quotidiennes contribuent à renforcer sa confiance en lui.'
 }
 
 function presentationPart2Moments() {
-       clearTextes()
+    clearTextes()
     this.classList.add('focus')
     tile.textContent = 'Moments privilégiés'
     texte.textContent = 'Proposer des moments privilégiés tels que le jeu, les activités diverses, et les moments de repos et de repas adaptés à son rythme est essentiel pour son bien-être et son développement global.'
 }
 
 function presentationPart2EveilAutonomie() {
-       clearTextes()
+    clearTextes()
     this.classList.add('focus')
     tile.textContent = 'Éveil et autonomie'
     texte.textContent = 'Accompagner l\'éveil, l\'épanouissement, la socialisation, et l\'autonomie de votre enfant aide à bâtir une base solide pour son avenir. Cela inclut des activités stimulantes qui favorisent la découverte et l\'indépendance.'
 }
 
 function presentationPart2Confiance() {
-       clearTextes()
+    clearTextes()
     this.classList.add('focus')
     tile.textContent = 'Relation de confiance'
     texte.textContent = 'Respecter vos attentes et travailler en collaboration avec vous, en privilégiant le dialogue, permet de construire une relation de confiance. Cette coopération est essentielle pour le bien-être et le développement de votre enfant.'
@@ -153,5 +252,6 @@ function presentationPart2Confiance() {
 
 function presentationPart2BigTitle() {
     clearTextes()
-    tile.textContent='Sélectionnez l’une des cases sur les côtés pour plus d’explications'
-   }
+    tile.textContent = 'Sélectionnez l’une des cases sur les côtés pour plus d’explications'
+}
+
