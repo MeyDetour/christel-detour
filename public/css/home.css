@@ -134,7 +134,7 @@
 	}
 	#homePage #smallBox > div{
 		width: 94%;
-	}	#homePage #smallBox > div> div{
+	}	#homePage #smallBox > div > div{
 		width: 50%;
 	}
 	#homePage #smallBox > div .box {
@@ -144,7 +144,7 @@
 
 		font-size: 24px;
 	}
-	#smallBox > div > div{
+	#homePage #smallBox > div {
 		display: flex;
 		flex-direction: column;
 		align-items: center;

@@ -104,6 +104,12 @@
     }
 }
 
+@media all and (max-width: 720px) {
+    #activityPage h3 {
+        width: 500px;
+    }
+}
+
 @media all and (max-width: 630px) {
     #activityPage .boxActivity {
         width: 225px;
