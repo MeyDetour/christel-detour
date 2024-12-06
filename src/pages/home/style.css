@@ -1,0 +1,49 @@
+div.sub > div {
+	width: 100%;
+	height: fit-content;
+	padding: 10px;
+	margin: 0 10px;
+
+	border-radius: 20px;
+}
+
+div.sub div img {
+	width: 32px;
+	height: 32px;
+}
+
+div.sub div h3 {
+	font-family: "Anybody";
+	font-weight: 600;
+	font-size: 25px;
+
+	line-height: 32px;
+
+	color: rgba(0, 0, 0, .7);
+}
+
+div.sub div p {
+	min-width: fit-content;
+	margin: 15px;
+
+	font-size: 20px;
+}
+
+div.sub div:nth-child(1) { 
+	text-align: center;
+}
+div.sub div:nth-child(2) { margin-top: 100px; background-color: var(--lavender); }
+div.sub div:nth-child(3) { background-color: var(--light-green); }
+
+div.sub div:nth-child(1) p {
+	color: var(--secondary-text-color);
+	font-size: 25px;
+}
+div.sub > div:nth-child(1) img {
+	margin: auto;
+}
+div.sub div:nth-child(2), div.sub div:nth-child(3) {
+	width: 60%;
+
+	cursor: pointer;
+}
