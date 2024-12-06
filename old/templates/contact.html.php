@@ -23,14 +23,14 @@
         <div class="flexRow" style="margin: auto;">
             <div class="flexCol">
                 <a class="contactButton" href="/presentation/">Présentation de mon activité</a>
-                <a class="contactButton" href="/documents/projet_accueil_christel_detour.pdf" download> Télécharger mon
+                <a class="contactButton" href="/documents/projet_accueil_christel_detour.pdf" download>Télécharger mon
                     projet d'accueil</a>
             </div>
         </div>
-        <div class="flexRow">
+       <!--  <div class="flexRow">
             <img class="contactChristelImage2" src="/pictures/svg/contact/christelDetour.jpg" alt="christelDetour">
             <img class="contactSalleImage2" src="/pictures/svg/contact/salleDeJeu.jpg" alt="salleDeJeu">
-        </div>
+        </div> -->
     </div>
 </div>
 

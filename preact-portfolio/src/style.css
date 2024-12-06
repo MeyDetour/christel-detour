@@ -1,0 +1,128 @@
+:root {
+	/* Colors */
+	--bg: #F4F2EC;
+	--primary-color: #EAE7DD;
+	--secondary-color: #BDB9AC;
+
+	--lavender: #CCBDF4;
+	--light-green: #D0F6AF;
+
+	--blue: #AAC8F3;
+	--green: #C0F1BC;
+	--pink: #E9C8DD;
+	--orange: #F9CDB8;
+	--red: #F1AEB2;
+
+	--button-text: #7B7B7B;
+	--clicked-button-text: #F4F2EC;
+}
+
+/* Basic classes */
+.flexRow {
+	display: flex;
+	flex-direction: row;
+}
+
+.flexRowEnd {
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+}
+
+.flexRowAround {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.flexRowBetween {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.flexRowCenter {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.flexCol {
+	display: flex;
+	flex-direction: column;
+}
+
+.flexColAround {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.flexColBetween {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.flexColEvenly {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.gridCenter {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+section.oneScreen {
+	width: 100vw;
+	height: 100vh;
+}
+/* --- Basic classes --- */
+
+/* Components */
+div.button {
+	width: fit-content;
+	height: 45px;
+	padding: 0 20px;
+
+	background-color: var(--primary-color);
+
+	position: relative;
+}
+div.button::before {
+	content: '';
+
+	top: -5px;
+	left: 5px;
+	width: calc(100% - 4px);
+	height: calc(100% - 4px);
+
+	border: 2px solid var(--secondary-color);
+
+	position: absolute;
+	z-index: -1;
+}
+div.button:hover { cursor: pointer; }
+div.button:active { background-color: var(--secondary-color); }
+div.button p {
+	color: var(--button-text);
+
+	text-align: center;
+
+	font-weight: bold;
+
+	line-height: 45px;
+}
+div.button:active p {
+	color: var(--clicked-button-text);
+}
+/* --- Components --- */
+
+body {
+	margin: 0;
+	
+	background: var(--bg);
+}
