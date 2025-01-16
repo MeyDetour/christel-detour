@@ -1,0 +1,30 @@
+section article:first-child .content {
+	align-items: center;
+}
+
+section article:first-child .content p {
+	max-width: 50%;
+}
+
+section article:first-child .content img[src*="profile-picture.png"] {
+	width: 300px;
+}
+
+section article:last-child .content h4 {
+	margin: 0 20px 40px 0;
+
+	color: var(--violet);
+}
+
+section article:last-child .content p {
+	width: 70%;
+}
+
+.sm-text {
+	color: var(--grey);
+}
+span.md-text {
+	color: var(--black);
+
+	line-height: 30px;
+}

@@ -63,6 +63,21 @@ body {
 }
 /* --- Basic classes --- */
 
+/* Basic tags */
+section {
+    width: 100vw;
+}
+
+article {
+    width: 75vw;
+    margin: auto;
+}
+
+img {
+    border-radius: 10px;
+}
+/* --- Basic tags --- */
+
 /* Header */
 header {
     display: flex;
@@ -94,8 +109,8 @@ header nav ul li .point {
 
 /* Components */
 .horizontalSeparator {
-	width: 90%;
-	margin: auto;
+	width: 100%;
+	margin: 50px auto;
 }
 .horizontalSeparator > div {
 	width: 100%;
@@ -111,7 +126,6 @@ header nav ul li .point {
 	padding-inline: 30px;
 }
 /* --- Components --- */
-
 
 /* Font sizes */
 a {
@@ -183,7 +197,7 @@ h6 {
 }
 
 .sm-text {
-    font-size: 18px;
+    font-size: 15px;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-style: normal;
