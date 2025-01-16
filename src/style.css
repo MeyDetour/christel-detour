@@ -23,6 +23,10 @@ body {
     overflow-x: hidden;
     background-color: var(--white);
     color: var(--black);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Basic classes */
@@ -63,12 +67,28 @@ body {
 }
 /* --- Basic classes --- */
 
+/* Basic tags */
+section {
+    width: 100vw;
+}
+
+article {
+    width: 65vw;
+    margin: auto;
+}
+
+img {
+    border-radius: 10px;
+}
+/* --- Basic tags --- */
+
 /* Header */
 header {
     display: flex;
     flex-direction: row;
     justify-content: end;
 
+    width: 100vw;
     padding: 30px;
     box-sizing: border-box;
 }
