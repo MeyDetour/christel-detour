@@ -76,7 +76,7 @@ section {
 }
 
 article {
-    width: 75vw;
+    width: 65vw;
     margin: auto;
 }
 
@@ -178,7 +178,7 @@ header nav ul li .point {
 /* Components */
 .horizontalSeparator {
     width: 100%;
-    margin-block: 100px;
+    margin-block: 150px;
 }
 .horizontalSeparator > div {
 	width: 100%;
