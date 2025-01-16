@@ -9,9 +9,9 @@ export const App = () => {
         <LocationProvider>
             <Header />
                 <Router>
-                    <Route path="/" component={Home}/>
-                    <Route path="/activty" component={Activity}/>
-                    <Route default component={NotFound}/>
+                    <Route path="/" component={Home} />
+                    <Route path="/activity" component={Activity} />
+                    <Route default component={NotFound} />
                 </Router>
         </LocationProvider>
     );

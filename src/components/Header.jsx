@@ -16,7 +16,7 @@ export const Header = () => {
 						<div className={"point"} />
 					</li>
 					<li>
-						<a class={"md-text"}  href="/404" className={url == '/404' && 'active'}>
+						<a class={"md-text"}  href="/activity" className={url == '/activity' && 'active'}>
 							Activity
 						</a>
 					</li>
