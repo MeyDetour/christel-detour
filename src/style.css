@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+
+:root {
+    /* Colors */
+    --black: #0E0E0E;
+    --white: #FEFEFE;
+
+    --brown: #C7C2B3;
+    --green: #D9FFD6;
+    --blue: #D4E6FF;
+    --violet: #F9D6FF;
+    --red: #FFD6D9;
+    --orange: #FFE3D6;
+    --pink: #FDF3FF;
+
+    --alpha-white: rgba(255, 255, 255, .5);
+}
+
+
+/* font size */
+
+h1 {
+    font-size: 128px;
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 64px;
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    font-size: 49px;
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.h3-italic {
+    font-size: 48px;
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 76px;
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h5 {
+    font-size: 52px;
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h6 {
+    font-size: 30px;
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.md-text{
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}.md-bold-text{
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}.sm-text{
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 29px;
+    }
+
+    .h3-italic {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 47px;
+    }
+
+    h5 {
+        font-size: 43px;
+    }
+    .md-text{
+        font-size: 18px;
+    }
+    .sm-text{
+        font-size: 16px;
+    }
+}
