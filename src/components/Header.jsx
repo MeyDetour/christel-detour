@@ -20,15 +20,37 @@ export const Header = () => {
 						</a>
 					</li>
 					<li>
-						<div className={"point"}/>
+						<div className={"point"} />
 					</li>
 					<li>
 						<a href="/activite" className={`md-text  ${url === '/activite' && 'active'}`}>
-							Activité
+							Mon activité
 						</a>
 					</li>
 					<li>
-						<div className={"point"}/>
+						<div className={"point"} />
+					</li>
+
+					<li>
+						<a href="/procedure" className={`md-text  ${url === '/procedure' && 'active'}`}>
+							Procédure
+						</a>
+					</li>
+					<li>
+						<div className={"point"} />
+					</li>
+					<li>
+						<a href="/animations" className={`md-text  ${url === '/animations' && 'active'}`}>
+							Animations
+						</a>
+					</li>
+					<li>
+						<div className={"point"} />
+					</li>
+					<li>
+						<a href="/contact" className={`md-text  ${url === '/contact' && 'active'}`}>
+							Contact
+						</a>
 					</li>
 				</ul>
 
