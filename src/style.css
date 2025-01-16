@@ -1,0 +1,15 @@
+:root {
+	/* Colors */
+	--black: #0E0E0E;
+	--white: #FEFEFE;
+
+	--brown: #C7C2B3;
+	--green: #D9FFD6;
+	--blue: #D4E6FF;
+	--violet: #F9D6FF;
+	--red: #FFD6D9;
+	--orange: #FFE3D6;
+	--pink: #FDF3FF;
+
+	--alpha-white: rgba(255, 255, 255, .5);
+}
