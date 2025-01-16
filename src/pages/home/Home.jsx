@@ -74,9 +74,6 @@ export const Home = () => {
 					</div>
 				</article>
 			</section>
-			<footer>
-				
-			</footer>
 		</>
 	);
 }
