@@ -1,0 +1,124 @@
+/* first section */
+.article1 {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.article1 ul {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    width: 60%;
+}
+
+.article1 h3 {
+    width: 40%;
+}
+
+/* color blocks */
+
+.article2 .blue {
+    background: var(--blue);
+}
+
+.article2 .orange {
+    background: var(--orange);
+}
+
+.article2 .rose {
+    background: var(--pink);
+}
+
+.article2 .red {
+    background: var(--red);
+}
+
+.article2 .green {
+    background: var(--green);
+}
+
+.article2 .line1 {
+    margin-bottom: 34px;
+}
+
+
+.article2 .line1,
+.article2 .line2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 34px;
+}
+
+.article2 .line1 div,
+.article2 .line2 div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.article2 .line1 div {
+    width: 50%;
+}
+
+.article2 .line2 div {
+    width: 33%;
+}
+
+
+/* section3 */
+
+.article3 > div {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 50px;
+}
+
+.article3 > div > div {
+    width: 50%;
+}
+
+.article3 > div > img {
+    width: 50%;
+}
+
+.article3 > div:nth-child(2) {
+    margin-bottom: 150px;
+}
+
+.article3 > div:first-child > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.article3 > div:last-child > div:last-child {
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.article3 > div:last-child > div:last-child img{
+    width: 47%;
+}
+
+/* section 4 */
+
+.article4 div:last-child {
+ display: flex;
+    flex-direction: row;
+    gap: 60px;
+
+}
+
+.article4 div:last-child p{
+    width: 33%;
+}
