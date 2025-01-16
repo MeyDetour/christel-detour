@@ -10,7 +10,7 @@ export const App = () => {
             <Header />
                 <Router>
                     <Route path="/" component={Home} />
-                    <Route path="/activity" component={Activity} />
+                    <Route path="/activite" component={Activity} />
                     <Route default component={NotFound} />
                 </Router>
         </LocationProvider>

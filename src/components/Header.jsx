@@ -8,7 +8,7 @@ export const Header = () => {
 			<nav>
 				<ul>
 					<li>
-						<a class={"md-text"} href="/" className={url == '/' && 'active'}>
+						<a  href="/" className={ `md-text  ${ url === '/' && 'active'}`}>
 							Home
 						</a>
 					</li>
@@ -16,8 +16,8 @@ export const Header = () => {
 						<div className={"point"} />
 					</li>
 					<li>
-						<a class={"md-text"}  href="/activity" className={url == '/activity' && 'active'}>
-							Activity
+						<a href="/activite" className={ `md-text  ${ url === '/activite' && 'active'}`}>
+							Activité
 						</a>
 					</li>
 					<li>
