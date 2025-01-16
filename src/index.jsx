@@ -18,7 +18,7 @@ export const App = () => {
 }
 
 if (typeof window !== 'undefined') {
-    hydrate(<App/>, document.querySelector('body'));
+	hydrate(<App />, document.querySelector('body'));
 }
 
 export async function prerender(data) {
