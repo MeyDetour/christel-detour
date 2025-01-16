@@ -6,12 +6,26 @@ export const Header = () => {
 	return (
 		<header>
 			<nav>
-				<a href="/" class={url == '/' && 'active'}>
-					Home
-				</a>
-				<a href="/404" class={url == '/404' && 'active'}>
-					404
-				</a>
+				<ul>
+					<li>
+						<a class={"md-text"} href="/" className={url == '/' && 'active'}>
+							Home
+						</a>
+					</li>
+					<li>
+						<div className={"point"} />
+					</li>
+					<li>
+						<a class={"md-text"}  href="/404" className={url == '/404' && 'active'}>
+							Activity
+						</a>
+					</li>
+					<li>
+						<div className={"point"} />
+					</li>
+				</ul>
+
+
 			</nav>
 		</header>
 	);
