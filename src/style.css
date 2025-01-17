@@ -116,14 +116,16 @@ footer .contacts {
     gap: 50px;
 
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
+footer .contacts div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 footer .contacts img {
     padding-right: 10px;
-
     vertical-align: middle;
-
     display: inline;
 }
 
@@ -133,8 +135,8 @@ footer .contacts p {
 
 footer p {
     color: var(--grey);
-    text-align: center;
     margin: 0;
+    text-align: start;
 }
 
 footer hr {
@@ -147,20 +149,39 @@ footer hr {
 }
 
 
-@media only screen and (max-width: 650px) {
-    footer div:first-child {
+@media only screen and (max-width: 1000px) {
+
+    footer> .contacts {
         flex-direction: column;
+        align-items: start;
     }
 
-    footer div:first-child ul {
+    footer> div:first-child {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer> div:first-child ul {
         padding: 0;
     }
 
-    footer .contacts {
+    footer> .contacts {
         gap: 20px;
     }
 }
 
+@media only screen and (max-width: 700px) {
+    footer {
+
+        padding: 75px 60px 10px 60px;
+
+    }
+}
+@media only screen and (max-width: 500px) {
+    footer {
+        padding: 75px 30px 10px 30px;
+    }
+}
 /* --- Basic tags --- */
 
 /* Header */
@@ -229,6 +250,7 @@ header nav ul li .point {
         margin-block: 100px;
     }
 }
+
 @media only screen and (max-width: 500px ) {
     .horizontalSeparator {
         margin-block: 150px 50px;
@@ -351,10 +373,15 @@ h6 {
         font-size: 39px;
     }
 
+    .h3-italic {
+        font-size: 29px;
+    }
+
     .md-text {
 
         font-size: 18px;
     }
+
     .md-bold-text {
         font-size: 18px;
     }
@@ -363,7 +390,6 @@ h6 {
 
         width: 70vw;
     }
-
 
 
 }
@@ -377,11 +403,16 @@ h6 {
         font-size: 28px;
     }
 
+    .h3-italic {
+        font-size: 24px;
+    }
+
     .md-text {
 
         font-size: 16px;
     }
-  .md-bold-text {
+
+    .md-bold-text {
 
         font-size: 16px;
     }
@@ -389,13 +420,15 @@ h6 {
 }
 
 @media only screen and (max-width: 850px) {
-    h1{
+    h1 {
 
         margin-block: 85px 96px;
     }
+
     h3 {
         text-align: center;
     }
+
     article {
         width: 80vw
     }
@@ -411,10 +444,11 @@ h6 {
 }
 
 @media only screen and (max-width: 600px) {
-    article{
+    article {
         width: 90vw;
     }
 }
+
 @media only screen and (max-width: 500px) {
     h1 {
         font-size: 40px;
@@ -429,8 +463,9 @@ h6 {
     }
 
     .h3-italic {
-        font-size: 24px;
+        font-size: 22px;
     }
+
 
     h4 {
         font-size: 47px;

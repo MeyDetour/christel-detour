@@ -39,7 +39,7 @@ export const Activity = () => {
                 </article>
 
                 <article className={"article2"}>
-                    <HorizontalSeparator text="Développement"/>
+                    <HorizontalSeparator text="Développement" />
 
                     <div className="line1 ">
                         <div className={"blue"}>

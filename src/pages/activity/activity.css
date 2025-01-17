@@ -16,6 +16,8 @@
 
     list-style-type: disc;
     width: 55%;
+
+    padding-left: 17px;
 }
 
 .article1 h3 {
@@ -79,22 +81,22 @@
 
 /* section3 */
 
-.article3 > div {
+.article3 > div:not(:first-child) {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    gap: 50px;
+    justify-content: space-between;
 }
 
-.article3 > div > div {
-    width: 50%;
+.article3 > div:not(:first-child) > div {
+    width: 47%;
     gap: 15px;
     display: flex;
     flex-direction: column;
 }
 
-.article3 > div > img {
-    width: 50%;
+.article3 > div:not(:first-child) > img {
+    width: 47%;
     object-fit: cover;
 }
 
@@ -102,7 +104,7 @@
     margin-bottom: 150px;
 }
 
-.article3 > div:first-child > div {
+.article3 > div:nth-child(2) > div {
     display: flex;
     flex-direction: column;
 }
@@ -131,7 +133,7 @@
 }
 
 .article4 div:last-child p {
-    width: 33%;
+    width: 47%;
 }
 
 
@@ -154,7 +156,9 @@
     .article2 .line1 div, .article2 .line2 div {
         width: 47% ;
     }
-
+    .article3 > div:nth-child(2) {
+        margin-bottom: 100px;
+    }
     .article4 div:last-child {
         gap: 32px;}
 
@@ -175,22 +179,27 @@
         width: 100%;
     }
 
-    .article3 h3{
+    .article3 > div:not(:first-child)  h3{
         text-align: start;
-    }
-    .article3 div:nth-child(2),
-    .article3 > div  {
-        gap: 20px;
     }
 
 
     .article3 > div:nth-child(2) {
         margin-bottom: 75px;
     }
+
+    /* images size */
     .article3 > div:last-child > div:last-child {
-        gap: 16px;}
+        gap: 16px;
+    }
     .article3 > div:last-child > div:last-child img {
         width: calc(50% - 8px);}
+
+    .article4 > div:last-child {
+        flex-direction: column;
+    }  .article4 > div:last-child p {
+           width: 100%;
+       }
 }
 
 
@@ -199,15 +208,17 @@
     .article3 > div:nth-child(2){
         flex-direction: column;
     }
-    .article3 > div:first-child   {
-        gap: 50px;
-    }
-    .article3 > div  {
+    .article3 > div:last-child{
         flex-direction: column-reverse;
     }
-    .article3 > div:nth-child(2) *,  .article3 > div div {
+    .article3 > div:not(:first-child)   {
+        gap: 50px;
+    }
+
+    .article3 > div:not(:first-child) > img ,    .article3 > div:not(:first-child) > div{
         width: 100%;
     }
+
 }
 @media only screen and (max-width: 500px) {
 
