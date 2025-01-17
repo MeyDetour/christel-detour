@@ -28,46 +28,52 @@ body {
     flex-direction: column;
     align-items: center;
 
+    width: 100vw;
 
-    text-align :justify;
+    text-align: justify;
 }
 
 /* Basic classes */
 .flexRow {
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
+
 .flexRowAround {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
 .flexRowBetween {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .flexCol {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
+
 .flexColAround {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
+
 .flexColBetween {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .gridCenter {
-	display: grid;
-	justify-content: center;
-	align-items: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
+
 /* --- Basic classes --- */
 
 /* Basic tags */
@@ -93,7 +99,7 @@ footer {
     width: 100vw;
     height: fit-content;
     margin-top: 150px;
-    padding: 75px 0 10px 100px;
+    padding: 75px 100px 10px 100px;
 
     box-sizing: border-box;
 
@@ -105,17 +111,21 @@ footer ul li {
 }
 
 footer .contacts {
-    width: 60%;
-    margin-top: 50px;
+    margin-top: 100px;
 
     gap: 50px;
+
+    flex-direction: row;
 }
 
+footer .contacts div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 footer .contacts img {
     padding-right: 10px;
-
     vertical-align: middle;
-
     display: inline;
 }
 
@@ -125,17 +135,52 @@ footer .contacts p {
 
 footer p {
     color: var(--grey);
-    text-align: center;
     margin: 0;
+    text-align: start;
 }
 
 footer hr {
-    width: calc(100% - 100px);
+    width: calc(100%);
     margin-left: 0;
     margin-block: 50px;
 
     border: 1px solid #858585;
     border-radius: 1px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    footer> .contacts {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    footer> div:first-child {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer> div:first-child ul {
+        padding: 0;
+    }
+
+    footer> .contacts {
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    footer {
+
+        padding: 75px 60px 10px 60px;
+
+    }
+}
+@media only screen and (max-width: 500px) {
+    footer {
+        padding: 75px 30px 10px 30px;
+    }
 }
 /* --- Basic tags --- */
 
@@ -149,7 +194,8 @@ header {
     padding: 30px;
     box-sizing: border-box;
 }
-header svg{
+
+header svg {
     position: absolute;
     top: -10%;
     z-index: -2;
@@ -157,6 +203,7 @@ header svg{
     width: 100%;
     left: 0%;
 }
+
 header nav ul {
     padding: 0;
     margin: 0;
@@ -173,6 +220,7 @@ header nav ul li .point {
     border-radius: 50%;
     background: var(--black);
 }
+
 /* --- Header --- */
 
 /* Components */
@@ -180,31 +228,46 @@ header nav ul li .point {
     width: 100%;
     margin-block: 150px;
 }
+
 .horizontalSeparator > div {
-	width: 100%;
-	height: 1.5px;
-	margin: auto;
+    width: 100%;
+    height: 1.5px;
+    margin: auto;
 
-	background-color: var(--grey);
+    background-color: var(--grey);
 
-	border-radius: 3px;
+    border-radius: 3px;
 }
+
 .horizontalSeparator > h3 {
-	min-width: fit-content;
-	padding-inline: 30px;
+    min-width: fit-content;
+    padding-inline: 30px;
 }
- @media only screen and (max-width: 500px ){
-     .horizontalSeparator{
-         padding-block: 150px 50px;
-     }
 
- }
+@media only screen and (max-width: 1230px ) {
+    .horizontalSeparator {
+
+        margin-block: 100px;
+    }
+}
+
+@media only screen and (max-width: 500px ) {
+    .horizontalSeparator {
+        margin-block: 150px 50px;
+    }
+
+}
+
 /* --- Components --- */
 
 /* Font sizes */
 a {
     text-decoration: none;
     color: var(--black);
+}
+
+p {
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -285,36 +348,136 @@ h6 {
     font-style: normal;
 }
 
-@media only screen and (max-width: 500px) {
-	h1 {
-		font-size: 40px;
-	}
+@media only screen and (max-width: 1430px) {
+    h1 {
+        font-size: 105px;
+    }
 
-	h2 {
-		font-size: 25px;
-	}
-
-	h3 {
-		font-size: 29px;
-	}
-
-	.h3-italic {
-		font-size: 24px;
-	}
-
-	h4 {
-		font-size: 47px;
-	}
-
-	h5 {
-		font-size: 43px;
-	}
-	.md-text{
-		font-size: 18px;
-	}
-	.sm-text{
-		font-size: 16px;
-	}
+    h3 {
+        font-size: 43px;
+    }
 
 }
+
+@media only screen and (max-width: 1230px) {
+    h1 {
+        font-size: 88px;
+    }
+
+    h3 {
+        font-size: 39px;
+    }
+
+    .h3-italic {
+        font-size: 29px;
+    }
+
+    .md-text {
+
+        font-size: 18px;
+    }
+
+    .md-bold-text {
+        font-size: 18px;
+    }
+
+    article {
+
+        width: 70vw;
+    }
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+    h1 {
+        font-size: 64px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    .h3-italic {
+        font-size: 24px;
+    }
+
+    .md-text {
+
+        font-size: 16px;
+    }
+
+    .md-bold-text {
+
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    h1 {
+
+        margin-block: 85px 96px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    article {
+        width: 80vw
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    h3 {
+        font-size: 22px;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    article {
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .h3-italic {
+        font-size: 22px;
+    }
+
+
+    h4 {
+        font-size: 47px;
+    }
+
+    h5 {
+        font-size: 43px;
+    }
+
+    .md-text {
+        font-size: 18px;
+    }
+
+    .sm-text {
+        font-size: 16px;
+    }
+
+}
+
 /* --- Font sizes ---*/

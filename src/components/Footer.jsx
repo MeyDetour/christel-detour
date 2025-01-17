@@ -30,18 +30,20 @@ const Footer = () => {
 				</ul>
 			</div>
 			<div className="flexRow sm-text contacts">
-				<p>
+				<div>
 					<img src="./icons/mail.svg" className="icon" />
-					christel.detour@gmail.com
-				</p>
-				<p>
+					<span>christel.detour@gmail.com</span>
+				</div>
+				<div>
 					<img src="./icons/map.svg" className="icon" />
-					Simandres 69360 à 20km de Lyon
-				</p>
-				<p>
+					<span>Simandres 69360 à 20km de Lyon</span>
+
+				</div>
+				<div>
 					<img src="./icons/bookmark.svg" className="icon" />
-					Télécharger mon projet d’accueil
-				</p>
+					<span>Télécharger mon projet d’accueil</span>
+
+				</div>
 			</div>
 			<hr/>
 			<p>© Copyrights, 2024</p>
