@@ -1,16 +1,139 @@
-section article:first-child .content {
+/* First section */
+section.top {
+	height: 65vh;
+/*	position: relative;*/
+}
+section.top .pinkRound {
+	top: -50px;
+	left: -75px;
+	width: 500px;
+
+	position: absolute;
+	z-index: 9;
+}
+section.top .line {
+	top: 10%;
+	width: 100vw;
+
+	position: absolute;
+	z-index: 10;
+}
+
+section.top div.title {
+	width: fit-content;
+	margin-top: 10vh;
+	margin-left: 5vw;
+
+	position: relative;
+
+	z-index: 11;
+}
+section.top div.title * {
+	widows: 100%;
+	margin: 0;
+}
+section.top div.title h2 {
+	color: var(--grey);
+	text-align: right;
+
+}
+
+section.top .homeBoxes {
+	width: 100vw;
+	height: 300px;
+}
+
+section.top div.homeBoxes > div {
+	width: 100%;
+	height: 300px;
+	margin-top: 100px;
+}
+
+section.top .homeBoxes > div:nth-child(1) {
+	padding-top: 30px;
+	gap: 10px;
+
+	text-align: center;
+
 	align-items: center;
 }
 
-section article:first-child .content p {
+section.top .homeBoxes > div:nth-child(1) > img {
+	animation: moveMouse ease-in-out 2.5s infinite;
+}
+
+@keyframes moveMouse {
+	0% { margin-top: 0px; }
+	20% { margin-top: 5px; }
+	40% { margin-top: 0px; }
+	100% { margin-top: 0px; }
+}
+
+section.top .homeBoxes > div:nth-child(2) {
+	justify-content: end;
+}
+section.top .homeBoxes > div:nth-child(2) > div {
+	width: 70%;
+	height: fit-content;
+	margin-top: 80px;
+	margin-right: 10px;
+	padding: 15px;
+
+	box-sizing: border-box;
+
+	background-color: var(--blue);
+
+	border-radius: 20px;
+}
+section.top .homeBoxes > div:nth-child(2) > div p {
+	margin: 0;
+	text-align: right;
+}
+section.top .homeBoxes > div:nth-child(2) > div > div {
+	gap: 10px;
+	margin-block: 10px;
+	margin-top: 50px;
+}
+
+section.top .homeBoxes > div:nth-child(3) {
+	justify-content: start;
+}
+section.top .homeBoxes > div:nth-child(3) > div {
+	width: 65%;
+	height: fit-content;
+	margin-left: 40px;
+	padding: 15px;
+
+	box-sizing: border-box;;
+
+	background-color: var(--green);
+
+	border-radius: 20px;
+}
+section.top .homeBoxes > div:nth-child(3) > div p {
+	margin: 0;
+	text-align: right;
+}
+section.top .homeBoxes > div:nth-child(3) > div > div {
+	gap: 10px;
+	margin-block: 15px;
+	margin-top: 30px;
+}
+/* --- First section --- */
+/* Second section */
+section.bottom article:first-child .content {
+	align-items: center;
+}
+
+section.bottom article:first-child .content p {
 	max-width: 50%;
 }
 
-section article:first-child .content img[src*="profile-picture.png"] {
+section.bottom article:first-child .content img[src*="profile-picture.png"] {
 	width: 300px;
 }
 
-section article:last-child .content h4 {
+section.bottom article:last-child .content h4 {
 	margin: 0 20px 40px 0;
 
 	color: var(--violet);
@@ -28,3 +151,5 @@ span.md-text {
 
 	line-height: 30px;
 }
+
+/* --- Second section --- */
