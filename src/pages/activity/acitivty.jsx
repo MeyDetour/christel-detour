@@ -60,7 +60,7 @@ export const Activity = () => {
 
                     </div>
                     <div className="line2">
-                        <div className={"rose"}>
+                        <div className={"violet"}>
                             <span className={"md-bold-text"}>La socialisation</span>
                             <p className={"md-text"}>Je travaille en équipe avec l’Association des Assistantes Maternelle Les Pioupious des nounous qui propose des activités collectives manuelles et de motricité  (sortie ludique, ludothèque, bibliothèque...).
 

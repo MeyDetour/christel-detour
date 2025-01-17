@@ -2,18 +2,20 @@
 .article1 {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: start;
 }
 
 .article1 ul {
-    padding: 0;
+    box-sizing: border-box;
     margin: 0;
 
     display: flex;
     flex-direction: column;
     gap: 5px;
 
-    width: 60%;
+    list-style-type: disc;
+    width: 55%;
 }
 
 .article1 h3 {
@@ -30,8 +32,8 @@
     background: var(--orange);
 }
 
-.article2 .rose {
-    background: var(--pink);
+.article2 .violet {
+    background: var(--violet);
 }
 
 .article2 .red {
@@ -52,6 +54,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: stretch;
     gap: 34px;
 }
 
@@ -59,9 +62,10 @@
 .article2 .line2 div {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     padding: 30px;
     border-radius: 20px;
+    box-sizing: border-box;
 }
 
 .article2 .line1 div {
@@ -84,10 +88,14 @@
 
 .article3 > div > div {
     width: 50%;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .article3 > div > img {
     width: 50%;
+    object-fit: cover;
 }
 
 .article3 > div:nth-child(2) {
@@ -104,21 +112,117 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    justify-content: space-between;
 }
 
-.article3 > div:last-child > div:last-child img{
-    width: 47%;
+.article3 > div:last-child > div:last-child img {
+    width: calc(50% - 15px);
+    object-fit: cover;
 }
 
 /* section 4 */
 
 .article4 div:last-child {
- display: flex;
+    display: flex;
     flex-direction: row;
     gap: 60px;
 
 }
 
-.article4 div:last-child p{
+.article4 div:last-child p {
     width: 33%;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .article2 .line2 {
+        flex-wrap: wrap;
+    }
+
+
+    .article2 .line1, .article2 .line2 {
+        gap: 0;
+        justify-content: space-between;
+
+    }
+
+    .article2 .line2 div {
+        margin-bottom: 40px;
+    }
+
+    .article2 .line1 div, .article2 .line2 div {
+        width: 47% ;
+    }
+
+    .article4 div:last-child {
+        gap: 32px;}
+
+}
+
+
+@media screen and (max-width: 850px) {
+
+    .article1{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .article1 h3{
+        width: 60%;
+    }
+    .article1 ul{
+        width: 100%;
+    }
+
+    .article3 h3{
+        text-align: start;
+    }
+    .article3 div:nth-child(2),
+    .article3 > div  {
+        gap: 20px;
+    }
+
+
+    .article3 > div:nth-child(2) {
+        margin-bottom: 75px;
+    }
+    .article3 > div:last-child > div:last-child {
+        gap: 16px;}
+    .article3 > div:last-child > div:last-child img {
+        width: calc(50% - 8px);}
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .article3 > div:nth-child(2){
+        flex-direction: column;
+    }
+    .article3 > div:first-child   {
+        gap: 50px;
+    }
+    .article3 > div  {
+        flex-direction: column-reverse;
+    }
+    .article3 > div:nth-child(2) *,  .article3 > div div {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 500px) {
+
+    .article2 .line1, .article2 .line2 {
+        flex-direction: column;
+        gap: 34px;
+    }
+    .article2 .line1 div, .article2 .line2 div{
+        width: 100% ;
+    }
+    .article2 .line2 div {
+        margin-bottom: 0;
+    }
+
+    .article1 h3 {
+        width: 71%;
+    }
 }
