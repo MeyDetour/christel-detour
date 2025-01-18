@@ -1,24 +1,42 @@
-import {LocationProvider, Router, Route, hydrate, prerender as ssr} from 'preact-iso';
+import {LocationProvider, Router, Route, hydrate, prerender as ssr, useLocation} from 'preact-iso';
 
-import { Header } from "./components/Header.jsx";
-import { Home } from './pages/home/Home.jsx';
-import { Activity } from "./pages/activity/acitivty.jsx";
+import {Header} from "./components/Header.jsx";
+import {Home} from './pages/home/Home.jsx';
+import {Activity} from "./pages/activity/acitivty.jsx";
 
 import {Animations} from "./pages/animations/animations.jsx";
 import {Contact} from "./pages/contact/contact.jsx";
-import {Procedure} from "./pages/procedure/Procedure.jsx";
-import { Footer } from "./components/Footer.jsx";
+import {Procedure} from "./pages/procedure/procedure.jsx";
+import {Footer} from "./components/Footer.jsx";
 
-import { NotFound } from './pages/_404.jsx';
+import {NotFound} from './pages/_404.jsx';
 
 import "./style.css"
-import NavigationMenu from "./components/navigationMenu.js";
+import NavigationMenu from "./components/navigationMenu.jsx";
 
 export const App = () => {
     return (
         <LocationProvider>
+            <LocationWithRouter />
+        </LocationProvider>
+    );
+};
+
+const LocationWithRouter = () => {
+    const { url } = useLocation();
+    console.log(url);
+
+    return (
+        <div className={
+            url === '/' ? "home" :
+                url === '/activite' ? "activite" :
+                    url === '/procedure' ? "procedure" :
+                        url === '/animations' ? "animations" :
+                            url === '/contact' ? "contact" :
+                                " "
+        }>
             <Header />
-            {window.innerWidth <= 600 &&  <NavigationMenu />}
+            {window.innerWidth <= 600 && <NavigationMenu />}
             <Router>
                 <Route path="/" component={Home} />
                 <Route path="/activite" component={Activity} />
@@ -28,13 +46,12 @@ export const App = () => {
                 <Route default component={NotFound} />
             </Router>
             <Footer />
-
-        </LocationProvider>
+        </div>
     );
-}
+};
 
 if (typeof window !== 'undefined') {
-	hydrate(<App />, document.querySelector('body'));
+    hydrate(<App/>, document.querySelector('body'));
 }
 
 export async function prerender(data) {
