@@ -136,7 +136,7 @@ footer .contacts p {
 footer p {
     color: var(--grey);
     margin: 0;
-    text-align: start;
+    text-align: center;
 }
 
 footer hr {
@@ -190,12 +190,14 @@ header {
     flex-direction: row;
     justify-content: end;
 
+
+    z-index: 50;
     width: 100vw;
     padding: 30px;
     box-sizing: border-box;
 }
 
-header svg {
+header> svg {
     position: absolute;
     top: -10%;
     z-index: -2;
@@ -220,8 +222,67 @@ header nav ul li .point {
     border-radius: 50%;
     background: var(--black);
 }
+header .burgerContainer {
+    display: none;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+}
+
+header .burgerContainer > svg {
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0;
+    filter: var(--black);
+}
 
 /* --- Header --- */
+
+
+/* Menu */
+
+.menu{
+    background: #F9F5F5;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 50;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+
+    padding: 30px;
+    box-sizing: border-box;
+    transition: bottom 0.3s;
+
+    left: 0;
+    bottom: 100%;
+}
+
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    align-self: center;
+}
+
+.menu ul li .point {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+    background: var(--black);
+}
+/* --- Menu  --- */
+
+
 
 /* Components */
 .horizontalSeparator {
@@ -357,13 +418,17 @@ h6 {
         font-size: 43px;
     }
 
+
 }
 
 @media only screen and (max-width: 1230px) {
     h1 {
         font-size: 88px;
     }
+    h2{
 
+        font-size: 58px;
+    }
     h3 {
         font-size: 39px;
     }
@@ -393,7 +458,10 @@ h6 {
     h1 {
         font-size: 64px;
     }
+h2{
 
+    font-size: 44px;
+}
     h3 {
         font-size: 28px;
     }
@@ -442,11 +510,17 @@ h6 {
     article {
         width: 90vw;
     }
+    header nav{
+        display: none;
+    }
+    header .burgerContainer{
+        display: flex;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     h1 {
-        font-size: 40px;
+        font-size: 40px !important;
     }
 
     h2 {
@@ -480,4 +554,20 @@ h6 {
 
 }
 
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 35px !important;
+    }
+    .md-text {
+        font-size: 16px;
+    }section.top {
+         height: 62vh;
+     }
+}
+
+@media only screen and (max-width: 328px) {
+    h1 {
+        font-size: 31px !important;
+    }
+}
 /* --- Font sizes ---*/

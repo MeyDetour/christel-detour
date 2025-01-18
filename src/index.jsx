@@ -12,11 +12,13 @@ import { Footer } from "./components/Footer.jsx";
 import { NotFound } from './pages/_404.jsx';
 
 import "./style.css"
+import NavigationMenu from "./components/navigationMenu.js";
 
 export const App = () => {
     return (
         <LocationProvider>
             <Header />
+            {window.innerWidth <= 600 &&  <NavigationMenu />}
             <Router>
                 <Route path="/" component={Home} />
                 <Route path="/activite" component={Activity} />
@@ -26,6 +28,7 @@ export const App = () => {
                 <Route default component={NotFound} />
             </Router>
             <Footer />
+
         </LocationProvider>
     );
 }
