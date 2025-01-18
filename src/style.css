@@ -20,16 +20,19 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     background-color: var(--white);
+    width: 100vw;
+}
+
+body > div {
+    width: 100%;
     color: var(--black);
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    width: 100vw;
-
+    overflow-x: hidden;
     text-align: justify;
 }
 
@@ -118,11 +121,12 @@ footer .contacts {
     flex-direction: row;
 }
 
-footer .contacts div{
+footer .contacts div {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 footer .contacts img {
     padding-right: 10px;
     vertical-align: middle;
@@ -151,21 +155,21 @@ footer hr {
 
 @media only screen and (max-width: 1000px) {
 
-    footer> .contacts {
+    footer > .contacts {
         flex-direction: column;
         align-items: start;
     }
 
-    footer> div:first-child {
+    footer > div:first-child {
         flex-direction: column;
         gap: 20px;
     }
 
-    footer> div:first-child ul {
+    footer > div:first-child ul {
         padding: 0;
     }
 
-    footer> .contacts {
+    footer > .contacts {
         gap: 20px;
     }
 }
@@ -177,11 +181,13 @@ footer hr {
 
     }
 }
+
 @media only screen and (max-width: 500px) {
     footer {
         padding: 75px 30px 10px 30px;
     }
 }
+
 /* --- Basic tags --- */
 
 /* Header */
@@ -197,7 +203,7 @@ header {
     box-sizing: border-box;
 }
 
-header> svg {
+header > svg {
     position: absolute;
     top: -10%;
     z-index: -2;
@@ -222,6 +228,7 @@ header nav ul li .point {
     border-radius: 50%;
     background: var(--black);
 }
+
 header .burgerContainer {
     display: none;
     flex-direction: row;
@@ -241,7 +248,7 @@ header .burgerContainer > svg {
 
 /* Menu */
 
-.menu{
+.menu {
     background: #F9F5F5;
     width: 100vw;
     height: 100vh;
@@ -280,8 +287,8 @@ header .burgerContainer > svg {
     border-radius: 50%;
     background: var(--black);
 }
-/* --- Menu  --- */
 
+/* --- Menu  --- */
 
 
 /* Components */
@@ -425,10 +432,12 @@ h6 {
     h1 {
         font-size: 88px;
     }
-    h2{
+
+    h2 {
 
         font-size: 58px;
     }
+
     h3 {
         font-size: 39px;
     }
@@ -458,10 +467,12 @@ h6 {
     h1 {
         font-size: 64px;
     }
-h2{
 
-    font-size: 44px;
-}
+    h2 {
+
+        font-size: 44px;
+    }
+
     h3 {
         font-size: 28px;
     }
@@ -510,10 +521,12 @@ h2{
     article {
         width: 90vw;
     }
-    header nav{
+
+    header nav {
         display: none;
     }
-    header .burgerContainer{
+
+    header .burgerContainer {
         display: flex;
     }
 }
@@ -558,11 +571,14 @@ h2{
     h1 {
         font-size: 35px !important;
     }
+
     .md-text {
         font-size: 16px;
-    }section.top {
-         height: 62vh;
-     }
+    }
+
+    section.top {
+        height: 62vh;
+    }
 }
 
 @media only screen and (max-width: 328px) {
@@ -570,4 +586,5 @@ h2{
         font-size: 31px !important;
     }
 }
+
 /* --- Font sizes ---*/
