@@ -82,8 +82,8 @@ section {
 }
 
 article {
-    width: 65vw;
-    margin: auto;
+    width: 65vw !important;
+    margin: auto !important;
 }
 
 img:not(img.icon) {
