@@ -4,8 +4,6 @@ import HorizontalSeparator from "../../components/HorizontalSeparator.jsx";
 export const Activity = () => {
     return (
         <>
-
-
             <h1>Mon activité</h1>
             <section>
                 <article className={"article1"}>

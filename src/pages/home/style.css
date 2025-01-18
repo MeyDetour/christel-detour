@@ -347,7 +347,9 @@ span.md-text {
 }
 
 @media only screen and (max-width: 400px) {
-
+   .home section.top {
+        height: 62vh;
+    }
     .home section.top h2 {
         font-size: 26px;
     }
