@@ -51,7 +51,7 @@ const LocationWithRouter = () => {
 };
 
 if (typeof window !== 'undefined') {
-    hydrate(<App/>, document.querySelector('body'));
+    hydrate(<App/>, document.querySelector('#app'));
 }
 
 export async function prerender(data) {
