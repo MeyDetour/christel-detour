@@ -1,10 +1,10 @@
 /* First section */
-.home section.top {
+section.top {
     height: 90vh;
     /*	position: relative;*/
 }
 
-.home section.top .pinkRound {
+section.top .pinkRound {
     top: -50px;
     left: -75px;
     width: 28%;
@@ -13,7 +13,7 @@
     z-index: 9;
 }
 
-.home section.top .line {
+section.top .line {
     top: 10%;
     width: 100vw;
 
@@ -21,7 +21,7 @@
     z-index: 10;
 }
 
-.home section.top div.title {
+section.top div.title {
     width: fit-content;
     margin-top: 10vh;
     margin-left: 5vw;
@@ -31,17 +31,17 @@
     z-index: 11;
 }
 
-.home section.top div.title * {
+section.top div.title * {
     margin: 0;
 }
 
-.home section.top div.title h2 {
+section.top div.title h2 {
     color: var(--grey);
     text-align: right;
 
 }
 
-.home section.top .homeBoxes {
+section.top .homeBoxes {
     width: 100vw;
 
     height: 50vh;
@@ -52,12 +52,12 @@
     justify-content: space-around;
 }
 
-.home section.top div.homeBoxes > div {
+section.top div.homeBoxes > div {
     width: 100%;
     height: 300px;
 }
 
-.home section.top .homeBoxes > div:nth-child(1) {
+section.top .homeBoxes > div:nth-child(1) {
     gap: 10px;
     width: 19%;
 
@@ -68,7 +68,7 @@
     justify-content: center;
 }
 
-.home section.top .homeBoxes > div:nth-child(1) > img {
+section.top .homeBoxes > div:nth-child(1) > img {
     animation: moveMouse ease-in-out 2.5s infinite;
 }
 
@@ -88,7 +88,7 @@
 }
 
 
-.home section.top .homeBoxes > div:nth-child(2) {
+section.top .homeBoxes > div:nth-child(2) {
 
     display: flex;
     flex-direction: column;
@@ -107,24 +107,23 @@
     border-radius: 20px;
 }
 
-.home section.top .homeBoxes > div:nth-child(2) > h3, .home section.top .homeBoxes > div:last-child > h3 {
+section.top .homeBoxes > div:nth-child(2) > h3, section.top .homeBoxes > div:last-child > h3 {
     text-align: end;
 
     font-size: 35px;
 }
 
-.home section.top .homeBoxes > div:nth-child(2) > div p {
+section.top .homeBoxes > div:nth-child(2) > div p {
     margin: 0;
     text-align: end;
 }
 
-.home section.top .homeBoxes > div:nth-child(2) > div {
+section.top .homeBoxes > div:nth-child(2) > div {
     gap: 10px;
     margin-top: 50px;
-    align-items: end;
 }
 
-.home section.top .homeBoxes > div:nth-child(3) {
+section.top .homeBoxes > div:nth-child(3) {
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -140,57 +139,56 @@
     border-radius: 20px;
 }
 
-.home section.top .homeBoxes > div:nth-child(3) div p {
+section.top .homeBoxes > div:nth-child(3) div p {
     margin: 0;
     text-align: end;
 }
 
-.home section.top .homeBoxes > div:nth-child(3) > div {
+section.top .homeBoxes > div:nth-child(3) > div {
     gap: 10px;
     margin-top: 30px;
-    align-items: end;
 }
 
 /* --- First section --- */
 /* Second section */
-.home section.bottom article:first-child .content {
+section.bottom article:first-child .content {
     align-items: center;
 }
 
-.home section.bottom article:first-child .content p {
+section.bottom article:first-child .content p {
     max-width: 50%;
 }
 
-.home section.bottom article:first-child .content img[src*="profile-picture.png"] {
+section.bottom article:first-child .content img[src*="profile-picture.png"] {
     width: 300px;
     object-fit: contain;
 }
 
 /* number section */
 
-.home section.bottom article:last-child .content h4 {
+section.bottom article:last-child .content h4 {
 
     margin-right: 20px;
     margin-top: -32px;
     color: var(--violet);
 }
 
-.home section.bottom article:last-child .content p {
+section article:last-child .content p {
     width: 100%;
 }
 
 
-.home section.bottom article:last-child .content {
+section.bottom article:last-child .content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.home section.bottom article:last-child .content .md-text {
+section.bottom article:last-child .content .md-text {
     text-align: start;
 }
 
-.home section.bottom article:last-child .content > div {
+section.bottom article:last-child .content > div {
     gap: 40px;
     display: flex;
     flex-direction: column;
@@ -213,88 +211,88 @@ span.md-text {
 
 @media only screen and (max-width: 1500px) {
 
-    .home section.bottom article:last-child .content h4 {
+    section.bottom article:last-child .content h4 {
         font-size: 58px;
         margin-top: -8px;
     }
 
-    .home section.top .pinkRound {
+    section.top .pinkRound {
         width: 32%;
     }
 }
 
 @media only screen and (max-width: 1250px) {
-    .home section.top .homeBoxes > div:nth-child(2) {
+    section.top .homeBoxes > div:nth-child(2) {
         width: 30%;
         margin-left: 4%;
     }
 
-    .home section.top .homeBoxes > div:nth-child(3) {
+    section.top .homeBoxes > div:nth-child(3) {
         width: 30%;
     }
 }
 
 @media only screen and (max-width: 1000px) {
 
-    .home section.top div.title {
+    section.top div.title {
         margin-top: 15vh;
     }
 
-    .home section.top .homeBoxes > div:nth-child(2) > h3, .home section.top .homeBoxes > div:last-child > h3 {
+    section.top .homeBoxes > div:nth-child(2) > h3, section.top .homeBoxes > div:last-child > h3 {
         text-align: end;
         font-size: 23px;
     }
 
-    .home section.top .homeBoxes {
+    section.top .homeBoxes {
 
         height: 59vh;
     }
 
-    .home section.top .pinkRound {
+    section.top .pinkRound {
         width: 39%;
     }
 
-    .home section.top .homeBoxes {
+    section.top .homeBoxes {
         height: 54vh;
     }
 
-    .home section.bottom article:first-child .content {
+    section.bottom article:first-child .content {
 
         justify-content: space-between;
     }
 
-    .home section.bottom article:first-child .content p {
+    section.bottom article:first-child .content p {
         width: 45%;
         max-width: fit-content;
     }
 
-    .home section.bottom article:first-child .content img[src*="profile-picture.png"] {
+    section.bottom article:first-child .content img[src*="profile-picture.png"] {
         width: 45%
     }
 }
 
 
 @media only screen and (max-width: 800px) {
-    .home section.top h1 {
+    section.top h1 {
 
         font-size: 52px;
     }
 
-    .home section.top .pinkRound {
+    section.top .pinkRound {
         width: 56%;
     }
 
-    .home section.top h2 {
+    section.top h2 {
 
         font-size: 37px;
     }
 
-    .home section.bottom article:last-child .content {
+    section.bottom article:last-child .content {
         flex-direction: column;
         gap: 40px;
     }
 
-    .home section.bottom article:last-child .content > div {
+    section.bottom article:last-child .content > div {
         width: 100%;
     }
 }
@@ -302,73 +300,75 @@ span.md-text {
 
 @media only screen and (max-width: 600px) {
 
-    .home section.top {
+    section.top {
         height: 68vh;
     }
 
-    .home section.top .homeBoxes {
+    section.top .homeBoxes {
         height: 43vh;
     }
 
-    .home section.top .homeBoxes > div:nth-child(1) {
+    section.top .homeBoxes > div:nth-child(1) {
         display: none
     }
 
 
-    .home section.top .homeBoxes > div:nth-child(2) {
+    section.top .homeBoxes > div:nth-child(2) {
         width: 45%;
         margin-left: 0;
     }
 
-    .home section.top .homeBoxes > div:nth-child(3) {
+    section.top .homeBoxes > div:nth-child(3) {
         width: 45%;
     }
 
 }
 
 @media only screen and (max-width: 500px) {
-    .home section.top .pinkRound {
+    section.top .pinkRound {
         width: 70%;
     }
 
-    .home section.bottom article:first-child .content {
+    section.bottom article:first-child .content {
         flex-direction: column-reverse;
         gap: 60px;
         width: 100%;
     }
 
-    .home section.bottom article:first-child .content p {
+    section.bottom article:first-child .content p {
         width: 100%;
     }
 
-    .home section.bottom article:first-child .content img[src*="profile-picture.png"] {
+    section.bottom article:first-child .content img[src*="profile-picture.png"] {
         width: 60%
     }
 }
 
 @media only screen and (max-width: 400px) {
-
+   .home section.top {
+        height: 62vh;
+    }
     .home section.top h2 {
         font-size: 26px;
     }
 
-    .home section.top .homeBoxes > div:nth-child(2) > h3, .home section.top .homeBoxes > div:last-child > h3 {
+    section.top .homeBoxes > div:nth-child(2) > h3, section.top .homeBoxes > div:last-child > h3 {
 
         font-size: 21px;
     }
 
-    .home section.bottom article:first-child .content img[src*="profile-picture.png"] {
+    section.bottom article:first-child .content img[src*="profile-picture.png"] {
         width: 100%
     }
 }
 
 
 @media only screen and (max-width: 328px) {
-    .home section.top {
+    section.top {
         height: fit-content !important;
     }
 
-    .home section.top .homeBoxes {
+    section.top .homeBoxes {
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -380,11 +380,11 @@ span.md-text {
         margin-top: 11vh;
     }
 
-    .home section.top .homeBoxes > div {
+    section.top .homeBoxes > div {
         width: 70% !important;
         margin: 0 !important;
     }
-   .home section.bottom .content .flexRow{
+   section.bottom .content .flexRow{
        flex-direction: column;
    }
 }
