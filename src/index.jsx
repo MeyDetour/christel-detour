@@ -29,11 +29,11 @@ const LocationWithRouter = () => {
     return (
         <div className={
             url === '/' ? "home" :
-                url === '/activite' ? "activite" :
-                    url === '/procedure' ? "procedure" :
-                        url === '/animations' ? "animations" :
-                            url === '/contact' ? "contact" :
-                                " "
+            url === '/activite' ? "activite" :
+            url === '/procedure' ? "procedure" :
+            url === '/animations' ? "animations" :
+            url === '/contact' ? "contact" :
+            " "
         }>
             <Header />
             {window.innerWidth <= 600 && <NavigationMenu />}
