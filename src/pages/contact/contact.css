@@ -1,0 +1,40 @@
+.contact img.icon {
+	width: 30px;
+}
+
+.contact .profile {
+	width: 30%;
+}
+
+.contact .profile a {
+	width: 100%;
+	margin-top: 10px;
+
+	text-align: center;
+}
+.contact .profile span {
+	text-wrap: nowrap;
+}
+.contact .profile span img {
+	padding-left: 10px;
+
+	vertical-align: middle;
+
+	display: inline-block;
+}
+
+.contact .info {
+	width: 60%;
+	min-height: 100%;
+	padding: 30px;
+
+	justify-content: center;
+	gap: 40px;
+
+	background-color: var(--pink);
+}
+
+.contact .info > div.flexRow {
+	gap: 30px;
+	margin-left: 40px;
+}
