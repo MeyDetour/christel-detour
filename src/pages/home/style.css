@@ -175,7 +175,7 @@
     color: var(--violet);
 }
 
-section article:last-child .content p {
+.home section.bottom article:last-child .content p {
     width: 100%;
 }
 
