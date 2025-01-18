@@ -1,0 +1,49 @@
+section.top h1 {
+	text-align: center;
+}
+section.top div {
+	width: 100%;
+}
+section.top div p {
+	width: 45%;
+}
+
+section.bottom {
+	margin-top: 100px;
+}
+section.bottom ul {
+	width: 70%;
+	margin: auto;
+
+	list-style: url(./icons/list-type.svg);
+
+	position: relative;
+}
+section.bottom ul:before {
+	left: 24px;
+	content: '';
+
+	width: 1px;
+	height: 100%;
+
+	border-radius: 1px;
+
+	background-color: var(--brown);
+
+	position: absolute;
+
+	z-index: 0;
+}
+section.bottom ul li {
+	margin-top: 75px;
+	padding-left: 50px;
+
+	list-style-type: initial;
+
+	position: relative;
+
+/*	z-index: 1;*/
+}
+section.bottom ul li h3 {
+	padding-bottom: 10px;
+}
