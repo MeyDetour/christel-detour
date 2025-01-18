@@ -6,7 +6,7 @@ import { Activity } from "./pages/activity/acitivty.jsx";
 
 import {Animations} from "./pages/animations/animations.jsx";
 import {Contact} from "./pages/contact/contact.jsx";
-import {Procedure} from "./pages/procedure/procedure.jsx";
+import {Procedure} from "./pages/procedure/Procedure.jsx";
 import { Footer } from "./components/Footer.jsx";
 
 import { NotFound } from './pages/_404.jsx';
