@@ -1,12 +1,12 @@
 /* first section */
-.article1 {
+.activite .article1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
 }
 
-.article1 ul {
+.activite .article1 ul {
     box-sizing: border-box;
     margin: 0;
 
@@ -20,39 +20,39 @@
     padding-left: 17px;
 }
 
-.article1 h3 {
+.activite .article1 h3 {
     width: 40%;
 }
 
 /* color blocks */
 
-.article2 .blue {
+.activite .article2 .blue {
     background: var(--blue);
 }
 
-.article2 .orange {
+.activite .article2 .orange {
     background: var(--orange);
 }
 
-.article2 .violet {
+.activite .article2 .violet {
     background: var(--violet);
 }
 
-.article2 .red {
+.activite .article2 .red {
     background: var(--red);
 }
 
-.article2 .green {
+.activite .article2 .green {
     background: var(--green);
 }
 
-.article2 .line1 {
+.activite .article2 .line1 {
     margin-bottom: 34px;
 }
 
 
-.article2 .line1,
-.article2 .line2 {
+.activite .article2 .line1,
+.activite .article2 .line2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -60,8 +60,8 @@
     gap: 34px;
 }
 
-.article2 .line1 div,
-.article2 .line2 div {
+.activite .article2 .line1 div,
+.activite .article2 .line2 div {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -70,46 +70,46 @@
     box-sizing: border-box;
 }
 
-.article2 .line1 div {
+.activite .article2 .line1 div {
     width: 50%;
 }
 
-.article2 .line2 div {
+.activite .article2 .line2 div {
     width: 33%;
 }
 
 
 /* section3 */
 
-.article3 > div:not(:first-child) {
+.activite .article3 > div:not(:first-child) {
     display: flex;
     flex-direction: row;
     align-items: stretch;
     justify-content: space-between;
 }
 
-.article3 > div:not(:first-child) > div {
+.activite .article3 > div:not(:first-child) > div {
     width: 47%;
     gap: 15px;
     display: flex;
     flex-direction: column;
 }
 
-.article3 > div:not(:first-child) > img {
+.activite .article3 > div:not(:first-child) > img {
     width: 47%;
     object-fit: cover;
 }
 
-.article3 > div:nth-child(2) {
+.activite .article3 > div:nth-child(2) {
     margin-bottom: 150px;
 }
 
-.article3 > div:nth-child(2) > div {
+.activite .article3 > div:nth-child(2) > div {
     display: flex;
     flex-direction: column;
 }
 
-.article3 > div:last-child > div:last-child {
+.activite .article3 > div:last-child > div:last-child {
     gap: 30px;
     display: flex;
     flex-direction: row;
@@ -118,48 +118,48 @@
     justify-content: space-between;
 }
 
-.article3 > div:last-child > div:last-child img {
+.activite .article3 > div:last-child > div:last-child img {
     width: calc(50% - 15px);
     object-fit: cover;
 }
 
 /* section 4 */
 
-.article4 div:last-child {
+.activite .article4 div:last-child {
     display: flex;
     flex-direction: row;
     gap: 60px;
 
 }
 
-.article4 div:last-child p {
+.activite .article4 div:last-child p {
     width: 47%;
 }
 
 
 @media screen and (max-width: 1000px) {
-    .article2 .line2 {
+    .activite .article2 .line2 {
         flex-wrap: wrap;
     }
 
 
-    .article2 .line1, .article2 .line2 {
+    .activite .article2 .line1, .activite .article2 .line2 {
         gap: 0;
         justify-content: space-between;
 
     }
 
-    .article2 .line2 div {
+    .activite .article2 .line2 div {
         margin-bottom: 40px;
     }
 
-    .article2 .line1 div, .article2 .line2 div {
+    .activite .article2 .line1 div, .activite .article2 .line2 div {
         width: 47% ;
     }
-    .article3 > div:nth-child(2) {
+    .activite .article3 > div:nth-child(2) {
         margin-bottom: 100px;
     }
-    .article4 div:last-child {
+    .activite .article4 div:last-child {
         gap: 32px;}
 
 }
@@ -167,37 +167,37 @@
 
 @media screen and (max-width: 850px) {
 
-    .article1{
+    .activite .article1{
         flex-direction: column;
         align-items: center;
         gap: 40px;
     }
-    .article1 h3{
+    .activite .article1 h3{
         width: 60%;
     }
-    .article1 ul{
+    .activite .article1 ul{
         width: 100%;
     }
 
-    .article3 > div:not(:first-child)  h3{
+    .activite .article3 > div:not(:first-child)  h3{
         text-align: start;
     }
 
 
-    .article3 > div:nth-child(2) {
+    .activite .article3 > div:nth-child(2) {
         margin-bottom: 75px;
     }
 
     /* images size */
-    .article3 > div:last-child > div:last-child {
+    .activite .article3 > div:last-child > div:last-child {
         gap: 16px;
     }
-    .article3 > div:last-child > div:last-child img {
+    .activite .article3 > div:last-child > div:last-child img {
         width: calc(50% - 8px);}
 
-    .article4 > div:last-child {
+    .activite .article4 > div:last-child {
         flex-direction: column;
-    }  .article4 > div:last-child p {
+    }  .activite .article4 > div:last-child p {
            width: 100%;
        }
 }
@@ -205,35 +205,35 @@
 
 @media screen and (max-width: 650px) {
 
-    .article3 > div:nth-child(2){
+    .activite .article3 > div:nth-child(2){
         flex-direction: column;
     }
-    .article3 > div:last-child{
+    .activite .article3 > div:last-child{
         flex-direction: column-reverse;
     }
-    .article3 > div:not(:first-child)   {
+    .activite .article3 > div:not(:first-child)   {
         gap: 50px;
     }
 
-    .article3 > div:not(:first-child) > img ,    .article3 > div:not(:first-child) > div{
+    .activite .article3 > div:not(:first-child) > img ,    .activite .article3 > div:not(:first-child) > div{
         width: 100%;
     }
 
 }
 @media only screen and (max-width: 500px) {
 
-    .article2 .line1, .article2 .line2 {
+    .activite .article2 .line1, .activite .article2 .line2 {
         flex-direction: column;
         gap: 34px;
     }
-    .article2 .line1 div, .article2 .line2 div{
+    .activite .article2 .line1 div, .activite .article2 .line2 div{
         width: 100% ;
     }
-    .article2 .line2 div {
+    .activite .article2 .line2 div {
         margin-bottom: 0;
     }
 
-    .article1 h3 {
+    .activite .article1 h3 {
         width: 71%;
     }
 }
