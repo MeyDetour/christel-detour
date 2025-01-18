@@ -1,0 +1,40 @@
+section.animations.top {
+	height: fit-content;
+}
+
+section.animations.top .images {
+	gap: 30px;
+}
+section.animations.top .images > div {
+	max-width: 100%;
+	gap: 30px;
+}
+
+section.animations.top .images img {
+	width: calc((65vw / 4) - ((30px * 3) / 4));
+}
+
+section.animations.top .images img + p {
+	width: 100%;
+	padding-top: 10px;
+
+	font-style: italic;
+
+	text-align: center;
+}
+
+section.animations.bottom {
+	margin-top: 100px;
+}
+
+section.animations.bottom > article > div {
+	width: calc(50% - 30px);
+}
+
+section.animations.bottom article > div {
+	gap: 30px;
+}
+
+section.animations.bottom article > div h3 {
+	text-wrap: nowrap;
+}
