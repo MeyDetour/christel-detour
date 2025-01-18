@@ -1,40 +1,88 @@
-section.animations.top {
-	height: fit-content;
+.animations section.top {
+    height: fit-content;
 }
 
-section.animations.top .images {
-	gap: 30px;
-}
-section.animations.top .images > div {
-	max-width: 100%;
-	gap: 30px;
+.animations section.top .images {
+    gap: 30px;
 }
 
-section.animations.top .images img {
-	width: calc((65vw / 4) - ((30px * 3) / 4));
+.animations section.top .images > div {
+    max-width: 100%;
+    gap: 30px;
 }
 
-section.animations.top .images img + p {
-	width: 100%;
-	padding-top: 10px;
-
-	font-style: italic;
-
-	text-align: center;
+.animations section.top .images > div > div {
+    width: calc(25% - ((30px * 3) / 4));
 }
 
-section.animations.bottom {
-	margin-top: 100px;
+.animations section.top .images > div > div img {
+    width: 100%;
 }
 
-section.animations.bottom > article > div {
-	width: calc(50% - 30px);
+.animations section.top .images img + p {
+    width: 100%;
+    padding-top: 10px;
+
+    font-style: italic;
+
+    text-align: center;
 }
 
-section.animations.bottom article > div {
-	gap: 30px;
+.animations section.bottom {
+    margin-top: 100px;
 }
 
-section.animations.bottom article > div h3 {
-	text-wrap: nowrap;
+.animations section.bottom > article > div {
+    width: calc(50% - 30px);
+}
+
+.animations section.bottom article > div {
+    gap: 30px;
+}
+
+.animations section.bottom article > div h3 {
+    text-wrap: nowrap;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .animations section.top .images > div {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+    .animations section.bottom article > div h3 {
+        text-align: start;
+    }
+
+    .animations section.bottom article {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .animations section.bottom article div {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .animations section.top .images > div > div {
+        width: calc(50% - ((30px) / 2));
+    }
+}
+
+
+@media only screen and (max-width: 328px) {
+    .animations section.top .images > div {
+        gap: 15px;
+    }
+
+.animations section.top .images {
+    gap: 15px;
+}
+    .animations section.top .images > div > div {
+        width: calc(50% - ((15px) / 2));
+    }
 }

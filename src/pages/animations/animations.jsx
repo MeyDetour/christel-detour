@@ -3,9 +3,9 @@ import "./animations.css"
 export const Animations = () => {
 	return (
 		<>
-			<section className="animations top">
+			<h1>Animations</h1>
+			<section className=" top">
 				<article>
-					<h1>Animations</h1>
 					<div className="flexCol images">
 						<div className="flexRow">
 							<div className="flexCol">
@@ -46,7 +46,7 @@ export const Animations = () => {
 					</div>
 				</article>
 			</section>
-			<section className="flexRow animations bottom">
+			<section className="flexRow  bottom">
 				<article className="flexRowBetween">
 					<div className="flexCol">
 						<h3>Activités</h3>

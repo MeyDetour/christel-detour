@@ -420,7 +420,7 @@ h6 {
     }
 
     h3 {
-        font-size: 43px;
+        font-size: 41px;
     }
 
 
@@ -435,7 +435,7 @@ h6 {
         font-size: 58px;
     }
     h3 {
-        font-size: 39px;
+        font-size: 32px;
     }
 
     .h3-italic {
@@ -453,7 +453,7 @@ h6 {
 
     article {
 
-        width: 70vw;
+        width: 70vw !important;
     }
 
 
@@ -513,7 +513,7 @@ h2{
 
 @media only screen and (max-width: 600px) {
     article {
-        width: 90vw;
+        width: 90vw !important;
     }
     header nav{
         display: none;
