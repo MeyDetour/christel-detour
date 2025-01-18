@@ -11,7 +11,7 @@ export const Contact = () => {
                     <div className="flexCol profile">
                         <img src="/images/profile-picture.png" alt="image Christel Detour"/>
 
-                        <a href="" download>Téléchargez mon projet <span>d’accueil
+                        <a href="" className={"md-text"} download>Téléchargez mon projet <span className={"md-text"}>d’accueil
                             <img className="icon" src="./icons/link.svg" alt="Download project" />
                             </span>
                         </a>
