@@ -24,7 +24,7 @@ export const App = () => {
 
 const LocationWithRouter = () => {
     const { url } = useLocation();
-    console.log(url);
+    const isMobile = typeof window !== "undefined" && window.innerWidth <= 600;
 
     return (
         <div className={
@@ -36,7 +36,7 @@ const LocationWithRouter = () => {
             " "
         }>
             <Header />
-            {window.innerWidth <= 600 && <NavigationMenu />}
+            {isMobile <= 600 && <NavigationMenu />}
             <Router>
                 <Route path="/" component={Home} />
                 <Route path="/activite" component={Activity} />
