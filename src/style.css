@@ -195,7 +195,7 @@ header {
     flex-direction: row;
     justify-content: end;
 
-
+position: relative;
     z-index: 50;
     width: 100vw;
     padding: 30px;
