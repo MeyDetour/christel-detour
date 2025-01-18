@@ -13,17 +13,17 @@ const Footer = () => {
 						</a>
 					</li>
 					<li>
-						<a href="/404">
+						<a href="/activite">
 							Mon activité
 						</a>
 					</li>
 					<li>
-						<a href="/404">
-							Animation
+						<a href="/animations">
+							Animations
 						</a>
 					</li>
 					<li>
-						<a href="/404">
+						<a href="/contact">
 							Contact
 						</a>
 					</li>
