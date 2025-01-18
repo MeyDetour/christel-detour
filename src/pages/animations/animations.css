@@ -23,6 +23,10 @@ section.animations.top .images img + p {
 	text-align: center;
 }
 
+section.animations.bottom {
+	margin-top: 100px;
+}
+
 section.animations.bottom > article > div {
 	width: calc(50% - 30px);
 }
