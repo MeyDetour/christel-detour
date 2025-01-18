@@ -1,4 +1,7 @@
+import { motion } from 'framer-motion';
+
 import HorizontalSeparator from './../../components/HorizontalSeparator';
+
 import './style.css';
 
 export const Home = () => {
@@ -13,39 +16,62 @@ export const Home = () => {
 					<path d="M1988 251.143C1988 251.143 1805 324.857 1670 292.939C1535 261.022 1632.5 35.6998 1419 3.78225C1205.5 -28.1353 1019.49 222.645 1101 341.955C1182.5 461.266 1348.5 414.53 1405 341.955C1461.5 269.381 1448.5 186.928 1270 123.853C1091.5 60.7777 805.494 -0.777201 625.492 3.78225C445.489 8.3417 324.493 70.2769 149.99 341.955C-24.5119 613.634 -209.011 385.652 -137.01 401.231" stroke="#0E0E0E"/>
 				</svg>
 
-
-
 				<div className="flexCol title">
-					<h1>DETOUR Christel</h1>
-					<h2>Assistante maternelle</h2>
+					<motion.h1
+						style={{overflow: "hidden", whiteSpace: "nowrap"}}
+						initial={{width: 0}}
+						animate={{width: "100%"}}
+						transition={{duration: 1.5, ease: "easeInOut"}}
+					>
+						DETOUR Christel
+					</motion.h1>
+					<motion.h2
+						style={{overflow: "hidden", whiteSpace: "nowrap"}}
+						initial={{width: 0}}
+						animate={{width: "100%"}}
+						transition={{duration: 1.5, delay: 1, ease: "easeInOut"}}
+					>
+						Assistante maternelle
+					</motion.h2>
 				</div>
 
 				<div className="flexRow homeBoxes">
-					<div className="flexCol">
+					<motion.div 
+						initial={{opacity: 0, scale: 0}}
+						animate={{opacity: 1, scale: [1.2, 0.9, 1]}}
+						transition={{duration: .6, delay: 1.5 + 1, ease: "easeInOut"}}
+						className="flexCol"
+					>
 						<p className="md-text">Faites défiller l’écran<br/>pour mieux me connaître.</p>
 						<img src="./icons/mouse.svg" alt="Scroll down" />
 						<img src="./icons/small-down-arrow.svg" alt="Scroll down" />
-					</div>
-					<div className="flexRow">
-
-							<h3 >Apprenez à me connaître</h3>
-							<div className="flexCol">
-								<p className="md-text">Qui-suis je ?</p>
-								<p className="md-text">Mes formations</p>
-							</div>
-
-					</div>
-					<div className="flexRow">
-
-							<h3 >Mon activité</h3>
-							<div className="flexCol">
-								<p className="md-text">Mon rôle</p>
-								<p className="md-text">Accompagnement</p>
-								<p className="md-text">Lieu d’accueil</p>
-								<p className="md-text">Organisation</p>
-							</div>
-
-					</div>
+					</motion.div>
+					<motion.div 
+						initial={{opacity: 0, scale: 0}}
+						animate={{opacity: 1, scale: [1.2, 0.9, 1]}}
+						transition={{duration: 1.2, delay: 2 + 1, ease: "easeInOut"}}
+						className="flexRow"
+					>
+						<h3 >Apprenez à me connaître</h3>
+						<div className="flexCol">
+							<p className="md-text">Qui-suis je ?</p>
+							<p className="md-text">Mes formations</p>
+						</div>
+					</motion.div>
+					<motion.div 
+						initial={{opacity: 0, scale: 0}}
+						animate={{opacity: 1, scale: [1.2, 0.9, 1]}}
+						transition={{duration: .6, delay: 1 + 1, ease: "easeInOut"}}
+						className="flexRow"
+					>
+						<h3 >Mon activité</h3>
+						<div className="flexCol">
+							<p className="md-text">Mon rôle</p>
+							<p className="md-text">Accompagnement</p>
+							<p className="md-text">Lieu d’accueil</p>
+							<p className="md-text">Organisation</p>
+						</div>
+					</motion.div>
 				</div>
 			</section>
 			<section className="bottom">

@@ -36,9 +36,11 @@
 }
 
 .home section.top div.title h2 {
-    color: var(--grey);
-    text-align: right;
+    width: fit-content;
+    margin-left: calc(100% - 19ch);
 
+    color: var(--grey);
+    text-align: left;
 }
 
 .home section.top .homeBoxes {
