@@ -1,155 +1,388 @@
 /* First section */
 section.top {
-	height: 65vh;
-/*	position: relative;*/
+    height: 90vh;
+    /*	position: relative;*/
 }
+
 section.top .pinkRound {
-	top: -50px;
-	left: -75px;
-	width: 500px;
+    top: -50px;
+    left: -75px;
+    width: 28%;
 
-	position: absolute;
-	z-index: 9;
+    position: absolute;
+    z-index: 9;
 }
-section.top .line {
-	top: 10%;
-	width: 100vw;
 
-	position: absolute;
-	z-index: 10;
+section.top .line {
+    top: 10%;
+    width: 100vw;
+
+    position: absolute;
+    z-index: 10;
 }
 
 section.top div.title {
-	width: fit-content;
-	margin-top: 10vh;
-	margin-left: 5vw;
+    width: fit-content;
+    margin-top: 10vh;
+    margin-left: 5vw;
 
-	position: relative;
+    position: relative;
 
-	z-index: 11;
+    z-index: 11;
 }
+
 section.top div.title * {
-	widows: 100%;
-	margin: 0;
+    margin: 0;
 }
+
 section.top div.title h2 {
-	color: var(--grey);
-	text-align: right;
+    color: var(--grey);
+    text-align: right;
 
 }
 
 section.top .homeBoxes {
-	width: 100vw;
-	height: 300px;
+    width: 100vw;
+
+    height: 50vh;
+    z-index: 12;
+    position: relative;
+    align-items: end;
+
+    justify-content: space-around;
 }
 
 section.top div.homeBoxes > div {
-	width: 100%;
-	height: 300px;
-	margin-top: 100px;
+    width: 100%;
+    height: 300px;
 }
 
 section.top .homeBoxes > div:nth-child(1) {
-	padding-top: 30px;
-	gap: 10px;
+    gap: 10px;
+    width: 19%;
 
-	text-align: center;
+    text-align: center;
 
-	align-items: center;
+    align-items: center;
+
+    justify-content: center;
 }
 
 section.top .homeBoxes > div:nth-child(1) > img {
-	animation: moveMouse ease-in-out 2.5s infinite;
+    animation: moveMouse ease-in-out 2.5s infinite;
 }
 
 @keyframes moveMouse {
-	0% { margin-top: 0px; }
-	20% { margin-top: 5px; }
-	40% { margin-top: 0px; }
-	100% { margin-top: 0px; }
+    0% {
+        margin-top: 0px;
+    }
+    20% {
+        margin-top: 5px;
+    }
+    40% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: 0px;
+    }
 }
+
 
 section.top .homeBoxes > div:nth-child(2) {
-	justify-content: end;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+
+
+    width: 20%;
+    height: fit-content;
+
+    padding: 16px;
+    margin-left: 21%;
+    margin-right: -6%;
+    box-sizing: border-box;
+    background-color: var(--blue);
+    border-radius: 20px;
 }
-section.top .homeBoxes > div:nth-child(2) > div {
-	width: 70%;
-	height: fit-content;
-	margin-top: 80px;
-	margin-right: 10px;
-	padding: 15px;
 
-	box-sizing: border-box;
+section.top .homeBoxes > div:nth-child(2) > h3, section.top .homeBoxes > div:last-child > h3 {
+    text-align: end;
 
-	background-color: var(--blue);
-
-	border-radius: 20px;
+    font-size: 35px;
 }
+
 section.top .homeBoxes > div:nth-child(2) > div p {
-	margin: 0;
-	text-align: right;
+    margin: 0;
+    text-align: end;
 }
-section.top .homeBoxes > div:nth-child(2) > div > div {
-	gap: 10px;
-	margin-block: 10px;
-	margin-top: 50px;
+
+section.top .homeBoxes > div:nth-child(2) > div {
+    gap: 10px;
+    margin-top: 50px;
 }
 
 section.top .homeBoxes > div:nth-child(3) {
-	justify-content: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+
+    width: 20%;
+    height: fit-content;
+
+    margin-bottom: 60px;
+    padding: 16px;
+    box-sizing: border-box;
+    background-color: var(--green);
+    border-radius: 20px;
 }
+
+section.top .homeBoxes > div:nth-child(3) div p {
+    margin: 0;
+    text-align: end;
+}
+
 section.top .homeBoxes > div:nth-child(3) > div {
-	width: 65%;
-	height: fit-content;
-	margin-left: 40px;
-	padding: 15px;
-
-	box-sizing: border-box;;
-
-	background-color: var(--green);
-
-	border-radius: 20px;
+    gap: 10px;
+    margin-top: 30px;
 }
-section.top .homeBoxes > div:nth-child(3) > div p {
-	margin: 0;
-	text-align: right;
-}
-section.top .homeBoxes > div:nth-child(3) > div > div {
-	gap: 10px;
-	margin-block: 15px;
-	margin-top: 30px;
-}
+
 /* --- First section --- */
 /* Second section */
 section.bottom article:first-child .content {
-	align-items: center;
+    align-items: center;
 }
 
 section.bottom article:first-child .content p {
-	max-width: 50%;
+    max-width: 50%;
 }
 
 section.bottom article:first-child .content img[src*="profile-picture.png"] {
-	width: 300px;
+    width: 300px;
+    object-fit: contain;
 }
 
-section.bottom article:last-child .content h4 {
-	margin: 0 20px 40px 0;
+/* number section */
 
-	color: var(--violet);
+section.bottom article:last-child .content h4 {
+
+    margin-right: 20px;
+    margin-top: -32px;
+    color: var(--violet);
 }
 
 section article:last-child .content p {
-	width: 70%;
+    width: 100%;
 }
+
+
+section.bottom article:last-child .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.bottom article:last-child .content .md-text {
+    text-align: start;
+}
+
+section.bottom article:last-child .content > div {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+}
+
 
 .sm-text {
-	color: var(--grey);
+    color: var(--grey);
 }
-span.md-text {
-	color: var(--black);
 
-	line-height: 30px;
+span.md-text {
+    color: var(--black);
+
+    line-height: 30px;
 }
 
 /* --- Second section --- */
+
+
+@media only screen and (max-width: 1500px) {
+
+    section.bottom article:last-child .content h4 {
+        font-size: 58px;
+        margin-top: -8px;
+    }
+
+    section.top .pinkRound {
+        width: 32%;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    section.top .homeBoxes > div:nth-child(2) {
+        width: 30%;
+        margin-left: 4%;
+    }
+
+    section.top .homeBoxes > div:nth-child(3) {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    section.top div.title {
+        margin-top: 15vh;
+    }
+
+    section.top .homeBoxes > div:nth-child(2) > h3, section.top .homeBoxes > div:last-child > h3 {
+        text-align: end;
+        font-size: 23px;
+    }
+
+    section.top .homeBoxes {
+
+        height: 59vh;
+    }
+
+    section.top .pinkRound {
+        width: 39%;
+    }
+
+    section.top .homeBoxes {
+        height: 54vh;
+    }
+
+    section.bottom article:first-child .content {
+
+        justify-content: space-between;
+    }
+
+    section.bottom article:first-child .content p {
+        width: 45%;
+        max-width: fit-content;
+    }
+
+    section.bottom article:first-child .content img[src*="profile-picture.png"] {
+        width: 45%
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    section.top h1 {
+
+        font-size: 52px;
+    }
+
+    section.top .pinkRound {
+        width: 56%;
+    }
+
+    section.top h2 {
+
+        font-size: 37px;
+    }
+
+    section.bottom article:last-child .content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    section.bottom article:last-child .content > div {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    section.top {
+        height: 68vh;
+    }
+
+    section.top .homeBoxes {
+        height: 43vh;
+    }
+
+    section.top .homeBoxes > div:nth-child(1) {
+        display: none
+    }
+
+
+    section.top .homeBoxes > div:nth-child(2) {
+        width: 45%;
+        margin-left: 0;
+    }
+
+    section.top .homeBoxes > div:nth-child(3) {
+        width: 45%;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    section.top .pinkRound {
+        width: 70%;
+    }
+
+    section.bottom article:first-child .content {
+        flex-direction: column-reverse;
+        gap: 60px;
+        width: 100%;
+    }
+
+    section.bottom article:first-child .content p {
+        width: 100%;
+    }
+
+    section.bottom article:first-child .content img[src*="profile-picture.png"] {
+        width: 60%
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    section.top h2 {
+        font-size: 26px;
+    }
+
+    section.top .homeBoxes > div:nth-child(2) > h3, section.top .homeBoxes > div:last-child > h3 {
+
+        font-size: 21px;
+    }
+
+    section.bottom article:first-child .content img[src*="profile-picture.png"] {
+        width: 100%
+    }
+}
+
+
+@media only screen and (max-width: 328px) {
+    section.top {
+        height: fit-content !important;
+    }
+
+    section.top .homeBoxes {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        padding-inline: 18px;
+        box-sizing: border-box;
+        gap: 18px;
+        height: fit-content;
+        margin-top: 11vh;
+    }
+
+    section.top .homeBoxes > div {
+        width: 70% !important;
+        margin: 0 !important;
+    }
+   section.bottom .content .flexRow{
+       flex-direction: column;
+   }
+}
