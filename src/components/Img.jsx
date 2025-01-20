@@ -28,7 +28,7 @@ const Img = ({ src, alt}) => {
 					layoutTransition={transition}
 				/>
 			</motion.div>
-			<img src={src} alt={alt} onClick={() => setOpen(!isOpen)} />
+			<img src={src} style={{cursor:"pointer"}} alt={alt} onClick={() => setOpen(!isOpen)} />
 		</>
 	);
 }

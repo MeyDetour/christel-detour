@@ -158,11 +158,11 @@
 }
 
 .home section.bottom article:first-child .content p {
-    max-width: 50%;
+   width: 48%;
 }
 
 .home section.bottom article:first-child .content img[src*="profile-picture.png"]:not(.zoomedImage) {
-    width: 300px;
+    width: 48%;
     object-fit: contain;
 }
 
@@ -340,10 +340,14 @@
     .home section.bottom article:first-child .content p {
         width: 100%;
     }
+    .home section.top h2 {
 
-    .home section.bottom article:first-child .content img[src*="profile-picture.png"] {
-        width: 60%
+        font-size: 32px;
     }
+    .home section.bottom article:first-child .content img[src*="profile-picture.png"]:not(.zoomedImage) {
+        width: 60%;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -358,7 +362,10 @@
 
         font-size: 21px;
     }
+    .home section.top h2 {
 
+        font-size: 26px;
+    }
     .home section.bottom article:first-child .content img[src*="profile-picture.png"] {
         width: 100%
     }
@@ -369,7 +376,14 @@
     .home section.top {
         height: fit-content !important;
     }
+    .home section.top h2 {
 
+        font-size: 22px;
+    }
+
+.home section.top .homeBoxes > div:nth-child(2) > div {
+    margin-top: 31px;
+}
     .home section.top .homeBoxes {
         flex-direction: column;
         align-items: center;
@@ -383,7 +397,7 @@
     }
 
     .home section.top .homeBoxes > div {
-        width: 70% !important;
+        width: 90% !important;
         margin: 0 !important;
     }
    .home section.bottom .content .flexRow{

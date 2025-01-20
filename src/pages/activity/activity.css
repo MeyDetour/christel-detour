@@ -216,7 +216,7 @@
     }
 
     .activite .article3 > div:not(:first-child) > img ,    .activite .article3 > div:not(:first-child) > div{
-        width: 100%;
+        width: 100% !important;
     }
 
 }
