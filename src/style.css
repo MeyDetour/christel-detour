@@ -222,6 +222,15 @@ header nav ul {
 	align-items: center;
 }
 
+header nav ul li a {
+	color: var(--black);
+
+	transition: .2s;
+}
+header nav ul li a:hover {
+	color: var(--brown);
+}
+
 header nav ul li .point {
 	width: 7px;
 	height: 7px;
