@@ -1,5 +1,7 @@
 import "./contact.css"
 
+import Img from './../../components/Img';
+
 export const Contact = () => {
     return (
         <>
@@ -9,7 +11,7 @@ export const Contact = () => {
 
                     {/* left */}
                     <div className="flexCol profile">
-                        <img src="/images/profile-picture.png" alt="image Christel Detour"/>
+                        <Img src="/images/profile-picture.png" alt="image Christel Detour"/>
 
                         <a href="" download>Téléchargez mon projet <span>d’accueil
                             <img className="icon" src="./icons/link.svg" alt="Download project" />

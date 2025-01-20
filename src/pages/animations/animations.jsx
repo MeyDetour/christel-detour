@@ -1,5 +1,7 @@
 import "./animations.css"
 
+import Img from './../../components/Img';
+
 export const Animations = () => {
 	return (
 		<>
@@ -9,37 +11,37 @@ export const Animations = () => {
 					<div className="flexCol images">
 						<div className="flexRow">
 							<div className="flexCol">
-								<img src="/images/animation-1.png" alt="Image d'une animation"/>
+								<Img src="/images/animation-1.png" alt="Image d'une animation"/>
 								<p className="sm-text">Noël</p>
 							</div>
 							<div className="flexCol">
-								<img src="/images/animation-2.png" alt="Image d'une animation"/>
+								<Img src="/images/animation-2.png" alt="Image d'une animation"/>
 								<p className="sm-text">Printemps</p>
 							</div>
 							<div className="flexCol">
-								<img src="/images/animation-3.png" alt="Image d'une animation"/>
+								<Img src="/images/animation-3.png" alt="Image d'une animation"/>
 								<p className="sm-text">Halloween</p>
 							</div>
 							<div className="flexCol">
-								<img src="/images/animation-4.png" alt="Image d'une animation"/>
+								<Img src="/images/animation-4.png" alt="Image d'une animation"/>
 								<p className="sm-text">Animaux</p>
 							</div>
 						</div>
 						<div className="flexRow">
 						<div className="flexCol">
-								<img src="/images/animation-5.png" alt="Image d'une animation"/>
+								<Img src="/images/animation-5.png" alt="Image d'une animation"/>
 								<p className="sm-text">Bac sensoriel</p>
 							</div>
 							<div className="flexCol">
-								<img src="/images/animation-6.png" alt="Image d'une animation"/>
+								<Img src="/images/animation-6.png" alt="Image d'une animation"/>
 								<p className="sm-text">Balades</p>
 							</div>
 							<div className="flexCol">
-								<img src="/images/animation-7.png" alt="Image d'une animation"/>
+								<Img src="/images/animation-7.png" alt="Image d'une animation"/>
 								<p className="sm-text">Nature</p>
 							</div>
 							<div className="flexCol">
-								<img src="/images/animation-8.png" alt="Image d'une animation"/>
+								<Img src="/images/animation-8.png" alt="Image d'une animation"/>
 								<p className="sm-text">Spectacles</p>
 							</div>
 						</div>

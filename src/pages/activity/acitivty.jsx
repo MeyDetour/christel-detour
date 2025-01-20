@@ -1,11 +1,11 @@
 import "./activity.css"
+
+import Img from './../../components/Img';
 import HorizontalSeparator from "../../components/HorizontalSeparator.jsx";
 
 export const Activity = () => {
     return (
         <>
-
-
             <h1>Mon activité</h1>
             <section>
                 <article className={"article1"}>
@@ -89,7 +89,7 @@ export const Activity = () => {
                     <HorizontalSeparator text="Lieu d'accueil"/>
                     <div>
 
-                        <img src="/images/garden.png" alt="image du jardin"/>
+                        <Img src="/images/garden.png" alt="image du jardin"/>
                         <div>
                             <h3>Mon lieu de travail et aussi mon lieu de vie</h3>
                             <p className={"md-text"}>J’habite et accueille votre enfant dans une maison avec 4 chambres,
@@ -110,12 +110,12 @@ export const Activity = () => {
                                 développement psychomoteur, et ce, toujours dans la bienveillance. </p>
                         </div>
                         <div>
-                            <img src="/images/accueil-1.png" alt="image d'enfant"/>
-                            <img src="/images/accueil-2.png" alt="image d'enfant"/>
-                            <img src="/images/accueil-3.png" alt="image d'enfant"/>
-                            <img src="/images/accueil-4.png" alt="image d'enfant"/>
-                            <img src="/images/accueil-5.png" alt="image d'enfant"/>
-                            <img src="/images/accueil-6.png" alt="image d'enfant"/>
+                            <Img src="/images/accueil-1.png" alt="image d'enfant"/>
+                            <Img src="/images/accueil-2.png" alt="image d'enfant"/>
+                            <Img src="/images/accueil-3.png" alt="image d'enfant"/>
+                            <Img src="/images/accueil-4.png" alt="image d'enfant"/>
+                            <Img src="/images/accueil-5.png" alt="image d'enfant"/>
+                            <Img src="/images/accueil-6.png" alt="image d'enfant"/>
                         </div>
                     </div>
 

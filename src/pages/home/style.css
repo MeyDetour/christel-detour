@@ -163,7 +163,7 @@
     max-width: 50%;
 }
 
-.home section.bottom article:first-child .content img[src*="profile-picture.png"] {
+.home section.bottom article:first-child .content img[src*="profile-picture.png"]:not(.zoomedImage) {
     width: 300px;
     object-fit: contain;
 }

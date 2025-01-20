@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 
+import Img from './../../components/Img';
 import HorizontalSeparator from './../../components/HorizontalSeparator';
 
 import './style.css';
@@ -79,7 +80,7 @@ export const Home = () => {
 					<HorizontalSeparator text="Qui suis-je ?"/>
 					<div className="flexRowAround content">
 						<p className="md-text">Je me présente, je me nomme Christel Detour, j'ai 52 ans et je suis Assistante Maternelle agréée par le Conseil Général du Rhône depuis 2008.<br/><br/>J’ai fait des études de comptabilité et j’ai travaillé 14 ans en tant que chef de service au siège d’un grand groupe de vente d’électroménager, de téléphonie, de matériel informatique et audiovisuel.</p>
-						<img src="./images/profile-picture.png" alt="Photo de profile" />
+						<Img src="./images/profile-picture.png" alt="Photo de profile" />
 					</div>
 				</article>
 				<article className="second-article">

@@ -88,7 +88,7 @@
     justify-content: space-between;
 }
 
-.activite .article3 > div:not(:first-child) > div {
+.activite .article3 > div:not(:first-child) > div:not(.shade) {
     width: 47%;
     gap: 15px;
     display: flex;

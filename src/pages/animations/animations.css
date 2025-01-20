@@ -5,7 +5,7 @@ section.animations.top {
 section.animations.top .images {
 	gap: 30px;
 }
-section.animations.top .images > div {
+section.animations.top .images > div:not(.shade) {
 	max-width: 100%;
 	gap: 30px;
 }
