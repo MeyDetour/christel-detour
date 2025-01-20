@@ -18,15 +18,16 @@
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	background-color: var(--white);
-	width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: var(--white);
+    width: 100vw;
 }
 
-body > div {
-	width: 100%;
-	color: var(--black);
+body > div > div {
+    width: 100%;
+    color: var(--black);
 
 	display: flex;
 	flex-direction: column;
@@ -196,11 +197,11 @@ header {
 	flex-direction: row;
 	justify-content: end;
 
-
-	z-index: 50;
-	width: 100vw;
-	padding: 30px;
-	box-sizing: border-box;
+    position: relative;
+    z-index: 50;
+    width: 100vw;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 header > svg {
@@ -455,9 +456,9 @@ h6 {
 		font-size: 105px;
 	}
 
-	h3 {
-		font-size: 43px;
-	}
+    h3 {
+        font-size: 41px;
+    }
 
 
 }
@@ -472,9 +473,9 @@ h6 {
 		font-size: 58px;
 	}
 
-	h3 {
-		font-size: 39px;
-	}
+    h3 {
+        font-size: 32px;
+    }
 
 	.h3-italic {
 		font-size: 29px;
@@ -491,8 +492,8 @@ h6 {
 
 	article {
 
-		width: 70vw;
-	}
+        width: 70vw !important;
+    }
 
 
 }
@@ -552,9 +553,9 @@ h6 {
 }
 
 @media only screen and (max-width: 600px) {
-	article {
-		width: 90vw;
-	}
+    article {
+        width: 90vw !important;
+    }
 
 	header nav {
 		display: none;
@@ -608,10 +609,6 @@ h6 {
 
 	.md-text {
 		font-size: 16px;
-	}
-
-	section.top {
-		height: 62vh;
 	}
 }
 

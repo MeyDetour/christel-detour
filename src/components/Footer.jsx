@@ -13,17 +13,17 @@ const Footer = () => {
 						</a>
 					</li>
 					<li>
-						<a href="/404">
+						<a href="/activite">
 							Mon activité
 						</a>
 					</li>
 					<li>
-						<a href="/404">
-							Animation
+						<a href="/animations">
+							Animations
 						</a>
 					</li>
 					<li>
-						<a href="/404">
+						<a href="/contact">
 							Contact
 						</a>
 					</li>
@@ -31,16 +31,16 @@ const Footer = () => {
 			</div>
 			<div className="flexRow sm-text contacts">
 				<div>
-					<img src="./icons/mail.svg" className="icon" />
+					<img src="/icons/mail.svg" className="icon" />
 					<span>christel.detour@gmail.com</span>
 				</div>
 				<div>
-					<img src="./icons/map.svg" className="icon" />
+					<img src="/icons/map.svg" className="icon" />
 					<span>Simandres 69360 à 20km de Lyon</span>
 
 				</div>
 				<div>
-					<img src="./icons/bookmark.svg" className="icon" />
+					<img src="/icons/bookmark.svg" className="icon" />
 					<span>Télécharger mon projet d’accueil</span>
 
 				</div>

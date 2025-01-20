@@ -1,40 +1,96 @@
 .contact img.icon {
-	width: 30px;
+    width: 30px;
 }
 
 .contact .profile {
-	width: 30%;
+    width: 30%;
 }
 
 .contact .profile a {
-	width: 100%;
-	margin-top: 10px;
+    width: 100%;
+    margin-top: 10px;
 
-	text-align: center;
+    text-align: center;
 }
+
 .contact .profile span {
-	text-wrap: nowrap;
+    text-wrap: nowrap;
 }
+
 .contact .profile span img {
-	padding-left: 10px;
+    padding-left: 10px;
 
-	vertical-align: middle;
+    vertical-align: middle;
 
-	display: inline-block;
+    display: inline-block;
 }
 
 .contact .info {
-	width: 60%;
-	min-height: 100%;
-	padding: 30px;
+    width: 60%;
+    min-height: 100%;
+    padding: 70px;
+    box-sizing: border-box;
 
-	justify-content: center;
-	gap: 40px;
+    justify-content: center;
+    gap: 40px;
 
-	background-color: var(--pink);
+    background-color: var(--pink);
 }
 
 .contact .info > div.flexRow {
-	gap: 30px;
-	margin-left: 40px;
+    gap: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact .info {
+        padding: 30px;
+        width: 62%;
+    }
+
+    .contact .profile {
+        width: 32%;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .contact .info {
+        padding: 50px;
+        width: 100%;
+    }
+
+    .contact .profile {
+        width: 55%;
+    }
+
+    .contact section > article {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .contact .profile {
+        width: 72%;
+    }
+
+    .contact .info {
+        padding: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 352px) {
+    .contact .info > div.flexRow {
+        gap: 15px;
+    }
+
+    .contact .profile {
+        width: 100%;
+    }
+
+    .contact .info {
+        padding: 30px 15px;
+    }
 }
