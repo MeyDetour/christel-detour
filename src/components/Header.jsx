@@ -1,4 +1,5 @@
 import {useLocation} from 'preact-iso';
+import {useEffect} from "react";
 
 export const Header = () => {
     const {url} = useLocation();
@@ -11,6 +12,12 @@ export const Header = () => {
         menu.style.bottom = '0%';
         menu.style.display = 'flex'
     }
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            // Le code qui manipule le DOM (par exemple, l'animation d'ouverture du menu)
+            console.log('Composant monté côté client');
+        }
+    }, []);
 
     return (
         <header>
