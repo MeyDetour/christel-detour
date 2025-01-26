@@ -1,5 +1,6 @@
 import { useState, useRef } from "preact/hooks";
 import { motion, useDomEvent } from "framer-motion";
+import {useEffect} from "react";
 
 const transition = {
   type: "spring",
@@ -10,8 +11,22 @@ const transition = {
 const Img = ({ src, alt}) => {
 	const [isOpen, setOpen] = useState(false);
 
-		useDomEvent(useRef(window), "scroll", () => isOpen && setOpen(false));
+		// useDomEvent(useRef(window), "scroll", () => isOpen && setOpen(false));
+	const imgRef = useRef(null);
 
+	// Vérifie si 'window' est défini pour éviter l'erreur en SSR
+	useEffect(() => {
+		if (typeof window !== 'undefined') {
+			const handleScroll = () => {
+				if (isOpen) setOpen(false);
+			};
+			window.addEventListener('scroll', handleScroll);
+
+			return () => {
+				window.removeEventListener('scroll', handleScroll);
+			};
+		}
+	}, [isOpen]);
 	return (
 		<>
 			<motion.div
@@ -28,7 +43,7 @@ const Img = ({ src, alt}) => {
 					layoutTransition={transition}
 				/>
 			</motion.div>
-			<img src={src} style={{cursor:"pointer"}} alt={alt} onClick={() => setOpen(!isOpen)} />
+			<img  ref={imgRef} src={src} style={{cursor:"pointer"}} alt={alt} onClick={() => setOpen(!isOpen)} />
 		</>
 	);
 }
