@@ -122,16 +122,19 @@ footer .contacts {
 	flex-direction: row;
 }
 
-footer .contacts div {
+footer .contacts div ,footer .contacts a{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	gap: 10px;
+	cursor: pointer;
 }
 
 footer .contacts img {
 	padding-right: 10px;
 	vertical-align: middle;
 	display: inline;
+	gap: 10px;
 }
 
 footer .contacts p {
