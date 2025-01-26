@@ -128,6 +128,7 @@ footer .contacts div ,footer .contacts a{
 	align-items: center;
 	gap: 10px;
 	cursor: pointer;
+	color: var(--black);
 }
 
 footer .contacts img {
