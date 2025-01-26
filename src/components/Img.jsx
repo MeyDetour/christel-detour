@@ -10,7 +10,7 @@ const transition = {
 const Img = ({ src, alt}) => {
 	const [isOpen, setOpen] = useState(false);
 
-	useDomEvent(useRef(window), "scroll", () => isOpen && setOpen(false));
+		useDomEvent(useRef(window), "scroll", () => isOpen && setOpen(false));
 
 	return (
 		<>

@@ -3,13 +3,16 @@ import {useLocation} from "preact-iso";
 export default function NavigationMenu() {
     const {url} = useLocation();
     const closeMenu = () => {
-        let menu = document.querySelector('.menu')
-        if (!menu) {
-            window.location.reload();
-            return;
+
+        if (typeof window !== 'undefined') {
+            let menu = document.querySelector('.menu')
+            if (!menu) {
+                window.location.reload();
+                return;
+            }
+            menu.style.bottom = '100%';
+            menu.style.display = 'none';
         }
-        menu.style.bottom = '100%';
-        menu.style.display = 'none';
     }
 
     return (

@@ -24,6 +24,7 @@ export const App = () => {
 
 const LocationWithRouter = () => {
     const { url } = useLocation();
+
     const isMobile = typeof window !== "undefined" && window.innerWidth <= 600;
 
     return (

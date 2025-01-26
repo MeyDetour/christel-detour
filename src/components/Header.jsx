@@ -4,20 +4,17 @@ import {useEffect} from "react";
 export const Header = () => {
     const {url} = useLocation();
     const openMenu = () => {
-        let menu = document.querySelector('.menu')
+        if (typeof window !== 'undefined') {
+            let menu = document.querySelector('.menu')
         if (!menu) {
             window.location.reload();
             return;
         }
         menu.style.bottom = '0%';
         menu.style.display = 'flex'
-    }
-    useEffect(() => {
-        if (typeof window !== 'undefined') {
-            // Le code qui manipule le DOM (par exemple, l'animation d'ouverture du menu)
-            console.log('Composant monté côté client');
         }
-    }, []);
+    }
+
 
     return (
         <header>
