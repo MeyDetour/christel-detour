@@ -18,7 +18,7 @@
     width: 70%;
     margin: auto;
 
-    list-style: url(./icons/list-type.svg);
+    list-style: url("icons/list-type.svg");
 
     position: relative;
 }
