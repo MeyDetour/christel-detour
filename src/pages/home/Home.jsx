@@ -92,7 +92,7 @@ export const Home = () => {
 				<article>
 					<HorizontalSeparator text="Qui suis-je ?"/>
 					<div className="flexRowAround content">
-						<p className="md-text">Je me présente, je me nomme Christel Detour, j'ai 52 ans et je suis Assistante Maternelle agréée par le Conseil Général du Rhône depuis 2008.<br/><br/>J’ai fait des études de comptabilité et j’ai travaillé 14 ans en tant que chef de service au siège d’un grand groupe de vente d’électroménager, de téléphonie, de matériel informatique et audiovisuel.</p>
+						<p className="md-text">Je me présente, je m'appelle Christel Detour, j'ai 52 ans et je suis Assistante Maternelle agréée par le Conseil Général du Rhône depuis 2008.<br/><br/>J’ai fait des études de comptabilité et j’ai travaillé 14 ans en tant que chef de service au siège d’un grand groupe de vente d’électroménager, de téléphonie, de matériel informatique et audiovisuel.</p>
 						<Img src="./images/profile-picture.png" alt="Photo de profile" />
 					</div>
 				</article>
@@ -104,14 +104,14 @@ export const Home = () => {
 								<h4>01</h4>
 								<p className="sm-text">
 									<span className="md-text">Alimentation d’un jeune enfant</span><br/>
-									Une alimentation saine et équilibrée, dès le plus jeune âge, contribue à la bonne santé des enfants. Entre 4 mois et trois ans, c’est la découverte de nouveaux goûts, de nouvelles saveurs et textures.
+									Une alimentation saine et équilibrée, dès le plus jeune âge, contribue à la bonne santé des enfants. Entre 4 mois et 3 ans, c’est la découverte de nouveaux goûts, de nouvelles saveurs et textures.
 									</p>
 							</div>
 							<div className="flexRow">
 								<h4>02</h4>
 								<p className="sm-text">
 									<span className="md-text">L'éveil corporel</span><br/>
-									En s’appropriant très vite son corps par le mouvement, en explorant soi-même et son environnement, en découvrant par le geste des contrées imaginaires, le jeune enfant gagne en confiance. 
+									En s’appropriant très vite son corps par le mouvement, en explorant soi-même son environnement, en découvrant par le geste des contrées imaginaires, le jeune enfant gagne en confiance.
 								</p>
 							</div>
 							<div className="flexRow">
@@ -134,7 +134,7 @@ export const Home = () => {
 								<h4>05</h4>
 								<p className="sm-text">
 									<span className="md-text">Psychomotricité</span><br/>
-									La musique a un effet positif sur bébé. Elle l’apaise et lui apprend à grandir. L’éveil musical pour bébé lui permet de développer des capacités d’écoute, et de concentration. Son ouïe s’affine et bébé est bientôt capable de distinguer les différentes nuances d’un morceau musical et de danser en rythme.
+									La musique a un effet positif sur le bébé. Elle l’apaise et lui apprend à grandir. L’éveil musical permet au bébé de développer des capacités d’écoute, et de concentration. Son ouïe s’affine et le bébé est bientôt capable de distinguer les différentes nuances d’un morceau musical et de danser en rythme.
 								</p>
 							</div>
 							<div className="flexRow">

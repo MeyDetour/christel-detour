@@ -69,7 +69,7 @@ export const Activity = () => {
                         <div className={"red"}>
                             <span className={"md-bold-text"}>L’autonomie</span>
                             <p className={"md-text"}>Je l’accompagne dans tous les actes de la vie quotidienne mais je
-                                n’nterviens pas automatiquement (je le soutiens, le stimule et l’encourage).</p>
+                                n’interviens pas automatiquement (je le soutiens, le stimule et l’encourage).</p>
                         </div>
                         <div className={"green"}>
                             <span className={"md-bold-text"}>L’épanouissement</span>
@@ -93,7 +93,7 @@ export const Activity = () => {
                         <div>
                             <h3>Mon lieu de travail et aussi mon lieu de vie</h3>
                             <p className={"md-text"}>J’habite et accueille votre enfant dans une maison avec 4 chambres,
-                                une salle de jeux et un jardin.Ce lieu a été visité par la puéricultrice et selon ses
+                                une salle de jeux et un jardin. Ce lieu a été visité par la puéricultrice et selon ses
                                 recommandations, certains aménagements ont été effectués afin d’assurer la sécurité des
                                 enfants accueillis.</p>
                         </div>
