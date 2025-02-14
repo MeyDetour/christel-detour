@@ -26,7 +26,7 @@ export const Procedure = () => {
 						</li>
 						<li>
 							<h3>Discussion des Modalités</h3>
-							<p className="md-text">Horaires (7h30)<br/>Activités proposées<br/>Tarifs horaires (entre 4€ et 5,10€) sont définis et discutés</p>
+							<p className="md-text">Horaires (7h30)<br/>Activités proposées<br/>Tarifs horaires (entre 4€ et 5,80€) sont définis et discutés</p>
 						</li>
 						<li>
 							<h3>Rédaction et Signature du Contrat</h3>

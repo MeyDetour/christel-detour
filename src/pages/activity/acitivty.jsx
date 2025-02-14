@@ -39,7 +39,7 @@ export const Activity = () => {
                 </article>
 
                 <article className={"article2"}>
-                    <HorizontalSeparator text="Développement" />
+                    <HorizontalSeparator text="Développement"/>
 
                     <div className="line1 ">
                         <div className={"blue"}>
@@ -62,7 +62,9 @@ export const Activity = () => {
                     <div className="line2">
                         <div className={"violet"}>
                             <span className={"md-bold-text"}>La socialisation</span>
-                            <p className={"md-text"}>Je travaille en équipe avec l’Association des Assistantes Maternelle Les Pioupious des nounous qui propose des activités collectives manuelles et de motricité  (sortie ludique, ludothèque, bibliothèque...).
+                            <p className={"md-text"}>Je travaille en équipe avec l’Association des Assistantes
+                                Maternelle Les Pioupious des nounous qui propose des activités collectives manuelles et
+                                de motricité (sortie ludique, ludothèque, bibliothèque...).
 
                             </p>
                         </div>
@@ -124,19 +126,20 @@ export const Activity = () => {
 
                     <HorizontalSeparator text="Enfants, Horaires, Transport"/>
                     <div>
-                        <p className={"md-text"}>J’accueille les enfants de 2 mois 1/2 jusqu’à 4 ; à leur rentrée
-                            scolaire, de 7h15 à 18h30 voire 19h00, du lundi au vendredi en temps partiel ou temps plein,
-                            avec planning annuel. Je veille à effectuer un accueil harmonieux et prévenant avec chaque
+                        <p className={"md-text"}>J’accueille les enfants de 2 mois 1/2 jusqu’à 3 ans, de 7h15 à 18h30,
+                            du lundi au vendredi en temps plein,
+                            Je veille à effectuer un accueil harmonieux et prévenant avec chaque
                             enfant.
                         </p>
-                        <p className={"md-text"}>J’ai un agrément pour quatre enfants, quatre tout âge. Les trajets pour
-                            les périscolaire : selon la commune ou je travaille, nous faisons les trajets soit à pied,
-                            soit en voiture: j’habite à 900 mètres de l’école de Simandres.</p>
-                        <p className={"md-text"}>Je ne peux pas faire tous les trajets à pied car avec des petites
-                            jambes, nous ne pouvons pas faire 8 allers – retours et nous devons tenir compte de la
-                            météo. Je suis donc véhiculée et ai le matériel en adéquation avec l’âge de votre enfant
-                            pour que le trajet soit réalisé en toute sécurité. Et il m’arrive de travailler sur une
-                            école aux alentours de ma commune selon mes gardes.</p>
+                        <p className={"md-text"}>J’ai un agrément pour quatre enfants, tout âge. Les trajets pour
+                            les périscolaire : nous faisons les trajets soit à pied, soit en voiture: j’habite à 900
+                            mètres de l’école de Simandres. Nous ne pouvons pas faire 8 allers – retours et nous devons
+                            tenir compte aussi de la météo.</p>
+
+                        <p className={"md-text"}>
+                            Je privilégie aussi le rythme des plus petits et je ne prévoie de faire les trajets que de 8h20 et de 11h20. (pas de trajet l'après-midi)
+                            Je suis donc véhiculée et ai le matériel en adéquation avec l’âge de votre enfant
+                            pour que le trajet soit réalisé en toute sécurité.</p>
                     </div>
                 </article>
             </section>
