@@ -12,7 +12,13 @@
 
     text-align: center;
 }
-
+.contact .profile .downloadSvg{
+    height: 18px;
+    display: inline;
+    width: fit-content;
+    margin-left: 9px;
+    margin-bottom: -2px;
+}
 .contact .profile span {
     text-wrap: nowrap;
 }
