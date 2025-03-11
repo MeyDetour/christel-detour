@@ -1,0 +1,10 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Christel Detour",
+  "jobTitle": "Assistante Maternelle",
+  "url": "https://christel-detour.md-genos.com",
+
+}
+</script>

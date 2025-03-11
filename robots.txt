@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://christel-detour.md-genos.com/sitemap.xml
