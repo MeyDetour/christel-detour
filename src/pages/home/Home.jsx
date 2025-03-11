@@ -37,7 +37,7 @@ export const Home = () => {
 				</div>
 
 				<div className="flexRow homeBoxes">
-					<motion.div 
+					<motion.div
 						initial={{opacity: 0, scale: 0}}
 						animate={{opacity: 1, scale: [1.2, 0.9, 1]}}
 						transition={{duration: .6, delay: 1.5 + 1, ease: "easeInOut"}}
@@ -60,7 +60,7 @@ export const Home = () => {
 						</svg>
 
 					</motion.div>
-					<motion.div 
+					<motion.div
 						initial={{opacity: 0, scale: 0}}
 						animate={{opacity: 1, scale: [1.2, 0.9, 1]}}
 						transition={{duration: 1.2, delay: 2 + 1, ease: "easeInOut"}}
@@ -72,7 +72,7 @@ export const Home = () => {
 							<p className="md-text">Mes formations</p>
 						</div>
 					</motion.div>
-					<motion.div 
+					<motion.div
 						initial={{opacity: 0, scale: 0}}
 						animate={{opacity: 1, scale: [1.2, 0.9, 1]}}
 						transition={{duration: .6, delay: 1 + 1, ease: "easeInOut"}}
@@ -93,7 +93,7 @@ export const Home = () => {
 					<HorizontalSeparator text="Qui suis-je ?"/>
 					<div className="flexRowAround content">
 						<p className="md-text">Je me présente, je m'appelle Christel Detour, j'ai 52 ans et je suis Assistante Maternelle agréée par le Conseil Général du Rhône depuis 2008.<br/><br/>J’ai fait des études de comptabilité et j’ai travaillé 14 ans en tant que chef de service au siège d’un grand groupe de vente d’électroménager, de téléphonie, de matériel informatique et audiovisuel.</p>
-						<Img src="./images/profile-picture.png" alt="Photo de profile" />
+						<Img src="./images/profile-picture.png" alt="Christel Detour, assistante maternelle formée et bienveillante. Accompagnement des enfants avec une approche pédagogique attentive et personnalisée." />
 					</div>
 				</article>
 				<article className="second-article">
@@ -148,7 +148,7 @@ export const Home = () => {
 								<h4>07</h4>
 								<p className="sm-text">
 									<span className="md-text">Baby Yoga</span><br/>
-									En s’appropriant très vite son corps par le mouvement, en explorant soi-même et son environnement, en découvrant par le geste des contrées imaginaires, le jeune enfant gagne en confiance. 
+									En s’appropriant très vite son corps par le mouvement, en explorant soi-même et son environnement, en découvrant par le geste des contrées imaginaires, le jeune enfant gagne en confiance.
 								</p>
 							</div>
 						</div>
