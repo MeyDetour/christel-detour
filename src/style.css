@@ -204,7 +204,8 @@ header {
     position: relative;
     z-index: 50;
     width: 100vw;
-    padding: 30px;
+
+	padding: 10px 30px;
     box-sizing: border-box;
 }
 
@@ -224,6 +225,12 @@ header nav ul {
 	flex-direction: row;
 	gap: 20px;
 	align-items: center;
+}
+header nav ul .navLink{
+
+	line-height: 50px;
+	height: 50px;
+	min-width: 50px;
 }
 
 header nav ul li a {

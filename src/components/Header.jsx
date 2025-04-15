@@ -27,7 +27,7 @@ export const Header = () => {
             }
             <nav>
                 <ul>
-                    <li>
+                    <li className={"navLink"}>
                         <a href="/" className={`md-text  ${url === '/' && 'active'}`}>
                             Home
                         </a>
@@ -35,7 +35,7 @@ export const Header = () => {
                     <li>
                         <div className={"point"}/>
                     </li>
-                    <li>
+                    <li className={"navLink"}>
                         <a href="/activite" className={`md-text  ${url === '/activite' && 'active'}`}>
                             Mon activité
                         </a>
@@ -44,7 +44,7 @@ export const Header = () => {
                         <div className={"point"}/>
                     </li>
 
-                    <li>
+                    <li className={"navLink"}>
                         <a href="/procedure" className={`md-text  ${url === '/procedure' && 'active'}`}>
                             Procédure
                         </a>
@@ -52,7 +52,7 @@ export const Header = () => {
                     <li>
                         <div className={"point"}/>
                     </li>
-                    <li>
+                    <li className={"navLink"}>
                         <a href="/animations" className={`md-text  ${url === '/animations' && 'active'}`}>
                             Animations
                         </a>
@@ -60,7 +60,7 @@ export const Header = () => {
                     <li>
                         <div className={"point"}/>
                     </li>
-                    <li>
+                    <li className={"navLink"}>
                         <a href="/contact" className={`md-text  ${url === '/contact' && 'active'}`}>
                             Contact
                         </a>
