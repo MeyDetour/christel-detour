@@ -52,11 +52,11 @@ export const Animations = () => {
 				<article className="flexRowBetween">
 					<div className="flexCol">
 						<h3>Activités</h3>
-						<p className="md-text">J’organise de nombreuses activités aux côtés des enfants, autour de thèmes
+						<p className="md-text">J’organise de nombreuses activités au côté des enfants, autour de thèmes
 							variés tels que les
 							saisons, les animaux, ou encore des fêtes comme la Fête des Mères, la Fête des Pères, Noël et
 							Pâques. Ces ateliers permettent aux enfants de créer des objets pratiques tout en offrant une
-							belle occasion de confectionner des cadeaux uniques pour leurs parents. Ces activités visent à
+							belle occasion de confectionner des cadeaux pour leurs parents. Ces activités visent à
 							développer leur motricité fine, stimuler leur créativité et nourrir leur imagination. En
 							parallèle, elles facilitent l’apprentissage grâce à une approche multisensorielle qui enrichit
 							leur développement global.
@@ -66,7 +66,7 @@ export const Animations = () => {
 						<h3>Animations et sorties</h3>
 						<p className="md-text">Nous proposons régulièrement des sorties en extérieur, comme des balades au
 							parc ou des explorations en pleine nature. Ces moments favorisent la découverte du monde naturel
-							tout en permettant aux enfants de se libérer, de courir et de s’ouvrir au monde. Les sorties en
+							tout en permettant aux enfants de se libérer et de courir. Les sorties en
 							plein air stimulent leurs sens, renforcent leur santé physique et les connectent à leur
 							environnement. Nous organisons également des sorties à thème, souvent en partenariat avec des
 							associations telles que "Les Pioupious des Nounous", pour offrir aux enfants des expériences

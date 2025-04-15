@@ -30,7 +30,7 @@ export const Activity = () => {
                         <li className={"md-text"}>Accompagner son éveil, son épanouissement, sa socialisation et son
                             autonomie.
                         </li>
-                        <li className={"md-text"}>Respecter vos attentes : pour se faire je travaille en collaboration
+                        <li className={"md-text"}>Respecter vos attentes : pour ce faire je travaille en collaboration
                             avec vous en
                             privilégiant le dialogue afin de nous permettre la construction d’une relation de confiance.
                         </li>
@@ -45,8 +45,8 @@ export const Activity = () => {
                         <div className={"blue"}>
                             <span class={"md-bold-text"}>Les règles et les limites</span>
                             <p className={"md-text"}>Un enfant a besoin de repères. Les limites lui permettent de se
-                                construire. Chez l’assistante Maternelle il y a des règles de vie à respecter : (on ne
-                                se tape pas, on respecte l’autre, on écoute l’autre, on dit « s’il te plait », « merci
+                                construire. Chez l’assistante Maternelle, il y a des règles de vie à respecter : (on ne
+                                se tape pas, on respecte l’autre, on écoute l’autre, on dit « s’il te plaît », « merci
                                 », etc)</p>
                         </div>
 
@@ -63,8 +63,8 @@ export const Activity = () => {
                         <div className={"violet"}>
                             <span className={"md-bold-text"}>La socialisation</span>
                             <p className={"md-text"}>Je travaille en équipe avec l’Association des Assistantes
-                                Maternelle Les Pioupious des nounous qui propose des activités collectives manuelles et
-                                de motricité (sortie ludique, ludothèque, bibliothèque...).
+                                Maternelles Les Pioupious des nounous qui propose des activités collectives manuelles et
+                                de motricité (sortie ludique, ludothèque).
 
                             </p>
                         </div>
@@ -76,10 +76,7 @@ export const Activity = () => {
                         <div className={"green"}>
                             <span className={"md-bold-text"}>L’épanouissement</span>
                             <p className={"md-text"}>Je lui propose diverses activités variées et adaptées. Elles
-                                doivent être
-                                variées pour lui permettre de s’éveiller et adaptées afin de respecter ses aptitudes (ne
-                                pas le mettre
-                                en échec).
+                                doivent être variées pour lui permettre de s’éveiller et adaptées afin de respecter ses aptitudes.
                             </p>
                         </div>
                     </div>
@@ -103,8 +100,8 @@ export const Activity = () => {
                     <div>
                         <div>
                             <p className={"md-text"}>Jardin : un espace jeu extérieur où les enfants pourront avoir des
-                                activités plus physiques, des activités de motricité... (Vélos, trottinettes,
-                                poussettes, cabane, tunnel...)</p>
+                                activités plus physiques, des activités de motricité... (vélos, trottinettes,
+                                poussettes, cabane, tunnel...).</p>
                             <p className={"md-text"}>Des chambres : Un espace repos dans lequel chaque enfant a son lit
                                 et pourra faire la sieste dans le respect de ses habitudes et de son rythme.</p>
                             <p className={"md-text"}>Une salle de jeu : Un espace jeu dans lequel chaque enfant pourra
@@ -127,17 +124,16 @@ export const Activity = () => {
                     <HorizontalSeparator text="Enfants, Horaires, Transport"/>
                     <div>
                         <p className={"md-text"}>J’accueille les enfants de 2 mois 1/2 jusqu’à 3 ans, de 7h15 à 18h30,
-                            du lundi au vendredi en temps plein,
-                            Je veille à effectuer un accueil harmonieux et prévenant avec chaque
+                            du lundi au vendredi en temps plein. Je veille à effectuer un accueil harmonieux et prévenant avec chaque
                             enfant.
                         </p>
                         <p className={"md-text"}>J’ai un agrément pour quatre enfants, tout âge. Les trajets pour
-                            les périscolaire : nous faisons les trajets soit à pied, soit en voiture: j’habite à 900
+                            les périscolaires : nous faisons les trajets soit à pied, soit en voiture: j’habite à 900
                             mètres de l’école de Simandres. Nous ne pouvons pas faire 8 allers – retours et nous devons
                             tenir compte aussi de la météo.</p>
 
                         <p className={"md-text"}>
-                            Je privilégie aussi le rythme des plus petits et je ne prévoie de faire les trajets que de 8h20 et de 11h20. (pas de trajet l'après-midi)
+                            Je privilégie aussi le rythme des plus petits et je ne prévois de faire les trajets que de 8h20 et de 11h20. (pas de trajet l'après-midi)
                             Je suis donc véhiculée et ai le matériel en adéquation avec l’âge de votre enfant
                             pour que le trajet soit réalisé en toute sécurité.</p>
                     </div>
