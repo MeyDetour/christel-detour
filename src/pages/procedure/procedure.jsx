@@ -22,7 +22,7 @@ export const Procedure = () => {
 						</li>
 						<li>
 							<h3>Rencontre et Visite</h3>
-							<p className="md-text">Une visite de mon domicile permet de vous familiariser avec l'environnement et discuter de vos attentes.</p>
+							<p className="md-text">Une visite de mon domicile à Simandres permet de vous familiariser avec l'environnement et discuter de vos attentes.</p>
 						</li>
 						<li>
 							<h3>Discussion des Modalités</h3>

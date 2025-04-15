@@ -92,7 +92,7 @@ export const Home = () => {
 				<article>
 					<HorizontalSeparator text="Qui suis-je ?"/>
 					<div className="flexRowAround content">
-						<p className="md-text">Je me présente, je m'appelle Christel Detour, j'ai 52 ans et je suis Assistante Maternelle agréée par le Conseil Général du Rhône depuis 2008.<br/><br/>J’ai fait des études de comptabilité et j’ai travaillé 14 ans en tant que chef de service au siège d’un grand groupe de vente d’électroménager, de téléphonie, de matériel informatique et audiovisuel.</p>
+						<p className="md-text">Je me présente, je m'appelle Christel Detour, j'ai 52 ans et je suis Assistante Maternelle à Simandres agréée par le Conseil Général du Rhône depuis 2008.<br/><br/>J’ai fait des études de comptabilité et j’ai travaillé 14 ans en tant que chef de service au siège d’un grand groupe de vente d’électroménager, de téléphonie, de matériel informatique et audiovisuel.</p>
 						<Img src="./images/profile-picture.png" alt="Christel Detour, assistante maternelle formée et bienveillante. Accompagnement des enfants avec une approche pédagogique attentive et personnalisée." />
 					</div>
 				</article>
