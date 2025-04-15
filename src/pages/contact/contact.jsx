@@ -77,7 +77,7 @@ export const Contact = () => {
                                 </defs>
                             </svg>
 
-                            <p className={"md-text"}>Parmis les premières recommandation sur <a style={{textDecoration:'underline'}} href="https://www.nounou-top.fr/annonce-gratuite/assistante-maternelle/simandres-69360" target="_blank" rel="noreferrer">Nounoutop</a>. <a
+                            <p className={"md-text"}>Parmis les premières recommandation sur <a style={{textDecoration:'underline'}} href="https://www.nounou-top.fr/annonce-gratuite/assistante-maternelle/simandres-69360" target="_blank" rel="noreferrer">Nounou-top</a>. <a
                                 href="https://www.nounou-top.fr/assmat-agreee-69360-simandres-1" style={{textDecoration:'underline'}} target={"_blank"} rel="noreferrer">Regardez mon profil !</a></p>
                         </div>
                     </div>
