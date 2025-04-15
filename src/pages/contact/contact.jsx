@@ -62,6 +62,24 @@ export const Contact = () => {
                             </svg>
                             <p className={"md-text"}>Vous pouvez me contacter de 8h à 18h en semaine</p>
                         </div>
+
+
+                        {/* nounou top  */}
+                        <div className="flexRow">
+                            <svg width="34" height="47" viewBox="0 0 34 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2002_1540)">
+                                    <path d="M24.5 32.5L25 42.5H23L16.5 37.5L9.5 42.5H7.5L8.23086 32.5L7.5 31.5L6.51773 43.3266H9.79774L16.3603 38.7643L22.8926 43.3266H26.1728L25 31.5L24.5 32.5ZM30.5953 12.6822L30.3992 8.36481L26.7774 6.03543L24.4593 2.39505L20.1635 2.19739L16.3452 0.209961L12.527 2.19784L8.23121 2.3955L5.91307 6.03543L2.29132 8.36481L2.09519 12.6822L0.117188 16.5197L2.09519 20.3574L2.29185 24.6747L5.91307 27.0041L8.23086 30.6445H13L16.3452 32.8296L20.1635 30.8417L24.4593 30.6445L26.7771 27.0041L30.3991 24.675L30.5953 20.3578L32.5733 16.5201L30.5953 12.6822ZM29.5 20V24L26.5 26L24 29.5L20.1635 29.5837L16.3641 31.5L13 29.5H9L7.01136 26L3.72903 24L3.5 20L1.5 16.5L3.43465 12.6822V9L7 7L9 3.5H13L16.5 1.5L20 3.5H24L26 7L29.5 9L29.3519 13.245L31.5 16.5L29.5 20Z" fill="black"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2002_1540">
+                                        <rect width="34" height="46" fill="white" transform="translate(0 0.0214844)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <p className={"md-text"}>Parmis les premières recommandation sur <a href="https://www.nounou-top.fr/annonce-gratuite/assistante-maternelle/simandres-69360" target="_blank" rel="noreferrer">Nounoutop</a>. <a
+                                href="https://www.nounou-top.fr/assmat-agreee-69360-simandres-1" target={"_blank"} rel="noreferrer">Regardez mon profil !</a></p>
+                        </div>
                     </div>
                 </article>
             </section>
