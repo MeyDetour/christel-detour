@@ -1,12 +1,19 @@
 import "./alert.css"
+import {useEffect} from "react";
 export function Alert({ displayAlert,setDisplayAlert }) {
 
-    if (!displayAlert){
+    useEffect(() => {
+        if (displayAlert) {
+            document.body.style.overflowY = "hidden";
+        } else {
+            document.body.style.overflowY = "scroll";
+        }
 
-        document.body.style.overflowY = "scroll";
-        return;
-    }
-    document.body.style.overflowY = "hidden";
+        // Cleanup on unmount
+        return () => {
+            document.body.style.overflowY = "scroll";
+        };
+    }, [displayAlert]);
     return (
 
         <div id="dialogoverlay" >
