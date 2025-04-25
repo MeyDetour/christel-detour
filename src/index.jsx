@@ -13,6 +13,8 @@ import {NotFound} from './pages/_404.jsx';
 
 import "./style.css"
 import NavigationMenu from "./components/navigationMenu.jsx";
+import {Alert} from "./components/Alert.jsx";
+import {useState} from "preact/hooks";
 
 export const App = () => {
     return (
@@ -24,30 +26,36 @@ export const App = () => {
 
 const LocationWithRouter = () => {
     const { url } = useLocation();
+    const [displayAlert, setDisplayAlert] = useState(true);
 
     const isMobile = typeof window !== "undefined" && window.innerWidth <= 600;
 
     return (
-        <div className={
-            url === '/' ? "home" :
-            url === '/activite' ? "activite" :
-            url === '/procedure' ? "procedure" :
-            url === '/animations' ? "animations" :
-            url === '/contact' ? "contact" :
-            " "
-        }>
-            <Header />
-            {isMobile <= 600 && <NavigationMenu />}
-            <Router>
-                <Route path="/" component={Home} />
-                <Route path="/activite" component={Activity} />
-                <Route path="/procedure" component={Procedure} />
-                <Route path="/animations" component={Animations} />
-                <Route path="/contact" component={Contact} />
-                <Route default component={NotFound} />
-            </Router>
-            <Footer />
-        </div>
+
+        <>
+            <Alert displayAlert={displayAlert} setDisplayAlert={setDisplayAlert} />
+            <div className={
+                url === '/' ? "home" :
+                    url === '/activite' ? "activite" :
+                        url === '/procedure' ? "procedure" :
+                            url === '/animations' ? "animations" :
+                                url === '/contact' ? "contact" :
+                                    " "
+            }>
+                <Header />
+                {isMobile <= 600 && <NavigationMenu />}
+                <Router>
+                    <Route path="/" component={Home} />
+                    <Route path="/activite" component={Activity} />
+                    <Route path="/procedure" component={Procedure} />
+                    <Route path="/animations" component={Animations} />
+                    <Route path="/contact" component={Contact} />
+                    <Route default component={NotFound} />
+                </Router>
+                <Footer />
+            </div>
+        </>
+
     );
 };
 

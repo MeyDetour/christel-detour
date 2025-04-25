@@ -1,0 +1,68 @@
+/* alert */
+
+#dialogoverlay {
+
+    width: 100vw;
+    overflow: hidden;
+    height: 100vh;
+    position: absolute;
+    background: #80808082;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 70;
+}
+
+#dialogoverlay > div {
+    background: white;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    width: 400px;
+    min-height: 385px;
+    clip-path: border-box;
+}
+
+
+#dialogoverlay > div *:not(#cloud1 and #cloud2) {
+    z-index: 125;
+}
+
+#dialogoverlay #cloud1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 120px;
+}
+#dialogoverlay #cloud2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 116px;
+    transform: rotate(180deg);
+}
+
+#dialogoverlay #dialogboxbody{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    width: 72%;
+}
+
+#dialogoverlay button{
+
+    outline: 0;
+    border: 0;
+    background: var(--violet);
+    padding: 7px 37px;
+    border-radius: 8px;
+    cursor: pointer;
+}

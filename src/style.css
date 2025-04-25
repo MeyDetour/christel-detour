@@ -399,7 +399,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 128px;
+	font-size: 120px;
 	font-family: "Baskervville", serif;
 	font-weight: 400;
 	font-style: normal;
@@ -407,7 +407,7 @@ h1 {
 }
 
 h2 {
-	font-size: 64px;
+	font-size: 56px;
 	font-family: "Baskervville", serif;
 	font-weight: 400;
 	font-style: normal;
@@ -451,7 +451,7 @@ h6 {
 }
 
 .md-text {
-	font-size: 20px;
+	font-size: 18px;
 	font-family: "Inter", sans-serif;
 	font-weight: 400;
 	font-style: normal;
