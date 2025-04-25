@@ -11,6 +11,7 @@ export function Alert({ displayAlert,setDisplayAlert }) {
 
     if (typeof window !== 'undefined') {
         document.body.style.overflowY = "hidden";
+        window.scrollTo(0, 0);
     }
     return (
 
