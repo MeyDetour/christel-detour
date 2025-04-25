@@ -5,7 +5,6 @@ export function Alert({ displayAlert,setDisplayAlert }) {
         if (typeof window !== "undefined") {
             if (displayAlert) {
                 document.body.style.overflowY = "hidden";
-                window.scrollTo(0, 0);
             } else {
                 document.body.style.overflowY = "scroll";
             }
