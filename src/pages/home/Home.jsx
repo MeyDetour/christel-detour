@@ -38,7 +38,7 @@ export const Home = () => {
                         animate={{width: "100%"}}
                         transition={{duration: 1.5, delay: 1, ease: "easeInOut"}}
                     >
-                        Assistante maternelle
+                        Assistante maternelle Simandres
                     </motion.h2>
                 </div>
 
