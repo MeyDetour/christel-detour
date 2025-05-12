@@ -33,9 +33,9 @@ export const Home = () => {
                         DETOUR Christel
                     </motion.h1>
                     <motion.h2
-                        style={{overflow: "hidden", whiteSpace: "nowrap"}}
+                            style={{overflow: "hidden", whiteSpace: "nowrap"}}
                         initial={{width: 0}}
-                        animate={{width: "100%"}}
+                        animate={{width: "fit-content"}}
                         transition={{duration: 1.5, delay: 1, ease: "easeInOut"}}
                     >
                         Assistante maternelle Simandres

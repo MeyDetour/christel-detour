@@ -37,7 +37,7 @@
 
 .home section.top div.title h2 {
     width: fit-content;
-    margin-left: calc(100% - 19ch);
+    margin-left: calc(100% - 24ch);
 
     color: var(--grey);
     text-align: left;
@@ -285,7 +285,8 @@
     }
 
     .home section.top h2 {
-
+        margin-left: inherit !important;
+        white-space: wrap !important;
         font-size: 37px;
     }
 
