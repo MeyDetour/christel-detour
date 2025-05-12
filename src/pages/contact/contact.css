@@ -45,6 +45,7 @@
 
 .contact .info > div.flexRow {
     gap: 30px;
+    align-items: center;
 }
 
 @media only screen and (max-width: 1000px) {
