@@ -66,3 +66,13 @@
     border-radius: 8px;
     cursor: pointer;
 }
+
+
+
+@media only screen and (max-width: 500px) {
+#dialogoverlay > div{
+
+    width: 300px;
+    min-height: 362px;
+}
+}
