@@ -28,6 +28,17 @@ const Footer = () => {
 						</a>
 					</li>
 				</ul>
+				<ul className={"sm-text"}>
+					<li>
+						<a target={"_blank"}  href="https://monenfant.fr/que-recherchez-vous/mode-d-accueil/assistant-maternel/simandres/be7951a9-9368-4c6f-b72f-90a869623411" rel="noreferrer">
+							Mon profim monenfant.fr
+						</a>
+					</li>	<li>
+						<a target={"_blank"} href="https://www.nounou-top.fr/assmat-agreee-69360-simandres-1" rel="noreferrer">
+							Mon profil nounou-top.fr
+						</a>
+					</li>
+				</ul>
 			</div>
 			<div className="flexRow sm-text contacts">
 				<div>
