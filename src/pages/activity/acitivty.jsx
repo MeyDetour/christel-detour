@@ -91,7 +91,7 @@ export const Activity = () => {
                         <Img src="/images/garden.png" alt="image du jardin"/>
                         <div>
                             <h3>Mon lieu de travail et aussi mon lieu de vie</h3>
-                            <p className={"md-text"}>J’habite et accueille votre enfant dans une maison avec 4 chambres,
+                            <p className={"md-text"}>J’habite à Simandres et accueille votre enfant dans une maison avec 4 chambres,
                                 une salle de jeux et un jardin. Ce lieu a été visité par la puéricultrice et selon ses
                                 recommandations, certains aménagements ont été effectués afin d’assurer la sécurité des
                                 enfants accueillis.</p>
@@ -125,7 +125,7 @@ export const Activity = () => {
                     <div>
                         <p className={"md-text"}>J’accueille les enfants de 2 mois 1/2 jusqu’à 3 ans, de 7h15 à 18h30,
                             du lundi au vendredi en temps plein. Je veille à effectuer un accueil harmonieux et prévenant avec chaque
-                            enfant.
+                            enfant. Ma maison est située à Simandres à 20 km de Lyon.
                         </p>
                         <p className={"md-text"}>J’ai un agrément pour quatre enfants, tout âge. Les trajets pour
                             les périscolaires : nous faisons les trajets soit à pied, soit en voiture: j’habite à 900
