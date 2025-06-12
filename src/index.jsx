@@ -9,6 +9,7 @@ import {Contact} from "./pages/contact/contact.jsx";
 import {Procedure} from "./pages/procedure/procedure.jsx";
 import {Footer} from "./components/Footer.jsx";
 
+import {Mentionslegales} from './pages/mentionslegales/Mentionslegales.jsx';
 import {NotFound} from './pages/_404.jsx';
 
 import "./style.css"
@@ -50,6 +51,7 @@ const LocationWithRouter = () => {
                     <Route path="/procedure" component={Procedure} />
                     <Route path="/animations" component={Animations} />
                     <Route path="/contact" component={Contact} />
+                     <Route path="/mentions-legales" component={Mentionslegales} />
                     <Route default component={NotFound} />
                 </Router>
                 <Footer />
