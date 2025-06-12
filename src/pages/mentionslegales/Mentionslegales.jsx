@@ -1,6 +1,6 @@
 
 import HorizontalSeparator from './../../components/HorizontalSeparator';
-import "./style.css"
+//import "./style.css"
 export function Mentionslegales() {
 
  
