@@ -82,7 +82,7 @@ const Footer = () => {
 				</a>
 			</div>
 			<hr/>
-			<p>© Copyrights, 2024< - <a href="/mentions-legales">Mentions légales</a>/p>
+			<p>© Copyrights, 2024< - <a href="/mentions-legales">Mentions légales</a></p>
 		</footer>
 	);
 }
