@@ -27,8 +27,8 @@ export function Alert({ displayAlert,setDisplayAlert }) {
                     <img src="/assets/cloud2.png" alt="" id={"cloud2"}/>
                     <div id="dialogboxbody">
                         <p className={"md-bold-text"}>Christel Detour : </p>
-                        <p className={"md-text"}>Une place en temps plein est disponible pour un bébé pour la rentrée 2027.<br></br>
-Ne tardez pas à nous contacter pour anticiper votre mode de garde !</p>
+                        <p className={"md-text"}>J’aurai deux places disponibles (enfants de moins de 3 ans) à compter de septembre 2027.<br></br>
+N’hésitez pas à me contacter si vous êtes intéressée. </p>
                     </div>
                         <button className="md-text" onClick={()=>setDisplayAlert(false)} >J'ai compris</button>
 
